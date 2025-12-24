@@ -1,302 +1,1082 @@
 [
-    {
-        "text": "How are you today?",
-        "file": "audio_2000_Daily_English_01\\en_0.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I'm doing well, thank you.",
-        "file": "audio_2000_Daily_English_01\\ex_en_0.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "How did you sleep last night?",
-        "file": "audio_2000_Daily_English_01\\en_1.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I slept pretty well.",
-        "file": "audio_2000_Daily_English_01\\ex_en_1.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Are you ready for today?",
-        "file": "audio_2000_Daily_English_01\\en_2.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, I'm ready.",
-        "file": "audio_2000_Daily_English_01\\ex_en_2.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "What time did you wake up?",
-        "file": "audio_2000_Daily_English_01\\en_3.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I woke up at 6 a.m.",
-        "file": "audio_2000_Daily_English_01\\ex_en_3.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Did you have breakfast?",
-        "file": "audio_2000_Daily_English_01\\en_4.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, I had breakfast.",
-        "file": "audio_2000_Daily_English_01\\ex_en_4.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "What did you eat for breakfast?",
-        "file": "audio_2000_Daily_English_01\\en_5.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I ate eggs and toast.",
-        "file": "audio_2000_Daily_English_01\\ex_en_5.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Are you hungry now?",
-        "file": "audio_2000_Daily_English_01\\en_6.mp3",
-        "type": "en"
-    },
-    {
-        "text": "No, I'm not hungry.",
-        "file": "audio_2000_Daily_English_01\\ex_en_6.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you want some water?",
-        "file": "audio_2000_Daily_English_01\\en_7.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, I'd like some water, please.",
-        "file": "audio_2000_Daily_English_01\\ex_en_7.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Where is your bag?",
-        "file": "audio_2000_Daily_English_01\\en_8.mp3",
-        "type": "en"
-    },
-    {
-        "text": "My bag is on the chair.",
-        "file": "audio_2000_Daily_English_01\\ex_en_8.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Is this your phone?",
-        "file": "audio_2000_Daily_English_01\\en_9.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, that's my phone.",
-        "file": "audio_2000_Daily_English_01\\ex_en_9.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Can I use your phone?",
-        "file": "audio_2000_Daily_English_01\\en_10.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Sure, go ahead.",
-        "file": "audio_2000_Daily_English_01\\ex_en_10.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "What time is it now?",
-        "file": "audio_2000_Daily_English_01\\en_11.mp3",
-        "type": "en"
-    },
-    {
-        "text": "It's almost 8:00.",
-        "file": "audio_2000_Daily_English_01\\ex_en_11.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Are you going to work today?",
-        "file": "audio_2000_Daily_English_01\\en_12.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, I'm going to work.",
-        "file": "audio_2000_Daily_English_01\\ex_en_12.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "How do you go to work?",
-        "file": "audio_2000_Daily_English_01\\en_13.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I take the bus to work.",
-        "file": "audio_2000_Daily_English_01\\ex_en_13.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Is the bus usually crowded?",
-        "file": "audio_2000_Daily_English_01\\en_14.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, it is usually crowded in the morning.",
-        "file": "audio_2000_Daily_English_01\\ex_en_14.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you like taking the bus?",
-        "file": "audio_2000_Daily_English_01\\en_15.mp3",
-        "type": "en"
-    },
-    {
-        "text": "It's okay. Not too bad.",
-        "file": "audio_2000_Daily_English_01\\ex_en_15.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Where do you work?",
-        "file": "audio_2000_Daily_English_01\\en_16.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I work in an office.",
-        "file": "audio_2000_Daily_English_01\\ex_en_16.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "What do you do there?",
-        "file": "audio_2000_Daily_English_01\\en_17.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I work in customer service.",
-        "file": "audio_2000_Daily_English_01\\ex_en_17.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you like your job?",
-        "file": "audio_2000_Daily_English_01\\en_18.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, I like my job.",
-        "file": "audio_2000_Daily_English_01\\ex_en_18.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Is your job difficult?",
-        "file": "audio_2000_Daily_English_01\\en_19.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Sometimes it's difficult, but I can manage.",
-        "file": "audio_2000_Daily_English_01\\ex_en_19.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you have friendly co-workers?",
-        "file": "audio_2000_Daily_English_01\\en_20.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, my co-workers are friendly.",
-        "file": "audio_2000_Daily_English_01\\ex_en_20.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Who do you sit next to at work?",
-        "file": "audio_2000_Daily_English_01\\en_21.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I sit next to my friend Lisa.",
-        "file": "audio_2000_Daily_English_01\\ex_en_21.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Is she nice?",
-        "file": "audio_2000_Daily_English_01\\en_22.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, she is very nice.",
-        "file": "audio_2000_Daily_English_01\\ex_en_22.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you take a lunch break?",
-        "file": "audio_2000_Daily_English_01\\en_23.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, I take a break at noon.",
-        "file": "audio_2000_Daily_English_01\\ex_en_23.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "What do you usually eat for lunch?",
-        "file": "audio_2000_Daily_English_01\\en_24.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I usually eat rice and chicken.",
-        "file": "audio_2000_Daily_English_01\\ex_en_24.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you bring food from home?",
-        "file": "audio_2000_Daily_English_01\\en_25.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, sometimes I do.",
-        "file": "audio_2000_Daily_English_01\\ex_en_25.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you eat out sometimes?",
-        "file": "audio_2000_Daily_English_01\\en_26.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, I eat out when I'm busy.",
-        "file": "audio_2000_Daily_English_01\\ex_en_26.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Where do you like to eat?",
-        "file": "audio_2000_Daily_English_01\\en_27.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I like to eat at a small local restaurant.",
-        "file": "audio_2000_Daily_English_01\\ex_en_27.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Is the food good there?",
-        "file": "audio_2000_Daily_English_01\\en_28.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Yes, the food is very good.",
-        "file": "audio_2000_Daily_English_01\\ex_en_28.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Is it expensive?",
-        "file": "audio_2000_Daily_English_01\\en_29.mp3",
-        "type": "en"
-    },
-    {
-        "text": "No, it's not expensive.",
-        "file": "audio_2000_Daily_English_01\\ex_en_29.mp3",
-        "type": "ex_en"
-    }
+  {
+    "id": "en_0",
+    "text": "How are you today?",
+    "file": "audio_2000_Daily_English_01/gtts_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_0",
+    "text": "How are you today?",
+    "file": "audio_2000_Daily_English_01/edge_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "I'm doing well, thank you.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "I'm doing well, thank you.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_1",
+    "text": "How did you sleep last night?",
+    "file": "audio_2000_Daily_English_01/gtts_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_1",
+    "text": "How did you sleep last night?",
+    "file": "audio_2000_Daily_English_01/edge_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "I slept pretty well.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "I slept pretty well.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_2",
+    "text": "Are you ready for today?",
+    "file": "audio_2000_Daily_English_01/gtts_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_2",
+    "text": "Are you ready for today?",
+    "file": "audio_2000_Daily_English_01/edge_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "Yes, I'm ready.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "Yes, I'm ready.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_3",
+    "text": "What time did you wake up?",
+    "file": "audio_2000_Daily_English_01/gtts_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_3",
+    "text": "What time did you wake up?",
+    "file": "audio_2000_Daily_English_01/edge_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "I woke up at 6 a.m.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "I woke up at 6 a.m.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_4",
+    "text": "Did you have breakfast?",
+    "file": "audio_2000_Daily_English_01/gtts_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_4",
+    "text": "Did you have breakfast?",
+    "file": "audio_2000_Daily_English_01/edge_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "Yes, I had breakfast.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "Yes, I had breakfast.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_5",
+    "text": "What did you eat for breakfast?",
+    "file": "audio_2000_Daily_English_01/gtts_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_5",
+    "text": "What did you eat for breakfast?",
+    "file": "audio_2000_Daily_English_01/edge_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "I ate eggs and toast.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "I ate eggs and toast.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_6",
+    "text": "Are you hungry now?",
+    "file": "audio_2000_Daily_English_01/gtts_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_6",
+    "text": "Are you hungry now?",
+    "file": "audio_2000_Daily_English_01/edge_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "No, I'm not hungry.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "No, I'm not hungry.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_7",
+    "text": "Do you want some water?",
+    "file": "audio_2000_Daily_English_01/gtts_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_7",
+    "text": "Do you want some water?",
+    "file": "audio_2000_Daily_English_01/edge_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "Yes, I'd like some water, please.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "Yes, I'd like some water, please.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_8",
+    "text": "Where is your bag?",
+    "file": "audio_2000_Daily_English_01/gtts_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_8",
+    "text": "Where is your bag?",
+    "file": "audio_2000_Daily_English_01/edge_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "My bag is on the chair.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "My bag is on the chair.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_9",
+    "text": "Is this your phone?",
+    "file": "audio_2000_Daily_English_01/gtts_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_9",
+    "text": "Is this your phone?",
+    "file": "audio_2000_Daily_English_01/edge_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "Yes, that's my phone.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "Yes, that's my phone.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_10",
+    "text": "Can I use your phone?",
+    "file": "audio_2000_Daily_English_01/gtts_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_10",
+    "text": "Can I use your phone?",
+    "file": "audio_2000_Daily_English_01/edge_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "Sure, go ahead.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "Sure, go ahead.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_11",
+    "text": "What time is it now?",
+    "file": "audio_2000_Daily_English_01/gtts_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_11",
+    "text": "What time is it now?",
+    "file": "audio_2000_Daily_English_01/edge_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "It's almost 8:00.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "It's almost 8:00.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_12",
+    "text": "Are you going to work today?",
+    "file": "audio_2000_Daily_English_01/gtts_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_12",
+    "text": "Are you going to work today?",
+    "file": "audio_2000_Daily_English_01/edge_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "Yes, I'm going to work.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "Yes, I'm going to work.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_13",
+    "text": "How do you go to work?",
+    "file": "audio_2000_Daily_English_01/gtts_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_13",
+    "text": "How do you go to work?",
+    "file": "audio_2000_Daily_English_01/edge_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "I take the bus to work.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "I take the bus to work.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_14",
+    "text": "Is the bus usually crowded?",
+    "file": "audio_2000_Daily_English_01/gtts_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_14",
+    "text": "Is the bus usually crowded?",
+    "file": "audio_2000_Daily_English_01/edge_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "Yes, it is usually crowded in the morning.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "Yes, it is usually crowded in the morning.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_15",
+    "text": "Do you like taking the bus?",
+    "file": "audio_2000_Daily_English_01/gtts_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_15",
+    "text": "Do you like taking the bus?",
+    "file": "audio_2000_Daily_English_01/edge_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "It's okay. Not too bad.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "It's okay. Not too bad.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_16",
+    "text": "Where do you work?",
+    "file": "audio_2000_Daily_English_01/gtts_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_16",
+    "text": "Where do you work?",
+    "file": "audio_2000_Daily_English_01/edge_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "I work in an office.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "I work in an office.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_17",
+    "text": "What do you do there?",
+    "file": "audio_2000_Daily_English_01/gtts_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_17",
+    "text": "What do you do there?",
+    "file": "audio_2000_Daily_English_01/edge_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I work in customer service.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I work in customer service.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_18",
+    "text": "Do you like your job?",
+    "file": "audio_2000_Daily_English_01/gtts_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_18",
+    "text": "Do you like your job?",
+    "file": "audio_2000_Daily_English_01/edge_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "Yes, I like my job.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "Yes, I like my job.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_19",
+    "text": "Is your job difficult?",
+    "file": "audio_2000_Daily_English_01/gtts_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_19",
+    "text": "Is your job difficult?",
+    "file": "audio_2000_Daily_English_01/edge_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "Sometimes it's difficult, but I can manage.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "Sometimes it's difficult, but I can manage.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_20",
+    "text": "Do you have friendly co-workers?",
+    "file": "audio_2000_Daily_English_01/gtts_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_20",
+    "text": "Do you have friendly co-workers?",
+    "file": "audio_2000_Daily_English_01/edge_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "Yes, my co-workers are friendly.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "Yes, my co-workers are friendly.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_21",
+    "text": "Who do you sit next to at work?",
+    "file": "audio_2000_Daily_English_01/gtts_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_21",
+    "text": "Who do you sit next to at work?",
+    "file": "audio_2000_Daily_English_01/edge_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "I sit next to my friend Lisa.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "I sit next to my friend Lisa.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_22",
+    "text": "Is she nice?",
+    "file": "audio_2000_Daily_English_01/gtts_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_22",
+    "text": "Is she nice?",
+    "file": "audio_2000_Daily_English_01/edge_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "Yes, she is very nice.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "Yes, she is very nice.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_23",
+    "text": "Do you take a lunch break?",
+    "file": "audio_2000_Daily_English_01/gtts_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_23",
+    "text": "Do you take a lunch break?",
+    "file": "audio_2000_Daily_English_01/edge_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "Yes, I take a break at noon.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "Yes, I take a break at noon.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_24",
+    "text": "What do you usually eat for lunch?",
+    "file": "audio_2000_Daily_English_01/gtts_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_24",
+    "text": "What do you usually eat for lunch?",
+    "file": "audio_2000_Daily_English_01/edge_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "I usually eat rice and chicken.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "I usually eat rice and chicken.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_25",
+    "text": "Do you bring food from home?",
+    "file": "audio_2000_Daily_English_01/gtts_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_25",
+    "text": "Do you bring food from home?",
+    "file": "audio_2000_Daily_English_01/edge_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "Yes, sometimes I do.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "Yes, sometimes I do.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_26",
+    "text": "Do you eat out sometimes?",
+    "file": "audio_2000_Daily_English_01/gtts_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_26",
+    "text": "Do you eat out sometimes?",
+    "file": "audio_2000_Daily_English_01/edge_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "Yes, I eat out when I'm busy.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "Yes, I eat out when I'm busy.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_27",
+    "text": "Where do you like to eat?",
+    "file": "audio_2000_Daily_English_01/gtts_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_27",
+    "text": "Where do you like to eat?",
+    "file": "audio_2000_Daily_English_01/edge_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "I like to eat at a small local restaurant.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "I like to eat at a small local restaurant.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_28",
+    "text": "Is the food good there?",
+    "file": "audio_2000_Daily_English_01/gtts_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_28",
+    "text": "Is the food good there?",
+    "file": "audio_2000_Daily_English_01/edge_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "Yes, the food is very good.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "Yes, the food is very good.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_29",
+    "text": "Is it expensive?",
+    "file": "audio_2000_Daily_English_01/gtts_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_29",
+    "text": "Is it expensive?",
+    "file": "audio_2000_Daily_English_01/edge_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "No, it's not expensive.",
+    "file": "audio_2000_Daily_English_01/gtts_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "No, it's not expensive.",
+    "file": "audio_2000_Daily_English_01/edge_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  }
 ]

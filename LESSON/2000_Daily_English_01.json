@@ -1,242 +1,242 @@
 [
-    [
-        "How are you today?",
-        "haʊ ɑːr juː təˈdeɪ?",
-        "Hôm nay bạn thế nào?",
-        "I'm doing well, thank you.",
-        "aɪm ˈduːɪŋ wɛl, θæŋk juː.",
-        "Tôi khỏe, cảm ơn bạn."
-    ],
-    [
-        "How did you sleep last night?",
-        "haʊ dɪd juː sliːp læst naɪt?",
-        "Đêm qua bạn ngủ có ngon không?",
-        "I slept pretty well.",
-        "aɪ slɛpt ˈprɪti wɛl.",
-        "Tôi ngủ khá ngon."
-    ],
-    [
-        "Are you ready for today?",
-        "ɑːr juː ˈrɛdi fɔːr təˈdeɪ?",
-        "Bạn đã sẵn sàng cho ngày hôm nay chưa?",
-        "Yes, I'm ready.",
-        "jɛs, aɪm ˈrɛdi.",
-        "Vâng, tôi đã sẵn sàng."
-    ],
-    [
-        "What time did you wake up?",
-        "wʌt taɪm dɪd juː weɪk ʌp?",
-        "Bạn thức dậy lúc mấy giờ?",
-        "I woke up at 6 a.m.",
-        "aɪ woʊk ʌp æt sɪks eɪ.ɛm.",
-        "Tôi thức dậy lúc 6 giờ sáng."
-    ],
-    [
-        "Did you have breakfast?",
-        "dɪd juː hæv ˈbrɛkfəst?",
-        "Bạn đã ăn sáng chưa?",
-        "Yes, I had breakfast.",
-        "jɛs, aɪ hæd ˈbrɛkfəst.",
-        "Vâng, tôi đã ăn sáng."
-    ],
-    [
-        "What did you eat for breakfast?",
-        "wʌt dɪd juː iːt fɔːr ˈbrɛkfəst?",
-        "Bạn đã ăn gì cho bữa sáng?",
-        "I ate eggs and toast.",
-        "aɪ eɪt ɛɡz ænd toʊst.",
-        "Tôi đã ăn trứng và bánh mì nướng."
-    ],
-    [
-        "Are you hungry now?",
-        "ɑːr juː ˈhʌŋɡri naʊ?",
-        "Bây giờ bạn có đói không?",
-        "No, I'm not hungry.",
-        "noʊ, aɪm nɑːt ˈhʌŋɡri.",
-        "Không, tôi không đói."
-    ],
-    [
-        "Do you want some water?",
-        "duː juː wɑːnt sʌm ˈwɔːtər?",
-        "Bạn có muốn uống nước không?",
-        "Yes, I'd like some water, please.",
-        "jɛs, aɪd laɪk sʌm ˈwɔːtər, pliːz.",
-        "Vâng, làm ơn cho tôi một ít nước."
-    ],
-    [
-        "Where is your bag?",
-        "wɛər ɪz jʊər bæɡ?",
-        "Cái túi của bạn ở đâu?",
-        "My bag is on the chair.",
-        "maɪ bæɡ ɪz ɑːn ðə ʧɛər.",
-        "Cái túi của tôi ở trên ghế."
-    ],
-    [
-        "Is this your phone?",
-        "ɪz ðɪs jʊər foʊn?",
-        "Đây có phải là điện thoại của bạn không?",
-        "Yes, that's my phone.",
-        "jɛs, ðæts maɪ foʊn.",
-        "Vâng, đó là điện thoại của tôi."
-    ],
-    [
-        "Can I use your phone?",
-        "kæn aɪ juːz jʊər foʊn?",
-        "Tôi có thể dùng điện thoại của bạn không?",
-        "Sure, go ahead.",
-        "ʃʊər, ɡoʊ əˈhɛd.",
-        "Chắc chắn rồi, cứ tự nhiên."
-    ],
-    [
-        "What time is it now?",
-        "wʌt taɪm ɪz ɪt naʊ?",
-        "Bây giờ là mấy giờ?",
-        "It's almost 8:00.",
-        "ɪts ˈɔːlmoʊst eɪt əˈklɑːk.",
-        "Gần 8 giờ rồi."
-    ],
-    [
-        "Are you going to work today?",
-        "ɑːr juː ˈɡoʊɪŋ tuː wɜːrk təˈdeɪ?",
-        "Hôm nay bạn có đi làm không?",
-        "Yes, I'm going to work.",
-        "jɛs, aɪm ˈɡoʊɪŋ tuː wɜːrk.",
-        "Vâng, tôi sẽ đi làm."
-    ],
-    [
-        "How do you go to work?",
-        "haʊ duː juː ɡoʊ tuː wɜːrk?",
-        "Bạn đi làm bằng phương tiện gì?",
-        "I take the bus to work.",
-        "aɪ teɪk ðə bʌs tuː wɜːrk.",
-        "Tôi đi làm bằng xe buýt."
-    ],
-    [
-        "Is the bus usually crowded?",
-        "ɪz ðə bʌs ˈjuːʒuəli ˈkraʊdɪd?",
-        "Xe buýt có thường đông không?",
-        "Yes, it is usually crowded in the morning.",
-        "jɛs, ɪt ɪz ˈjuːʒuəli ˈkraʊdɪd ɪn ðə ˈmɔːrnɪŋ.",
-        "Vâng, nó thường đông vào buổi sáng."
-    ],
-    [
-        "Do you like taking the bus?",
-        "duː juː laɪk ˈteɪkɪŋ ðə bʌs?",
-        "Bạn có thích đi xe buýt không?",
-        "It's okay. Not too bad.",
-        "ɪts oʊˈkeɪ. nɑːt tuː bæd.",
-        "Cũng được. Không quá tệ."
-    ],
-    [
-        "Where do you work?",
-        "wɛər duː juː wɜːrk?",
-        "Bạn làm việc ở đâu?",
-        "I work in an office.",
-        "aɪ wɜːrk ɪn ən ˈɔːfɪs.",
-        "Tôi làm việc trong một văn phòng."
-    ],
-    [
-        "What do you do there?",
-        "wʌt duː juː duː ðɛər?",
-        "Bạn làm gì ở đó?",
-        "I work in customer service.",
-        "aɪ wɜːrk ɪn ˈkʌstəmər ˈsɜːrvɪs.",
-        "Tôi làm việc trong bộ phận dịch vụ khách hàng."
-    ],
-    [
-        "Do you like your job?",
-        "duː juː laɪk jʊər ʤɑːb?",
-        "Bạn có thích công việc của mình không?",
-        "Yes, I like my job.",
-        "jɛs, aɪ laɪk maɪ ʤɑːb.",
-        "Vâng, tôi thích công việc của mình."
-    ],
-    [
-        "Is your job difficult?",
-        "ɪz jʊər ʤɑːb ˈdɪfɪkəlt?",
-        "Công việc của bạn có khó không?",
-        "Sometimes it's difficult, but I can manage.",
-        "ˈsʌmtaɪmz ɪts ˈdɪfɪkəlt, bʌt aɪ kæn ˈmænɪʤ.",
-        "Đôi khi nó khó, nhưng tôi có thể xoay xở được."
-    ],
-    [
-        "Do you have friendly co-workers?",
-        "duː juː hæv ˈfrɛndli koʊ-ˈwɜːrkərz?",
-        "Bạn có những người đồng nghiệp thân thiện không?",
-        "Yes, my co-workers are friendly.",
-        "jɛs, maɪ koʊ-ˈwɜːrkərz ɑːr ˈfrɛndli.",
-        "Vâng, đồng nghiệp của tôi rất thân thiện."
-    ],
-    [
-        "Who do you sit next to at work?",
-        "huː duː juː sɪt nɛkst tuː æt wɜːrk?",
-        "Bạn ngồi cạnh ai ở nơi làm việc?",
-        "I sit next to my friend Lisa.",
-        "aɪ sɪt nɛkst tuː maɪ frɛnd ˈliːsə.",
-        "Tôi ngồi cạnh bạn tôi, Lisa."
-    ],
-    [
-        "Is she nice?",
-        "ɪz ʃiː naɪs?",
-        "Cô ấy có tốt bụng không?",
-        "Yes, she is very nice.",
-        "jɛs, ʃiː ɪz ˈvɛri naɪs.",
-        "Vâng, cô ấy rất tốt bụng."
-    ],
-    [
-        "Do you take a lunch break?",
-        "duː juː teɪk ə lʌnʧ breɪk?",
-        "Bạn có nghỉ trưa không?",
-        "Yes, I take a break at noon.",
-        "jɛs, aɪ teɪk ə breɪk æt nuːn.",
-        "Vâng, tôi nghỉ giải lao vào buổi trưa."
-    ],
-    [
-        "What do you usually eat for lunch?",
-        "wʌt duː juː ˈjuːʒuəli iːt fɔːr lʌnʧ?",
-        "Bạn thường ăn gì vào bữa trưa?",
-        "I usually eat rice and chicken.",
-        "aɪ ˈjuːʒuəli iːt raɪs ænd ˈʧɪkɪn.",
-        "Tôi thường ăn cơm và gà."
-    ],
-    [
-        "Do you bring food from home?",
-        "duː juː brɪŋ fuːd frʌm hoʊm?",
-        "Bạn có mang thức ăn từ nhà đi không?",
-        "Yes, sometimes I do.",
-        "jɛs, ˈsʌmtaɪmz aɪ duː.",
-        "Vâng, đôi khi tôi có mang đi."
-    ],
-    [
-        "Do you eat out sometimes?",
-        "duː juː iːt aʊt ˈsʌmtaɪmz?",
-        "Bạn có thỉnh thoảng đi ăn ngoài không?",
-        "Yes, I eat out when I'm busy.",
-        "jɛs, aɪ iːt aʊt wɛn aɪm ˈbɪzi.",
-        "Vâng, tôi đi ăn ngoài khi tôi bận."
-    ],
-    [
-        "Where do you like to eat?",
-        "wɛər duː juː laɪk tuː iːt?",
-        "Bạn thích ăn ở đâu?",
-        "I like to eat at a small local restaurant.",
-        "aɪ laɪk tuː iːt æt ə smɔːl ˈloʊkəl ˈrɛstərɑːnt.",
-        "Tôi thích ăn ở một nhà hàng nhỏ ở địa phương."
-    ],
-    [
-        "Is the food good there?",
-        "ɪz ðə fuːd ɡʊd ðɛər?",
-        "Đồ ăn ở đó có ngon không?",
-        "Yes, the food is very good.",
-        "jɛs, ðə fuːd ɪz ˈvɛri ɡʊd.",
-        "Vâng, đồ ăn rất ngon."
-    ],
-    [
-        "Is it expensive?",
-        "ɪz ɪt ɪkˈspɛnsɪv?",
-        "Nó có đắt không?",
-        "No, it's not expensive.",
-        "noʊ, ɪts nɑːt ɪkˈspɛnsɪv.",
-        "Không, nó không đắt."
-    ]
+  [
+    "How are you today?",
+    "haʊ ɑːr juː təˈdeɪ?",
+    "Hôm nay bạn thế nào?",
+    "I'm doing well, thank you.",
+    "aɪm ˈduːɪŋ wɛl, θæŋk juː.",
+    "Tôi khỏe, cảm ơn bạn."
+  ],
+  [
+    "How did you sleep last night?",
+    "haʊ dɪd juː sliːp læst naɪt?",
+    "Đêm qua bạn ngủ có ngon không?",
+    "I slept pretty well.",
+    "aɪ slɛpt ˈprɪti wɛl.",
+    "Tôi ngủ khá ngon."
+  ],
+  [
+    "Are you ready for today?",
+    "ɑːr juː ˈrɛdi fɔːr təˈdeɪ?",
+    "Bạn đã sẵn sàng cho ngày hôm nay chưa?",
+    "Yes, I'm ready.",
+    "jɛs, aɪm ˈrɛdi.",
+    "Vâng, tôi đã sẵn sàng."
+  ],
+  [
+    "What time did you wake up?",
+    "wʌt taɪm dɪd juː weɪk ʌp?",
+    "Bạn thức dậy lúc mấy giờ?",
+    "I woke up at 6 a.m.",
+    "aɪ woʊk ʌp æt sɪks eɪ.ɛm.",
+    "Tôi thức dậy lúc 6 giờ sáng."
+  ],
+  [
+    "Did you have breakfast?",
+    "dɪd juː hæv ˈbrɛkfəst?",
+    "Bạn đã ăn sáng chưa?",
+    "Yes, I had breakfast.",
+    "jɛs, aɪ hæd ˈbrɛkfəst.",
+    "Vâng, tôi đã ăn sáng."
+  ],
+  [
+    "What did you eat for breakfast?",
+    "wʌt dɪd juː iːt fɔːr ˈbrɛkfəst?",
+    "Bạn đã ăn gì cho bữa sáng?",
+    "I ate eggs and toast.",
+    "aɪ eɪt ɛɡz ænd toʊst.",
+    "Tôi đã ăn trứng và bánh mì nướng."
+  ],
+  [
+    "Are you hungry now?",
+    "ɑːr juː ˈhʌŋɡri naʊ?",
+    "Bây giờ bạn có đói không?",
+    "No, I'm not hungry.",
+    "noʊ, aɪm nɑːt ˈhʌŋɡri.",
+    "Không, tôi không đói."
+  ],
+  [
+    "Do you want some water?",
+    "duː juː wɑːnt sʌm ˈwɔːtər?",
+    "Bạn có muốn uống nước không?",
+    "Yes, I'd like some water, please.",
+    "jɛs, aɪd laɪk sʌm ˈwɔːtər, pliːz.",
+    "Vâng, làm ơn cho tôi một ít nước."
+  ],
+  [
+    "Where is your bag?",
+    "wɛər ɪz jʊər bæɡ?",
+    "Cái túi của bạn ở đâu?",
+    "My bag is on the chair.",
+    "maɪ bæɡ ɪz ɑːn ðə ʧɛər.",
+    "Cái túi của tôi ở trên ghế."
+  ],
+  [
+    "Is this your phone?",
+    "ɪz ðɪs jʊər foʊn?",
+    "Đây có phải là điện thoại của bạn không?",
+    "Yes, that's my phone.",
+    "jɛs, ðæts maɪ foʊn.",
+    "Vâng, đó là điện thoại của tôi."
+  ],
+  [
+    "Can I use your phone?",
+    "kæn aɪ juːz jʊər foʊn?",
+    "Tôi có thể dùng điện thoại của bạn không?",
+    "Sure, go ahead.",
+    "ʃʊər, ɡoʊ əˈhɛd.",
+    "Chắc chắn rồi, cứ tự nhiên."
+  ],
+  [
+    "What time is it now?",
+    "wʌt taɪm ɪz ɪt naʊ?",
+    "Bây giờ là mấy giờ?",
+    "It's almost 8:00.",
+    "ɪts ˈɔːlmoʊst eɪt əˈklɑːk.",
+    "Gần 8 giờ rồi."
+  ],
+  [
+    "Are you going to work today?",
+    "ɑːr juː ˈɡoʊɪŋ tuː wɜːrk təˈdeɪ?",
+    "Hôm nay bạn có đi làm không?",
+    "Yes, I'm going to work.",
+    "jɛs, aɪm ˈɡoʊɪŋ tuː wɜːrk.",
+    "Vâng, tôi sẽ đi làm."
+  ],
+  [
+    "How do you go to work?",
+    "haʊ duː juː ɡoʊ tuː wɜːrk?",
+    "Bạn đi làm bằng phương tiện gì?",
+    "I take the bus to work.",
+    "aɪ teɪk ðə bʌs tuː wɜːrk.",
+    "Tôi đi làm bằng xe buýt."
+  ],
+  [
+    "Is the bus usually crowded?",
+    "ɪz ðə bʌs ˈjuːʒuəli ˈkraʊdɪd?",
+    "Xe buýt có thường đông không?",
+    "Yes, it is usually crowded in the morning.",
+    "jɛs, ɪt ɪz ˈjuːʒuəli ˈkraʊdɪd ɪn ðə ˈmɔːrnɪŋ.",
+    "Vâng, nó thường đông vào buổi sáng."
+  ],
+  [
+    "Do you like taking the bus?",
+    "duː juː laɪk ˈteɪkɪŋ ðə bʌs?",
+    "Bạn có thích đi xe buýt không?",
+    "It's okay. Not too bad.",
+    "ɪts oʊˈkeɪ. nɑːt tuː bæd.",
+    "Cũng được. Không quá tệ."
+  ],
+  [
+    "Where do you work?",
+    "wɛər duː juː wɜːrk?",
+    "Bạn làm việc ở đâu?",
+    "I work in an office.",
+    "aɪ wɜːrk ɪn ən ˈɔːfɪs.",
+    "Tôi làm việc trong một văn phòng."
+  ],
+  [
+    "What do you do there?",
+    "wʌt duː juː duː ðɛər?",
+    "Bạn làm gì ở đó?",
+    "I work in customer service.",
+    "aɪ wɜːrk ɪn ˈkʌstəmər ˈsɜːrvɪs.",
+    "Tôi làm việc trong bộ phận dịch vụ khách hàng."
+  ],
+  [
+    "Do you like your job?",
+    "duː juː laɪk jʊər ʤɑːb?",
+    "Bạn có thích công việc của mình không?",
+    "Yes, I like my job.",
+    "jɛs, aɪ laɪk maɪ ʤɑːb.",
+    "Vâng, tôi thích công việc của mình."
+  ],
+  [
+    "Is your job difficult?",
+    "ɪz jʊər ʤɑːb ˈdɪfɪkəlt?",
+    "Công việc của bạn có khó không?",
+    "Sometimes it's difficult, but I can manage.",
+    "ˈsʌmtaɪmz ɪts ˈdɪfɪkəlt, bʌt aɪ kæn ˈmænɪʤ.",
+    "Đôi khi nó khó, nhưng tôi có thể xoay xở được."
+  ],
+  [
+    "Do you have friendly co-workers?",
+    "duː juː hæv ˈfrɛndli koʊ-ˈwɜːrkərz?",
+    "Bạn có những người đồng nghiệp thân thiện không?",
+    "Yes, my co-workers are friendly.",
+    "jɛs, maɪ koʊ-ˈwɜːrkərz ɑːr ˈfrɛndli.",
+    "Vâng, đồng nghiệp của tôi rất thân thiện."
+  ],
+  [
+    "Who do you sit next to at work?",
+    "huː duː juː sɪt nɛkst tuː æt wɜːrk?",
+    "Bạn ngồi cạnh ai ở nơi làm việc?",
+    "I sit next to my friend Lisa.",
+    "aɪ sɪt nɛkst tuː maɪ frɛnd ˈliːsə.",
+    "Tôi ngồi cạnh bạn tôi, Lisa."
+  ],
+  [
+    "Is she nice?",
+    "ɪz ʃiː naɪs?",
+    "Cô ấy có tốt bụng không?",
+    "Yes, she is very nice.",
+    "jɛs, ʃiː ɪz ˈvɛri naɪs.",
+    "Vâng, cô ấy rất tốt bụng."
+  ],
+  [
+    "Do you take a lunch break?",
+    "duː juː teɪk ə lʌnʧ breɪk?",
+    "Bạn có nghỉ trưa không?",
+    "Yes, I take a break at noon.",
+    "jɛs, aɪ teɪk ə breɪk æt nuːn.",
+    "Vâng, tôi nghỉ giải lao vào buổi trưa."
+  ],
+  [
+    "What do you usually eat for lunch?",
+    "wʌt duː juː ˈjuːʒuəli iːt fɔːr lʌnʧ?",
+    "Bạn thường ăn gì vào bữa trưa?",
+    "I usually eat rice and chicken.",
+    "aɪ ˈjuːʒuəli iːt raɪs ænd ˈʧɪkɪn.",
+    "Tôi thường ăn cơm và gà."
+  ],
+  [
+    "Do you bring food from home?",
+    "duː juː brɪŋ fuːd frʌm hoʊm?",
+    "Bạn có mang thức ăn từ nhà đi không?",
+    "Yes, sometimes I do.",
+    "jɛs, ˈsʌmtaɪmz aɪ duː.",
+    "Vâng, đôi khi tôi có mang đi."
+  ],
+  [
+    "Do you eat out sometimes?",
+    "duː juː iːt aʊt ˈsʌmtaɪmz?",
+    "Bạn có thỉnh thoảng đi ăn ngoài không?",
+    "Yes, I eat out when I'm busy.",
+    "jɛs, aɪ iːt aʊt wɛn aɪm ˈbɪzi.",
+    "Vâng, tôi đi ăn ngoài khi tôi bận."
+  ],
+  [
+    "Where do you like to eat?",
+    "wɛər duː juː laɪk tuː iːt?",
+    "Bạn thích ăn ở đâu?",
+    "I like to eat at a small local restaurant.",
+    "aɪ laɪk tuː iːt æt ə smɔːl ˈloʊkəl ˈrɛstərɑːnt.",
+    "Tôi thích ăn ở một nhà hàng nhỏ ở địa phương."
+  ],
+  [
+    "Is the food good there?",
+    "ɪz ðə fuːd ɡʊd ðɛər?",
+    "Đồ ăn ở đó có ngon không?",
+    "Yes, the food is very good.",
+    "jɛs, ðə fuːd ɪz ˈvɛri ɡʊd.",
+    "Vâng, đồ ăn rất ngon."
+  ],
+  [
+    "Is it expensive?",
+    "ɪz ɪt ɪkˈspɛnsɪv?",
+    "Nó có đắt không?",
+    "No, it's not expensive.",
+    "noʊ, ɪts nɑːt ɪkˈspɛnsɪv.",
+    "Không, nó không đắt."
+  ]
 ]

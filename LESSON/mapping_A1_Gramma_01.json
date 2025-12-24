@@ -1,1002 +1,3602 @@
 [
-    {
-        "text": "I am a student.",
-        "file": "audio_A1_Gramma_01\\en_0.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I am a student.",
-        "file": "audio_A1_Gramma_01\\ex_en_0.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She is my friend.",
-        "file": "audio_A1_Gramma_01\\en_1.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She is my friend.",
-        "file": "audio_A1_Gramma_01\\ex_en_1.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He is at home.",
-        "file": "audio_A1_Gramma_01\\en_2.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He is at home.",
-        "file": "audio_A1_Gramma_01\\ex_en_2.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They are happy.",
-        "file": "audio_A1_Gramma_01\\en_3.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They are happy.",
-        "file": "audio_A1_Gramma_01\\ex_en_3.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We are ready.",
-        "file": "audio_A1_Gramma_01\\en_4.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We are ready.",
-        "file": "audio_A1_Gramma_01\\ex_en_4.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "It is cold today.",
-        "file": "audio_A1_Gramma_01\\en_5.mp3",
-        "type": "en"
-    },
-    {
-        "text": "It is cold today.",
-        "file": "audio_A1_Gramma_01\\ex_en_5.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "You are very kind.",
-        "file": "audio_A1_Gramma_01\\en_6.mp3",
-        "type": "en"
-    },
-    {
-        "text": "You are very kind.",
-        "file": "audio_A1_Gramma_01\\ex_en_6.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I am not tired.",
-        "file": "audio_A1_Gramma_01\\en_7.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I am not tired.",
-        "file": "audio_A1_Gramma_01\\ex_en_7.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She is not here.",
-        "file": "audio_A1_Gramma_01\\en_8.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She is not here.",
-        "file": "audio_A1_Gramma_01\\ex_en_8.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They are not students.",
-        "file": "audio_A1_Gramma_01\\en_9.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They are not students.",
-        "file": "audio_A1_Gramma_01\\ex_en_9.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "These are books.",
-        "file": "audio_A1_Gramma_01\\en_10.mp3",
-        "type": "en"
-    },
-    {
-        "text": "These are books.",
-        "file": "audio_A1_Gramma_01\\ex_en_10.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Those are chairs.",
-        "file": "audio_A1_Gramma_01\\en_11.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Those are chairs.",
-        "file": "audio_A1_Gramma_01\\ex_en_11.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I have two cats.",
-        "file": "audio_A1_Gramma_01\\en_12.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I have two cats.",
-        "file": "audio_A1_Gramma_01\\ex_en_12.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They have three cars.",
-        "file": "audio_A1_Gramma_01\\en_13.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They have three cars.",
-        "file": "audio_A1_Gramma_01\\ex_en_13.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "These are my friends.",
-        "file": "audio_A1_Gramma_01\\en_14.mp3",
-        "type": "en"
-    },
-    {
-        "text": "These are my friends.",
-        "file": "audio_A1_Gramma_01\\ex_en_14.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Those are apples.",
-        "file": "audio_A1_Gramma_01\\en_15.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Those are apples.",
-        "file": "audio_A1_Gramma_01\\ex_en_15.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We need more chairs.",
-        "file": "audio_A1_Gramma_01\\en_16.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We need more chairs.",
-        "file": "audio_A1_Gramma_01\\ex_en_16.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I see many people.",
-        "file": "audio_A1_Gramma_01\\en_17.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I see many people.",
-        "file": "audio_A1_Gramma_01\\ex_en_17.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They have four bags.",
-        "file": "audio_A1_Gramma_01\\en_18.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They have four bags.",
-        "file": "audio_A1_Gramma_01\\ex_en_18.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "These are new shoes.",
-        "file": "audio_A1_Gramma_01\\en_19.mp3",
-        "type": "en"
-    },
-    {
-        "text": "These are new shoes.",
-        "file": "audio_A1_Gramma_01\\ex_en_19.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I have a pen.",
-        "file": "audio_A1_Gramma_01\\en_20.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I have a pen.",
-        "file": "audio_A1_Gramma_01\\ex_en_20.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She has an orange.",
-        "file": "audio_A1_Gramma_01\\en_21.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She has an orange.",
-        "file": "audio_A1_Gramma_01\\ex_en_21.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "This is a book.",
-        "file": "audio_A1_Gramma_01\\en_22.mp3",
-        "type": "en"
-    },
-    {
-        "text": "This is a book.",
-        "file": "audio_A1_Gramma_01\\ex_en_22.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "That is an apple.",
-        "file": "audio_A1_Gramma_01\\en_23.mp3",
-        "type": "en"
-    },
-    {
-        "text": "That is an apple.",
-        "file": "audio_A1_Gramma_01\\ex_en_23.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "The sun is bright.",
-        "file": "audio_A1_Gramma_01\\en_24.mp3",
-        "type": "en"
-    },
-    {
-        "text": "The sun is bright.",
-        "file": "audio_A1_Gramma_01\\ex_en_24.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "The teacher is here.",
-        "file": "audio_A1_Gramma_01\\en_25.mp3",
-        "type": "en"
-    },
-    {
-        "text": "The teacher is here.",
-        "file": "audio_A1_Gramma_01\\ex_en_25.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I need a cup.",
-        "file": "audio_A1_Gramma_01\\en_26.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I need a cup.",
-        "file": "audio_A1_Gramma_01\\ex_en_26.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She wants an egg.",
-        "file": "audio_A1_Gramma_01\\en_27.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She wants an egg.",
-        "file": "audio_A1_Gramma_01\\ex_en_27.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "The dog is sleeping.",
-        "file": "audio_A1_Gramma_01\\en_28.mp3",
-        "type": "en"
-    },
-    {
-        "text": "The dog is sleeping.",
-        "file": "audio_A1_Gramma_01\\ex_en_28.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "The car is new.",
-        "file": "audio_A1_Gramma_01\\en_29.mp3",
-        "type": "en"
-    },
-    {
-        "text": "The car is new.",
-        "file": "audio_A1_Gramma_01\\ex_en_29.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "This is my bag.",
-        "file": "audio_A1_Gramma_01\\en_30.mp3",
-        "type": "en"
-    },
-    {
-        "text": "This is my bag.",
-        "file": "audio_A1_Gramma_01\\ex_en_30.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "That is your book.",
-        "file": "audio_A1_Gramma_01\\en_31.mp3",
-        "type": "en"
-    },
-    {
-        "text": "That is your book.",
-        "file": "audio_A1_Gramma_01\\ex_en_31.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "This is his phone.",
-        "file": "audio_A1_Gramma_01\\en_32.mp3",
-        "type": "en"
-    },
-    {
-        "text": "This is his phone.",
-        "file": "audio_A1_Gramma_01\\ex_en_32.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "This is her pen.",
-        "file": "audio_A1_Gramma_01\\en_33.mp3",
-        "type": "en"
-    },
-    {
-        "text": "This is her pen.",
-        "file": "audio_A1_Gramma_01\\ex_en_33.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "This is our house.",
-        "file": "audio_A1_Gramma_01\\en_34.mp3",
-        "type": "en"
-    },
-    {
-        "text": "This is our house.",
-        "file": "audio_A1_Gramma_01\\ex_en_34.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "That is their car.",
-        "file": "audio_A1_Gramma_01\\en_35.mp3",
-        "type": "en"
-    },
-    {
-        "text": "That is their car.",
-        "file": "audio_A1_Gramma_01\\ex_en_35.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "My name is Duy.",
-        "file": "audio_A1_Gramma_01\\en_36.mp3",
-        "type": "en"
-    },
-    {
-        "text": "My name is Duy.",
-        "file": "audio_A1_Gramma_01\\ex_en_36.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Her bag is new.",
-        "file": "audio_A1_Gramma_01\\en_37.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Her bag is new.",
-        "file": "audio_A1_Gramma_01\\ex_en_37.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "His room is big.",
-        "file": "audio_A1_Gramma_01\\en_38.mp3",
-        "type": "en"
-    },
-    {
-        "text": "His room is big.",
-        "file": "audio_A1_Gramma_01\\ex_en_38.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Their house is small.",
-        "file": "audio_A1_Gramma_01\\en_39.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Their house is small.",
-        "file": "audio_A1_Gramma_01\\ex_en_39.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I go to school.",
-        "file": "audio_A1_Gramma_01\\en_40.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I go to school.",
-        "file": "audio_A1_Gramma_01\\ex_en_40.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She works every day.",
-        "file": "audio_A1_Gramma_01\\en_41.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She works every day.",
-        "file": "audio_A1_Gramma_01\\ex_en_41.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He likes coffee.",
-        "file": "audio_A1_Gramma_01\\en_42.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He likes coffee.",
-        "file": "audio_A1_Gramma_01\\ex_en_42.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They play soccer.",
-        "file": "audio_A1_Gramma_01\\en_43.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They play soccer.",
-        "file": "audio_A1_Gramma_01\\ex_en_43.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We study English.",
-        "file": "audio_A1_Gramma_01\\en_44.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We study English.",
-        "file": "audio_A1_Gramma_01\\ex_en_44.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She reads books.",
-        "file": "audio_A1_Gramma_01\\en_45.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She reads books.",
-        "file": "audio_A1_Gramma_01\\ex_en_45.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He drives to work.",
-        "file": "audio_A1_Gramma_01\\en_46.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He drives to work.",
-        "file": "audio_A1_Gramma_01\\ex_en_46.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I eat breakfast.",
-        "file": "audio_A1_Gramma_01\\en_47.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I eat breakfast.",
-        "file": "audio_A1_Gramma_01\\ex_en_47.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They watch TV.",
-        "file": "audio_A1_Gramma_01\\en_48.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They watch TV.",
-        "file": "audio_A1_Gramma_01\\ex_en_48.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We cook dinner.",
-        "file": "audio_A1_Gramma_01\\en_49.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We cook dinner.",
-        "file": "audio_A1_Gramma_01\\ex_en_49.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I do not like tea.",
-        "file": "audio_A1_Gramma_01\\en_50.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I do not like tea.",
-        "file": "audio_A1_Gramma_01\\ex_en_50.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She does not work here.",
-        "file": "audio_A1_Gramma_01\\en_51.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She does not work here.",
-        "file": "audio_A1_Gramma_01\\ex_en_51.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He does not drive.",
-        "file": "audio_A1_Gramma_01\\en_52.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He does not drive.",
-        "file": "audio_A1_Gramma_01\\ex_en_52.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They do not eat meat.",
-        "file": "audio_A1_Gramma_01\\en_53.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They do not eat meat.",
-        "file": "audio_A1_Gramma_01\\ex_en_53.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We do not watch TV.",
-        "file": "audio_A1_Gramma_01\\en_54.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We do not watch TV.",
-        "file": "audio_A1_Gramma_01\\ex_en_54.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She does not like cats.",
-        "file": "audio_A1_Gramma_01\\en_55.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She does not like cats.",
-        "file": "audio_A1_Gramma_01\\ex_en_55.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He does not study English.",
-        "file": "audio_A1_Gramma_01\\en_56.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He does not study English.",
-        "file": "audio_A1_Gramma_01\\ex_en_56.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I do not work on Sunday.",
-        "file": "audio_A1_Gramma_01\\en_57.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I do not work on Sunday.",
-        "file": "audio_A1_Gramma_01\\ex_en_57.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They do not play games.",
-        "file": "audio_A1_Gramma_01\\en_58.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They do not play games.",
-        "file": "audio_A1_Gramma_01\\ex_en_58.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We do not cook dinner.",
-        "file": "audio_A1_Gramma_01\\en_59.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We do not cook dinner.",
-        "file": "audio_A1_Gramma_01\\ex_en_59.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you like coffee?",
-        "file": "audio_A1_Gramma_01\\en_60.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Do you like coffee",
-        "file": "audio_A1_Gramma_01\\ex_en_60.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do they play soccer?",
-        "file": "audio_A1_Gramma_01\\en_61.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Do they play soccer",
-        "file": "audio_A1_Gramma_01\\ex_en_61.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you work here?",
-        "file": "audio_A1_Gramma_01\\en_62.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Do you work here",
-        "file": "audio_A1_Gramma_01\\ex_en_62.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Does he drive?",
-        "file": "audio_A1_Gramma_01\\en_63.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Does he drive",
-        "file": "audio_A1_Gramma_01\\ex_en_63.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Does she study English?",
-        "file": "audio_A1_Gramma_01\\en_64.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Does she study English",
-        "file": "audio_A1_Gramma_01\\ex_en_64.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do we need help?",
-        "file": "audio_A1_Gramma_01\\en_65.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Do we need help",
-        "file": "audio_A1_Gramma_01\\ex_en_65.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do you eat breakfast?",
-        "file": "audio_A1_Gramma_01\\en_66.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Do you eat breakfast",
-        "file": "audio_A1_Gramma_01\\ex_en_66.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Does he like cats?",
-        "file": "audio_A1_Gramma_01\\en_67.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Does he like cats",
-        "file": "audio_A1_Gramma_01\\ex_en_67.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Do they watch TV?",
-        "file": "audio_A1_Gramma_01\\en_68.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Do they watch TV",
-        "file": "audio_A1_Gramma_01\\ex_en_68.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "Does she work today?",
-        "file": "audio_A1_Gramma_01\\en_69.mp3",
-        "type": "en"
-    },
-    {
-        "text": "Does she work today",
-        "file": "audio_A1_Gramma_01\\ex_en_69.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I always wake up early.",
-        "file": "audio_A1_Gramma_01\\en_70.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I always wake up early.",
-        "file": "audio_A1_Gramma_01\\ex_en_70.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She usually cooks dinner.",
-        "file": "audio_A1_Gramma_01\\en_71.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She usually cooks dinner.",
-        "file": "audio_A1_Gramma_01\\ex_en_71.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He often reads books.",
-        "file": "audio_A1_Gramma_01\\en_72.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He often reads books.",
-        "file": "audio_A1_Gramma_01\\ex_en_72.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They sometimes play games.",
-        "file": "audio_A1_Gramma_01\\en_73.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They sometimes play games.",
-        "file": "audio_A1_Gramma_01\\ex_en_73.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We never eat fast food.",
-        "file": "audio_A1_Gramma_01\\en_74.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We never eat fast food.",
-        "file": "audio_A1_Gramma_01\\ex_en_74.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I often go to the park.",
-        "file": "audio_A1_Gramma_01\\en_75.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I often go to the park.",
-        "file": "audio_A1_Gramma_01\\ex_en_75.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She always studies at night.",
-        "file": "audio_A1_Gramma_01\\en_76.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She always studies at night.",
-        "file": "audio_A1_Gramma_01\\ex_en_76.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He never drinks coffee.",
-        "file": "audio_A1_Gramma_01\\en_77.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He never drinks coffee.",
-        "file": "audio_A1_Gramma_01\\ex_en_77.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They usually walk to school.",
-        "file": "audio_A1_Gramma_01\\en_78.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They usually walk to school.",
-        "file": "audio_A1_Gramma_01\\ex_en_78.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We sometimes watch movies.",
-        "file": "audio_A1_Gramma_01\\en_79.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We sometimes watch movies.",
-        "file": "audio_A1_Gramma_01\\ex_en_79.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I can swim.",
-        "file": "audio_A1_Gramma_01\\en_80.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I can swim.",
-        "file": "audio_A1_Gramma_01\\ex_en_80.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She can cook.",
-        "file": "audio_A1_Gramma_01\\en_81.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She can cook.",
-        "file": "audio_A1_Gramma_01\\ex_en_81.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He can drive.",
-        "file": "audio_A1_Gramma_01\\en_82.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He can drive.",
-        "file": "audio_A1_Gramma_01\\ex_en_82.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They can sing.",
-        "file": "audio_A1_Gramma_01\\en_83.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They can sing.",
-        "file": "audio_A1_Gramma_01\\ex_en_83.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We can help you.",
-        "file": "audio_A1_Gramma_01\\en_84.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We can help you.",
-        "file": "audio_A1_Gramma_01\\ex_en_84.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "I can't swim.",
-        "file": "audio_A1_Gramma_01\\en_85.mp3",
-        "type": "en"
-    },
-    {
-        "text": "I can't swim.",
-        "file": "audio_A1_Gramma_01\\ex_en_85.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "She can't drive.",
-        "file": "audio_A1_Gramma_01\\en_86.mp3",
-        "type": "en"
-    },
-    {
-        "text": "She can't drive.",
-        "file": "audio_A1_Gramma_01\\ex_en_86.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "He can't cook.",
-        "file": "audio_A1_Gramma_01\\en_87.mp3",
-        "type": "en"
-    },
-    {
-        "text": "He can't cook.",
-        "file": "audio_A1_Gramma_01\\ex_en_87.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "They can't speak French.",
-        "file": "audio_A1_Gramma_01\\en_88.mp3",
-        "type": "en"
-    },
-    {
-        "text": "They can't speak French.",
-        "file": "audio_A1_Gramma_01\\ex_en_88.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "We can't help today.",
-        "file": "audio_A1_Gramma_01\\en_89.mp3",
-        "type": "en"
-    },
-    {
-        "text": "We can't help today.",
-        "file": "audio_A1_Gramma_01\\ex_en_89.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There is a cat on the table.",
-        "file": "audio_A1_Gramma_01\\en_90.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There is a cat on the table.",
-        "file": "audio_A1_Gramma_01\\ex_en_90.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There is a book on the chair.",
-        "file": "audio_A1_Gramma_01\\en_91.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There is a book on the chair.",
-        "file": "audio_A1_Gramma_01\\ex_en_91.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There are two dogs outside.",
-        "file": "audio_A1_Gramma_01\\en_92.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There are two dogs outside.",
-        "file": "audio_A1_Gramma_01\\ex_en_92.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There are many people here.",
-        "file": "audio_A1_Gramma_01\\en_93.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There are many people here.",
-        "file": "audio_A1_Gramma_01\\ex_en_93.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There is a problem.",
-        "file": "audio_A1_Gramma_01\\en_94.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There is a problem.",
-        "file": "audio_A1_Gramma_01\\ex_en_94.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There are three cars.",
-        "file": "audio_A1_Gramma_01\\en_95.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There are three cars.",
-        "file": "audio_A1_Gramma_01\\ex_en_95.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There is a pen on the desk.",
-        "file": "audio_A1_Gramma_01\\en_96.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There is a pen on the desk.",
-        "file": "audio_A1_Gramma_01\\ex_en_96.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There are apples in the bag.",
-        "file": "audio_A1_Gramma_01\\en_97.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There are apples in the bag.",
-        "file": "audio_A1_Gramma_01\\ex_en_97.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There is a phone here.",
-        "file": "audio_A1_Gramma_01\\en_98.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There is a phone here.",
-        "file": "audio_A1_Gramma_01\\ex_en_98.mp3",
-        "type": "ex_en"
-    },
-    {
-        "text": "There are students in the room.",
-        "file": "audio_A1_Gramma_01\\en_99.mp3",
-        "type": "en"
-    },
-    {
-        "text": "There are students in the room.",
-        "file": "audio_A1_Gramma_01\\ex_en_99.mp3",
-        "type": "ex_en"
-    }
+  {
+    "id": "en_0",
+    "text": "I am a student.",
+    "file": "audio_A1_Gramma_01/gtts_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_0",
+    "text": "I am a student.",
+    "file": "audio_A1_Gramma_01/edge_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "I am a student.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "I am a student.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_1",
+    "text": "She is my friend.",
+    "file": "audio_A1_Gramma_01/gtts_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_1",
+    "text": "She is my friend.",
+    "file": "audio_A1_Gramma_01/edge_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "She is my friend.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "She is my friend.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_2",
+    "text": "He is at home.",
+    "file": "audio_A1_Gramma_01/gtts_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_2",
+    "text": "He is at home.",
+    "file": "audio_A1_Gramma_01/edge_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "He is at home.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "He is at home.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_3",
+    "text": "They are happy.",
+    "file": "audio_A1_Gramma_01/gtts_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_3",
+    "text": "They are happy.",
+    "file": "audio_A1_Gramma_01/edge_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "They are happy.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "They are happy.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_4",
+    "text": "We are ready.",
+    "file": "audio_A1_Gramma_01/gtts_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_4",
+    "text": "We are ready.",
+    "file": "audio_A1_Gramma_01/edge_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "We are ready.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "We are ready.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_5",
+    "text": "It is cold today.",
+    "file": "audio_A1_Gramma_01/gtts_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_5",
+    "text": "It is cold today.",
+    "file": "audio_A1_Gramma_01/edge_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "It is cold today.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "It is cold today.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_6",
+    "text": "You are very kind.",
+    "file": "audio_A1_Gramma_01/gtts_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_6",
+    "text": "You are very kind.",
+    "file": "audio_A1_Gramma_01/edge_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "You are very kind.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "You are very kind.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_7",
+    "text": "I am not tired.",
+    "file": "audio_A1_Gramma_01/gtts_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_7",
+    "text": "I am not tired.",
+    "file": "audio_A1_Gramma_01/edge_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "I am not tired.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "I am not tired.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_8",
+    "text": "She is not here.",
+    "file": "audio_A1_Gramma_01/gtts_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_8",
+    "text": "She is not here.",
+    "file": "audio_A1_Gramma_01/edge_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "She is not here.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "She is not here.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_9",
+    "text": "They are not students.",
+    "file": "audio_A1_Gramma_01/gtts_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_9",
+    "text": "They are not students.",
+    "file": "audio_A1_Gramma_01/edge_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "They are not students.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "They are not students.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_10",
+    "text": "These are books.",
+    "file": "audio_A1_Gramma_01/gtts_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_10",
+    "text": "These are books.",
+    "file": "audio_A1_Gramma_01/edge_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "These are books.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "These are books.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_11",
+    "text": "Those are chairs.",
+    "file": "audio_A1_Gramma_01/gtts_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_11",
+    "text": "Those are chairs.",
+    "file": "audio_A1_Gramma_01/edge_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "Those are chairs.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "Those are chairs.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_12",
+    "text": "I have two cats.",
+    "file": "audio_A1_Gramma_01/gtts_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_12",
+    "text": "I have two cats.",
+    "file": "audio_A1_Gramma_01/edge_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "I have two cats.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "I have two cats.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_13",
+    "text": "They have three cars.",
+    "file": "audio_A1_Gramma_01/gtts_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_13",
+    "text": "They have three cars.",
+    "file": "audio_A1_Gramma_01/edge_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "They have three cars.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "They have three cars.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_14",
+    "text": "These are my friends.",
+    "file": "audio_A1_Gramma_01/gtts_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_14",
+    "text": "These are my friends.",
+    "file": "audio_A1_Gramma_01/edge_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "These are my friends.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "These are my friends.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_15",
+    "text": "Those are apples.",
+    "file": "audio_A1_Gramma_01/gtts_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_15",
+    "text": "Those are apples.",
+    "file": "audio_A1_Gramma_01/edge_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "Those are apples.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "Those are apples.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_16",
+    "text": "We need more chairs.",
+    "file": "audio_A1_Gramma_01/gtts_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_16",
+    "text": "We need more chairs.",
+    "file": "audio_A1_Gramma_01/edge_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "We need more chairs.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "We need more chairs.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_17",
+    "text": "I see many people.",
+    "file": "audio_A1_Gramma_01/gtts_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_17",
+    "text": "I see many people.",
+    "file": "audio_A1_Gramma_01/edge_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I see many people.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I see many people.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_18",
+    "text": "They have four bags.",
+    "file": "audio_A1_Gramma_01/gtts_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_18",
+    "text": "They have four bags.",
+    "file": "audio_A1_Gramma_01/edge_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "They have four bags.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "They have four bags.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_19",
+    "text": "These are new shoes.",
+    "file": "audio_A1_Gramma_01/gtts_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_19",
+    "text": "These are new shoes.",
+    "file": "audio_A1_Gramma_01/edge_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "These are new shoes.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "These are new shoes.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_20",
+    "text": "I have a pen.",
+    "file": "audio_A1_Gramma_01/gtts_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_20",
+    "text": "I have a pen.",
+    "file": "audio_A1_Gramma_01/edge_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "I have a pen.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "I have a pen.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_21",
+    "text": "She has an orange.",
+    "file": "audio_A1_Gramma_01/gtts_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_21",
+    "text": "She has an orange.",
+    "file": "audio_A1_Gramma_01/edge_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "She has an orange.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "She has an orange.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_22",
+    "text": "This is a book.",
+    "file": "audio_A1_Gramma_01/gtts_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_22",
+    "text": "This is a book.",
+    "file": "audio_A1_Gramma_01/edge_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "This is a book.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "This is a book.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_23",
+    "text": "That is an apple.",
+    "file": "audio_A1_Gramma_01/gtts_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_23",
+    "text": "That is an apple.",
+    "file": "audio_A1_Gramma_01/edge_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "That is an apple.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "That is an apple.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_24",
+    "text": "The sun is bright.",
+    "file": "audio_A1_Gramma_01/gtts_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_24",
+    "text": "The sun is bright.",
+    "file": "audio_A1_Gramma_01/edge_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "The sun is bright.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "The sun is bright.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_25",
+    "text": "The teacher is here.",
+    "file": "audio_A1_Gramma_01/gtts_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_25",
+    "text": "The teacher is here.",
+    "file": "audio_A1_Gramma_01/edge_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "The teacher is here.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "The teacher is here.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_26",
+    "text": "I need a cup.",
+    "file": "audio_A1_Gramma_01/gtts_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_26",
+    "text": "I need a cup.",
+    "file": "audio_A1_Gramma_01/edge_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "I need a cup.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "I need a cup.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_27",
+    "text": "She wants an egg.",
+    "file": "audio_A1_Gramma_01/gtts_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_27",
+    "text": "She wants an egg.",
+    "file": "audio_A1_Gramma_01/edge_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "She wants an egg.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "She wants an egg.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_28",
+    "text": "The dog is sleeping.",
+    "file": "audio_A1_Gramma_01/gtts_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_28",
+    "text": "The dog is sleeping.",
+    "file": "audio_A1_Gramma_01/edge_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "The dog is sleeping.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "The dog is sleeping.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_29",
+    "text": "The car is new.",
+    "file": "audio_A1_Gramma_01/gtts_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_29",
+    "text": "The car is new.",
+    "file": "audio_A1_Gramma_01/edge_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "The car is new.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "The car is new.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_30",
+    "text": "This is my bag.",
+    "file": "audio_A1_Gramma_01/gtts_en_30.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_30",
+    "text": "This is my bag.",
+    "file": "audio_A1_Gramma_01/edge_en_30.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_30",
+    "text": "This is my bag.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_30.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_30",
+    "text": "This is my bag.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_30.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_31",
+    "text": "That is your book.",
+    "file": "audio_A1_Gramma_01/gtts_en_31.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_31",
+    "text": "That is your book.",
+    "file": "audio_A1_Gramma_01/edge_en_31.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_31",
+    "text": "That is your book.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_31.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_31",
+    "text": "That is your book.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_31.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_32",
+    "text": "This is his phone.",
+    "file": "audio_A1_Gramma_01/gtts_en_32.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_32",
+    "text": "This is his phone.",
+    "file": "audio_A1_Gramma_01/edge_en_32.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_32",
+    "text": "This is his phone.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_32.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_32",
+    "text": "This is his phone.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_32.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_33",
+    "text": "This is her pen.",
+    "file": "audio_A1_Gramma_01/gtts_en_33.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_33",
+    "text": "This is her pen.",
+    "file": "audio_A1_Gramma_01/edge_en_33.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_33",
+    "text": "This is her pen.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_33.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_33",
+    "text": "This is her pen.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_33.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_34",
+    "text": "This is our house.",
+    "file": "audio_A1_Gramma_01/gtts_en_34.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_34",
+    "text": "This is our house.",
+    "file": "audio_A1_Gramma_01/edge_en_34.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_34",
+    "text": "This is our house.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_34.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_34",
+    "text": "This is our house.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_34.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_35",
+    "text": "That is their car.",
+    "file": "audio_A1_Gramma_01/gtts_en_35.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_35",
+    "text": "That is their car.",
+    "file": "audio_A1_Gramma_01/edge_en_35.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_35",
+    "text": "That is their car.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_35.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_35",
+    "text": "That is their car.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_35.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_36",
+    "text": "My name is Duy.",
+    "file": "audio_A1_Gramma_01/gtts_en_36.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_36",
+    "text": "My name is Duy.",
+    "file": "audio_A1_Gramma_01/edge_en_36.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_36",
+    "text": "My name is Duy.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_36.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_36",
+    "text": "My name is Duy.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_36.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_37",
+    "text": "Her bag is new.",
+    "file": "audio_A1_Gramma_01/gtts_en_37.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_37",
+    "text": "Her bag is new.",
+    "file": "audio_A1_Gramma_01/edge_en_37.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_37",
+    "text": "Her bag is new.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_37.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_37",
+    "text": "Her bag is new.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_37.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_38",
+    "text": "His room is big.",
+    "file": "audio_A1_Gramma_01/gtts_en_38.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_38",
+    "text": "His room is big.",
+    "file": "audio_A1_Gramma_01/edge_en_38.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_38",
+    "text": "His room is big.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_38.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_38",
+    "text": "His room is big.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_38.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_39",
+    "text": "Their house is small.",
+    "file": "audio_A1_Gramma_01/gtts_en_39.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_39",
+    "text": "Their house is small.",
+    "file": "audio_A1_Gramma_01/edge_en_39.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_39",
+    "text": "Their house is small.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_39.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_39",
+    "text": "Their house is small.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_39.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_40",
+    "text": "I go to school.",
+    "file": "audio_A1_Gramma_01/gtts_en_40.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_40",
+    "text": "I go to school.",
+    "file": "audio_A1_Gramma_01/edge_en_40.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_40",
+    "text": "I go to school.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_40.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_40",
+    "text": "I go to school.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_40.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_41",
+    "text": "She works every day.",
+    "file": "audio_A1_Gramma_01/gtts_en_41.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_41",
+    "text": "She works every day.",
+    "file": "audio_A1_Gramma_01/edge_en_41.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_41",
+    "text": "She works every day.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_41.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_41",
+    "text": "She works every day.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_41.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_42",
+    "text": "He likes coffee.",
+    "file": "audio_A1_Gramma_01/gtts_en_42.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_42",
+    "text": "He likes coffee.",
+    "file": "audio_A1_Gramma_01/edge_en_42.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_42",
+    "text": "He likes coffee.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_42.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_42",
+    "text": "He likes coffee.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_42.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_43",
+    "text": "They play soccer.",
+    "file": "audio_A1_Gramma_01/gtts_en_43.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_43",
+    "text": "They play soccer.",
+    "file": "audio_A1_Gramma_01/edge_en_43.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_43",
+    "text": "They play soccer.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_43.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_43",
+    "text": "They play soccer.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_43.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_44",
+    "text": "We study English.",
+    "file": "audio_A1_Gramma_01/gtts_en_44.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_44",
+    "text": "We study English.",
+    "file": "audio_A1_Gramma_01/edge_en_44.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_44",
+    "text": "We study English.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_44.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_44",
+    "text": "We study English.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_44.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_45",
+    "text": "She reads books.",
+    "file": "audio_A1_Gramma_01/gtts_en_45.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_45",
+    "text": "She reads books.",
+    "file": "audio_A1_Gramma_01/edge_en_45.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_45",
+    "text": "She reads books.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_45.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_45",
+    "text": "She reads books.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_45.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_46",
+    "text": "He drives to work.",
+    "file": "audio_A1_Gramma_01/gtts_en_46.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_46",
+    "text": "He drives to work.",
+    "file": "audio_A1_Gramma_01/edge_en_46.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_46",
+    "text": "He drives to work.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_46.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_46",
+    "text": "He drives to work.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_46.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_47",
+    "text": "I eat breakfast.",
+    "file": "audio_A1_Gramma_01/gtts_en_47.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_47",
+    "text": "I eat breakfast.",
+    "file": "audio_A1_Gramma_01/edge_en_47.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_47",
+    "text": "I eat breakfast.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_47.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_47",
+    "text": "I eat breakfast.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_47.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_48",
+    "text": "They watch TV.",
+    "file": "audio_A1_Gramma_01/gtts_en_48.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_48",
+    "text": "They watch TV.",
+    "file": "audio_A1_Gramma_01/edge_en_48.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_48",
+    "text": "They watch TV.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_48.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_48",
+    "text": "They watch TV.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_48.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_49",
+    "text": "We cook dinner.",
+    "file": "audio_A1_Gramma_01/gtts_en_49.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_49",
+    "text": "We cook dinner.",
+    "file": "audio_A1_Gramma_01/edge_en_49.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_49",
+    "text": "We cook dinner.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_49.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_49",
+    "text": "We cook dinner.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_49.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_50",
+    "text": "I do not like tea.",
+    "file": "audio_A1_Gramma_01/gtts_en_50.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_50",
+    "text": "I do not like tea.",
+    "file": "audio_A1_Gramma_01/edge_en_50.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_50",
+    "text": "I do not like tea.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_50.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_50",
+    "text": "I do not like tea.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_50.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_51",
+    "text": "She does not work here.",
+    "file": "audio_A1_Gramma_01/gtts_en_51.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_51",
+    "text": "She does not work here.",
+    "file": "audio_A1_Gramma_01/edge_en_51.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_51",
+    "text": "She does not work here.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_51.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_51",
+    "text": "She does not work here.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_51.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_52",
+    "text": "He does not drive.",
+    "file": "audio_A1_Gramma_01/gtts_en_52.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_52",
+    "text": "He does not drive.",
+    "file": "audio_A1_Gramma_01/edge_en_52.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_52",
+    "text": "He does not drive.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_52.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_52",
+    "text": "He does not drive.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_52.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_53",
+    "text": "They do not eat meat.",
+    "file": "audio_A1_Gramma_01/gtts_en_53.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_53",
+    "text": "They do not eat meat.",
+    "file": "audio_A1_Gramma_01/edge_en_53.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_53",
+    "text": "They do not eat meat.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_53.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_53",
+    "text": "They do not eat meat.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_53.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_54",
+    "text": "We do not watch TV.",
+    "file": "audio_A1_Gramma_01/gtts_en_54.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_54",
+    "text": "We do not watch TV.",
+    "file": "audio_A1_Gramma_01/edge_en_54.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_54",
+    "text": "We do not watch TV.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_54.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_54",
+    "text": "We do not watch TV.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_54.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_55",
+    "text": "She does not like cats.",
+    "file": "audio_A1_Gramma_01/gtts_en_55.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_55",
+    "text": "She does not like cats.",
+    "file": "audio_A1_Gramma_01/edge_en_55.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_55",
+    "text": "She does not like cats.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_55.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_55",
+    "text": "She does not like cats.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_55.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_56",
+    "text": "He does not study English.",
+    "file": "audio_A1_Gramma_01/gtts_en_56.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_56",
+    "text": "He does not study English.",
+    "file": "audio_A1_Gramma_01/edge_en_56.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_56",
+    "text": "He does not study English.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_56.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_56",
+    "text": "He does not study English.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_56.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_57",
+    "text": "I do not work on Sunday.",
+    "file": "audio_A1_Gramma_01/gtts_en_57.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_57",
+    "text": "I do not work on Sunday.",
+    "file": "audio_A1_Gramma_01/edge_en_57.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_57",
+    "text": "I do not work on Sunday.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_57.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_57",
+    "text": "I do not work on Sunday.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_57.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_58",
+    "text": "They do not play games.",
+    "file": "audio_A1_Gramma_01/gtts_en_58.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_58",
+    "text": "They do not play games.",
+    "file": "audio_A1_Gramma_01/edge_en_58.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_58",
+    "text": "They do not play games.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_58.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_58",
+    "text": "They do not play games.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_58.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_59",
+    "text": "We do not cook dinner.",
+    "file": "audio_A1_Gramma_01/gtts_en_59.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_59",
+    "text": "We do not cook dinner.",
+    "file": "audio_A1_Gramma_01/edge_en_59.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_59",
+    "text": "We do not cook dinner.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_59.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_59",
+    "text": "We do not cook dinner.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_59.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_60",
+    "text": "Do you like coffee?",
+    "file": "audio_A1_Gramma_01/gtts_en_60.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_60",
+    "text": "Do you like coffee?",
+    "file": "audio_A1_Gramma_01/edge_en_60.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_60",
+    "text": "Do you like coffee",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_60.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_60",
+    "text": "Do you like coffee",
+    "file": "audio_A1_Gramma_01/edge_ex_en_60.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_61",
+    "text": "Do they play soccer?",
+    "file": "audio_A1_Gramma_01/gtts_en_61.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_61",
+    "text": "Do they play soccer?",
+    "file": "audio_A1_Gramma_01/edge_en_61.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_61",
+    "text": "Do they play soccer",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_61.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_61",
+    "text": "Do they play soccer",
+    "file": "audio_A1_Gramma_01/edge_ex_en_61.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_62",
+    "text": "Do you work here?",
+    "file": "audio_A1_Gramma_01/gtts_en_62.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_62",
+    "text": "Do you work here?",
+    "file": "audio_A1_Gramma_01/edge_en_62.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_62",
+    "text": "Do you work here",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_62.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_62",
+    "text": "Do you work here",
+    "file": "audio_A1_Gramma_01/edge_ex_en_62.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_63",
+    "text": "Does he drive?",
+    "file": "audio_A1_Gramma_01/gtts_en_63.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_63",
+    "text": "Does he drive?",
+    "file": "audio_A1_Gramma_01/edge_en_63.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_63",
+    "text": "Does he drive",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_63.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_63",
+    "text": "Does he drive",
+    "file": "audio_A1_Gramma_01/edge_ex_en_63.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_64",
+    "text": "Does she study English?",
+    "file": "audio_A1_Gramma_01/gtts_en_64.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_64",
+    "text": "Does she study English?",
+    "file": "audio_A1_Gramma_01/edge_en_64.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_64",
+    "text": "Does she study English",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_64.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_64",
+    "text": "Does she study English",
+    "file": "audio_A1_Gramma_01/edge_ex_en_64.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_65",
+    "text": "Do we need help?",
+    "file": "audio_A1_Gramma_01/gtts_en_65.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_65",
+    "text": "Do we need help?",
+    "file": "audio_A1_Gramma_01/edge_en_65.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_65",
+    "text": "Do we need help",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_65.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_65",
+    "text": "Do we need help",
+    "file": "audio_A1_Gramma_01/edge_ex_en_65.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_66",
+    "text": "Do you eat breakfast?",
+    "file": "audio_A1_Gramma_01/gtts_en_66.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_66",
+    "text": "Do you eat breakfast?",
+    "file": "audio_A1_Gramma_01/edge_en_66.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_66",
+    "text": "Do you eat breakfast",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_66.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_66",
+    "text": "Do you eat breakfast",
+    "file": "audio_A1_Gramma_01/edge_ex_en_66.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_67",
+    "text": "Does he like cats?",
+    "file": "audio_A1_Gramma_01/gtts_en_67.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_67",
+    "text": "Does he like cats?",
+    "file": "audio_A1_Gramma_01/edge_en_67.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_67",
+    "text": "Does he like cats",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_67.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_67",
+    "text": "Does he like cats",
+    "file": "audio_A1_Gramma_01/edge_ex_en_67.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_68",
+    "text": "Do they watch TV?",
+    "file": "audio_A1_Gramma_01/gtts_en_68.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_68",
+    "text": "Do they watch TV?",
+    "file": "audio_A1_Gramma_01/edge_en_68.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_68",
+    "text": "Do they watch TV",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_68.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_68",
+    "text": "Do they watch TV",
+    "file": "audio_A1_Gramma_01/edge_ex_en_68.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_69",
+    "text": "Does she work today?",
+    "file": "audio_A1_Gramma_01/gtts_en_69.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_69",
+    "text": "Does she work today?",
+    "file": "audio_A1_Gramma_01/edge_en_69.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_69",
+    "text": "Does she work today",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_69.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_69",
+    "text": "Does she work today",
+    "file": "audio_A1_Gramma_01/edge_ex_en_69.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_70",
+    "text": "I always wake up early.",
+    "file": "audio_A1_Gramma_01/gtts_en_70.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_70",
+    "text": "I always wake up early.",
+    "file": "audio_A1_Gramma_01/edge_en_70.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_70",
+    "text": "I always wake up early.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_70.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_70",
+    "text": "I always wake up early.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_70.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_71",
+    "text": "She usually cooks dinner.",
+    "file": "audio_A1_Gramma_01/gtts_en_71.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_71",
+    "text": "She usually cooks dinner.",
+    "file": "audio_A1_Gramma_01/edge_en_71.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_71",
+    "text": "She usually cooks dinner.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_71.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_71",
+    "text": "She usually cooks dinner.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_71.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_72",
+    "text": "He often reads books.",
+    "file": "audio_A1_Gramma_01/gtts_en_72.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_72",
+    "text": "He often reads books.",
+    "file": "audio_A1_Gramma_01/edge_en_72.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_72",
+    "text": "He often reads books.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_72.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_72",
+    "text": "He often reads books.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_72.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_73",
+    "text": "They sometimes play games.",
+    "file": "audio_A1_Gramma_01/gtts_en_73.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_73",
+    "text": "They sometimes play games.",
+    "file": "audio_A1_Gramma_01/edge_en_73.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_73",
+    "text": "They sometimes play games.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_73.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_73",
+    "text": "They sometimes play games.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_73.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_74",
+    "text": "We never eat fast food.",
+    "file": "audio_A1_Gramma_01/gtts_en_74.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_74",
+    "text": "We never eat fast food.",
+    "file": "audio_A1_Gramma_01/edge_en_74.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_74",
+    "text": "We never eat fast food.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_74.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_74",
+    "text": "We never eat fast food.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_74.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_75",
+    "text": "I often go to the park.",
+    "file": "audio_A1_Gramma_01/gtts_en_75.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_75",
+    "text": "I often go to the park.",
+    "file": "audio_A1_Gramma_01/edge_en_75.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_75",
+    "text": "I often go to the park.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_75.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_75",
+    "text": "I often go to the park.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_75.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_76",
+    "text": "She always studies at night.",
+    "file": "audio_A1_Gramma_01/gtts_en_76.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_76",
+    "text": "She always studies at night.",
+    "file": "audio_A1_Gramma_01/edge_en_76.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_76",
+    "text": "She always studies at night.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_76.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_76",
+    "text": "She always studies at night.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_76.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_77",
+    "text": "He never drinks coffee.",
+    "file": "audio_A1_Gramma_01/gtts_en_77.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_77",
+    "text": "He never drinks coffee.",
+    "file": "audio_A1_Gramma_01/edge_en_77.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_77",
+    "text": "He never drinks coffee.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_77.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_77",
+    "text": "He never drinks coffee.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_77.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_78",
+    "text": "They usually walk to school.",
+    "file": "audio_A1_Gramma_01/gtts_en_78.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_78",
+    "text": "They usually walk to school.",
+    "file": "audio_A1_Gramma_01/edge_en_78.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_78",
+    "text": "They usually walk to school.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_78.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_78",
+    "text": "They usually walk to school.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_78.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_79",
+    "text": "We sometimes watch movies.",
+    "file": "audio_A1_Gramma_01/gtts_en_79.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_79",
+    "text": "We sometimes watch movies.",
+    "file": "audio_A1_Gramma_01/edge_en_79.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_79",
+    "text": "We sometimes watch movies.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_79.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_79",
+    "text": "We sometimes watch movies.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_79.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_80",
+    "text": "I can swim.",
+    "file": "audio_A1_Gramma_01/gtts_en_80.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_80",
+    "text": "I can swim.",
+    "file": "audio_A1_Gramma_01/edge_en_80.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_80",
+    "text": "I can swim.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_80.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_80",
+    "text": "I can swim.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_80.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_81",
+    "text": "She can cook.",
+    "file": "audio_A1_Gramma_01/gtts_en_81.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_81",
+    "text": "She can cook.",
+    "file": "audio_A1_Gramma_01/edge_en_81.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_81",
+    "text": "She can cook.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_81.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_81",
+    "text": "She can cook.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_81.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_82",
+    "text": "He can drive.",
+    "file": "audio_A1_Gramma_01/gtts_en_82.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_82",
+    "text": "He can drive.",
+    "file": "audio_A1_Gramma_01/edge_en_82.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_82",
+    "text": "He can drive.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_82.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_82",
+    "text": "He can drive.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_82.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_83",
+    "text": "They can sing.",
+    "file": "audio_A1_Gramma_01/gtts_en_83.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_83",
+    "text": "They can sing.",
+    "file": "audio_A1_Gramma_01/edge_en_83.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_83",
+    "text": "They can sing.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_83.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_83",
+    "text": "They can sing.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_83.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_84",
+    "text": "We can help you.",
+    "file": "audio_A1_Gramma_01/gtts_en_84.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_84",
+    "text": "We can help you.",
+    "file": "audio_A1_Gramma_01/edge_en_84.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_84",
+    "text": "We can help you.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_84.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_84",
+    "text": "We can help you.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_84.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_85",
+    "text": "I can't swim.",
+    "file": "audio_A1_Gramma_01/gtts_en_85.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_85",
+    "text": "I can't swim.",
+    "file": "audio_A1_Gramma_01/edge_en_85.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_85",
+    "text": "I can't swim.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_85.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_85",
+    "text": "I can't swim.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_85.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_86",
+    "text": "She can't drive.",
+    "file": "audio_A1_Gramma_01/gtts_en_86.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_86",
+    "text": "She can't drive.",
+    "file": "audio_A1_Gramma_01/edge_en_86.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_86",
+    "text": "She can't drive.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_86.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_86",
+    "text": "She can't drive.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_86.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_87",
+    "text": "He can't cook.",
+    "file": "audio_A1_Gramma_01/gtts_en_87.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_87",
+    "text": "He can't cook.",
+    "file": "audio_A1_Gramma_01/edge_en_87.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_87",
+    "text": "He can't cook.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_87.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_87",
+    "text": "He can't cook.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_87.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_88",
+    "text": "They can't speak French.",
+    "file": "audio_A1_Gramma_01/gtts_en_88.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_88",
+    "text": "They can't speak French.",
+    "file": "audio_A1_Gramma_01/edge_en_88.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_88",
+    "text": "They can't speak French.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_88.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_88",
+    "text": "They can't speak French.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_88.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_89",
+    "text": "We can't help today.",
+    "file": "audio_A1_Gramma_01/gtts_en_89.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_89",
+    "text": "We can't help today.",
+    "file": "audio_A1_Gramma_01/edge_en_89.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_89",
+    "text": "We can't help today.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_89.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_89",
+    "text": "We can't help today.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_89.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_90",
+    "text": "There is a cat on the table.",
+    "file": "audio_A1_Gramma_01/gtts_en_90.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_90",
+    "text": "There is a cat on the table.",
+    "file": "audio_A1_Gramma_01/edge_en_90.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_90",
+    "text": "There is a cat on the table.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_90.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_90",
+    "text": "There is a cat on the table.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_90.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_91",
+    "text": "There is a book on the chair.",
+    "file": "audio_A1_Gramma_01/gtts_en_91.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_91",
+    "text": "There is a book on the chair.",
+    "file": "audio_A1_Gramma_01/edge_en_91.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_91",
+    "text": "There is a book on the chair.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_91.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_91",
+    "text": "There is a book on the chair.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_91.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_92",
+    "text": "There are two dogs outside.",
+    "file": "audio_A1_Gramma_01/gtts_en_92.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_92",
+    "text": "There are two dogs outside.",
+    "file": "audio_A1_Gramma_01/edge_en_92.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_92",
+    "text": "There are two dogs outside.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_92.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_92",
+    "text": "There are two dogs outside.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_92.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_93",
+    "text": "There are many people here.",
+    "file": "audio_A1_Gramma_01/gtts_en_93.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_93",
+    "text": "There are many people here.",
+    "file": "audio_A1_Gramma_01/edge_en_93.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_93",
+    "text": "There are many people here.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_93.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_93",
+    "text": "There are many people here.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_93.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_94",
+    "text": "There is a problem.",
+    "file": "audio_A1_Gramma_01/gtts_en_94.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_94",
+    "text": "There is a problem.",
+    "file": "audio_A1_Gramma_01/edge_en_94.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_94",
+    "text": "There is a problem.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_94.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_94",
+    "text": "There is a problem.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_94.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_95",
+    "text": "There are three cars.",
+    "file": "audio_A1_Gramma_01/gtts_en_95.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_95",
+    "text": "There are three cars.",
+    "file": "audio_A1_Gramma_01/edge_en_95.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_95",
+    "text": "There are three cars.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_95.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_95",
+    "text": "There are three cars.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_95.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_96",
+    "text": "There is a pen on the desk.",
+    "file": "audio_A1_Gramma_01/gtts_en_96.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_96",
+    "text": "There is a pen on the desk.",
+    "file": "audio_A1_Gramma_01/edge_en_96.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_96",
+    "text": "There is a pen on the desk.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_96.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_96",
+    "text": "There is a pen on the desk.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_96.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_97",
+    "text": "There are apples in the bag.",
+    "file": "audio_A1_Gramma_01/gtts_en_97.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_97",
+    "text": "There are apples in the bag.",
+    "file": "audio_A1_Gramma_01/edge_en_97.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_97",
+    "text": "There are apples in the bag.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_97.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_97",
+    "text": "There are apples in the bag.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_97.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_98",
+    "text": "There is a phone here.",
+    "file": "audio_A1_Gramma_01/gtts_en_98.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_98",
+    "text": "There is a phone here.",
+    "file": "audio_A1_Gramma_01/edge_en_98.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_98",
+    "text": "There is a phone here.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_98.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_98",
+    "text": "There is a phone here.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_98.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_99",
+    "text": "There are students in the room.",
+    "file": "audio_A1_Gramma_01/gtts_en_99.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_99",
+    "text": "There are students in the room.",
+    "file": "audio_A1_Gramma_01/edge_en_99.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_99",
+    "text": "There are students in the room.",
+    "file": "audio_A1_Gramma_01/gtts_ex_en_99.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_99",
+    "text": "There are students in the room.",
+    "file": "audio_A1_Gramma_01/edge_ex_en_99.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  }
 ]

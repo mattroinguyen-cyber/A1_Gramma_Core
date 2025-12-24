@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning</title>
+    <style>    
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px;
+        }
+        h1 {
+            color: #61dafb;
+            text-align: center;
+        }
+        #vocabLabel {
+            font-size: 30px;
+            margin: 20px 0;
+            border: 2px solid #61dafb;
+            padding: 10px;
+            text-align: center;
+        }
+        .card {
+            background-color: #1c2025;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }     
+        .term {
+            color: lightgreen;
+            font-weight: bold;
+        }    
+        .ipa {
+            color: yellow;
+        }
+        .vietnamese {
+            color: #61dafb;
+        }        
+        .example {
+            color: lightgreen;
+        }
+        .example_ipa {
+            color: yellow;
+        }
+        .example_vi {
+            color: #21a1f1;
+        }
+        input, button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+        }        
+        button {
+            background-color: #61dafb;
+            color: #282c34;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #21a1f1;
+        }
+        #questionCounter {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        #answerInput {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+        }
+        #answerInput, #writingCheckBack {
+            width: 80%;
+            max-width: 800px;
+            height: 40px;
+            margin: 20px auto;
+            display: block;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1c2025;
+            color: #61dafb;
+            resize: vertical;
+            overflow-y: auto;
+        }
+        #vocabLabel {
+            font-size: 24px;
+            margin: 20px 0;
+            border: 2px solid #61dafb;
+            padding: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow-y: auto;
+            max-height: 400px;
+            background-color: #1c2025;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #checkAnswerButton, #checkAnswerBackButton, #speakCheckButton {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #61dafb;
+            color: #282c34;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #checkAnswerButton:hover, #checkAnswerBackButton:hover, #speakCheckButton:hover {
+            background-color: #21a1f1;
+        }
+        #notification {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            text-align: left;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #f44336;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 80%;
+            z-index: 1000;
+        }
+        
+        #recognizedSpeech {
+            color: #61dafb;
+            font-weight: bold;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #lessonSelector {
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        #speechResult {
+    	    background-color: #1c2025;
+    	    padding: 3px;
+    	    border-radius: 4px;
+    	    margin: 10px auto;
+    	    text-align: center;
+    	    max-width: 600px;
+    	    font-size: 14px;
+    	    display: none;
+	    }
+	    #recognizedSpeech {
+    	    color: lightgreen;
+            font-weight: bold;    
+    	    font-size: 20px;
+	    }
+        #notification {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #f44336;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+            max-width: 90%;
+        }
+        
+        /* Style cho checkbox */
+        label {
+            margin: 0 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .session-controls {
+            background-color: #1c2025;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .session-controls h3 {
+            margin-top: 0;
+            color: #61dafb;
+        }
+
+        .session-controls input {
+            padding: 8px;
+            border: 1px solid #61dafb;
+            background-color: #282c34;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        #appSelector {
+            font-size: 14px;
+            border: 1px solid #555;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        #appSelector:hover {
+            background: #444 !important;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+        <select id="appSelector" onchange="switchApp()" style="padding: 8px; border-radius: 5px; background: #333; color: white;">
+          <option value="">-- Select App --</option>          
+          <option value="test_offline.html"selected>Học Ngoại Ngữ</option>
+          <option value="A1_Grammar.html">A1_Grammar Core</option>
+          <option value="help.html">Help/Trợ giúp</option>
+        </select>
+    </div>
+<div style="text-align: center;">
+    <div id="questionCounter">Câu hỏi: 0/0</div>
+</div>
+<div id="vocabLabel">Không có từ vựng nào được thêm.</div>
+
+<!--Nhóm các nút đổi màu-->
+<div style="text-align: center;">
+<label>  
+    <input type="checkbox" onchange="toggleVisibility('term')"> Ẩn En  
+</label>  
+<label>  
+    <input type="checkbox" onchange="toggleVisibility('ipa')"> Ẩn IPA  
+</label>  
+<label>  
+    <input type="checkbox" onchange="toggleVisibility('vietnamese')"> Ẩn Vi  
+</label>
+<label>  
+    <input type="checkbox" id="autoCheckToggle" checked onchange="toggleAutoCheck()"> Tự động kiểm tra  
+</label>
+</div>
+
+<div id="notification"></div>
+<div id="speechResult">
+    <p><span id="recognizedSpeech"></span></p>
+</div>
+
+<textarea id="answerInput" placeholder="Kiểm Tra Viết Câu Hỏi (V1)" onkeydown="handleKeyDown(event)"></textarea>
+<textarea id="writingCheckBack" placeholder="Kiểm Tra Viết Câu Trả Lời (V2)" onkeydown="handleKeyDownBack(event)"></textarea>
+
+<!-- Nhóm các nút kiểm tra -->
+<div style="text-align: center;">
+    <button id="checkAnswerButton" onclick="checkAnswer()">V1</button>
+    <button id="checkAnswerBackButton" onclick="checkAnswerBack()">V2</button>
+    <button id="speakCheckFrontButton" onclick="startSpeechRecognitionFront()">Nói</button>    
+</div>
+
+<div style="text-align: center;">
+    <button onclick="prevWord()">Trước</button>
+    <button onclick="flipCard()">Lật Thẻ</button>
+    <button onclick="nextWord()">Tiếp Theo</button>
+    <button id="repeatButton" onclick="repeatPronunciation()">Lặp Lại</button>
+    <button id="autoFlipButton" onclick="toggleAutoFlip()">Tự Động</button>
+    <button id="toggleModeButton" onclick="toggleMode()">Thứ Tự</button>
+</div> 
+
+<div style="text-align: center;">
+    <!-- Dropdown để chọn bài học -->
+    <select id="lessonSelector" onchange="loadLesson()">
+        <!-- Các tùy chọn sẽ được thêm tự động từ json_list.json -->
+    </select>
+    <select id="audioEngineSelector" style="padding:8px; margin-left:8px; border-radius:6px;">
+        <option value="gTTS">gTTS (Female US)</option>
+        <option value="Edge">Edge TTS (Male US)</option>
+    </select>
+    <button id="bookmarkBtn" onclick="saveBookmark()" style="margin-left:6px; padding:8px 12px;">🔖 Lưu</button>
+    <button id="loadBookmarkBtn" onclick="loadBookmark()" style="margin-left:6px; padding:8px 12px;">📂 Tải</button>
+    <input type="number" id="rangeStart" placeholder="Từ câu" min="1" style="width: 80px;">
+    <span>đến</span>
+    <input type="number" id="rangeEnd" placeholder="Đến câu" min="1" style="width: 80px;">
+    <button onclick="startRangeSession()" style="padding: 8px 15px;">Bắt đầu</button>
+    <button onclick="resetSession()" style="margin-top: 10px; padding: 8px 15px;">Reset Phiên Học</button>
+</div>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+<script>
+    let vocabList = [];
+    let currentIndex = 0;
+    let autoFlip = false;
+    let audio;
+    let autoFlipTimeout;
+    let isFront = true;
+    let currentPronunciationText = '';
+    let isRandomMode = false;
+    let audioMapping = [];
+    let recognition;
+    let isSpeechRecognitionActive = false;
+    let sessionVocabList = [];
+    let sessionStartIndex = 0;
+    let isAutoCheckEnabled = true;
+    let typingTimer;
+    const doneTypingInterval = 1500;
+
+    let lessons = [];
+    let hiddenElements = { term: false, ipa: false, vietnamese: false };
+    let askedIndices = [];
+    let isRandomCycleComplete = false;
+
+    function toggleAutoCheck() {
+        isAutoCheckEnabled = !isAutoCheckEnabled;
+        const notification = document.getElementById('notification');
+        notification.textContent = `Tự động kiểm tra: ${isAutoCheckEnabled ? "BẬT" : "TẮT"}`;
+        notification.style.display = 'block';
+        notification.style.backgroundColor = isAutoCheckEnabled ? '#4caf50' : '#f44336';
+        setTimeout(() => notification.style.display = 'none', 2000);
+        
+        if (!isAutoCheckEnabled) {
+            clearTimeout(typingTimer);
+            document.getElementById('answerInput').classList.remove('typing');
+            document.getElementById('writingCheckBack').classList.remove('typing');
+        }
+    }
+
+    function startRangeSession() {
+        const start = parseInt(document.getElementById('rangeStart').value);
+        const end = parseInt(document.getElementById('rangeEnd').value);
+
+        if (isNaN(start)) {
+            showNotification("Vui lòng nhập câu bắt đầu", false);
+            return;
+        }
+        
+        if (isNaN(end)) {
+            showNotification("Vui lòng nhập câu kết thúc", false);
+            return;
+        }
+        
+        if (start < 1 || end < 1) {
+            showNotification("Số câu phải lớn hơn 0", false);
+            return;
+        }
+        
+        if (start > end) {
+            showNotification("Câu bắt đầu phải nhỏ hơn câu kết thúc", false);
+            return;
+        }
+        
+        sessionVocabList = vocabList.slice(start - 1, end);
+        
+        if (sessionVocabList.length === 0) {
+            showNotification("Không có câu nào trong khoảng này", false);
+            return;
+        }
+        
+        currentIndex = 0;
+        vocabList = sessionVocabList;
+        askedIndices = [];
+        isRandomCycleComplete = false;
+        isFront = true;
+        
+        showNotification(`Bắt đầu phiên học từ câu ${start} đến ${end}`, true);
+        displayWord();
+    }
+
+    function resetSession() {
+        const selectedLessonName = document.getElementById('lessonSelector').value;
+        loadLesson();
+        showNotification("Đã reset phiên học về toàn bộ danh sách", true);
+    }
+
+    function nextWord() {
+        if (vocabList.length === 0) return;
+        clearTimeout(autoFlipTimeout);
+
+        if (isRandomMode) {
+            if (askedIndices.length >= vocabList.length) {
+                if (!isRandomCycleComplete) {
+                    alert("Đã hoàn thành 1 vòng ngẫu nhiên!\nTự động bắt đầu vòng mới.");
+                }
+                askedIndices = [];
+                isRandomCycleComplete = true;
+            }
+
+            const availableIndices = [];
+            for (let i = 0; i < vocabList.length; i++) {
+                if (!askedIndices.includes(i)) {
+                    availableIndices.push(i);
+                }
+            }
+
+            currentIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+            askedIndices.push(currentIndex);
+        } else {
+            currentIndex = (currentIndex + 1) % vocabList.length;
+        }
+
+        isFront = true;
+        displayWord();
+        
+        if (autoFlip) {
+            const word = vocabList[currentIndex];
+            playPronunciation(word[0]);
+        }
+    }
+
+    function flipCard() {
+        isFront = !isFront;
+        displayWord();
+        
+        const word = vocabList[currentIndex];
+        const textToPlay = isFront ? word[0] : word[3];
+        playPronunciation(textToPlay);
+    }
+
+    function prevWord() {
+        if (isRandomMode) {
+            nextWord();
+        } else {
+            currentIndex = (currentIndex - 1 + vocabList.length) % vocabList.length;
+            isFront = true;
+            displayWord();
+        }
+    }
+
+    function displayWord() {  
+        if (vocabList.length > 0 && currentIndex < vocabList.length) {  
+            const word = vocabList[currentIndex];  
+            
+            const frontCard = `  
+                <div class="card">  
+                    <span class="term" style="color: ${hiddenElements.term ? '#1c2025' : 'lightgreen'};">${word[0]}</span><br>  
+                    <span class="ipa" style="color: ${hiddenElements.ipa ? '#1c2025' : 'yellow'};">${word[1]}</span><br>                
+                    <span class="vietnamese" style="color: ${hiddenElements.vietnamese ? '#1c2025' : '#21a1f1'};">${word[2]}</span><br>                    
+                </div>  
+            `;  
+            
+            const backCard = `  
+                <div class="card">  
+                    <span class="example">${word[3]}</span><br>  
+                    <span class="example_ipa">${word[4]}</span><br>  
+                    <span class="example_vi">${word[5]}</span>  
+                </div>  
+            `;  
+            
+            document.getElementById('vocabLabel').innerHTML = isFront ? frontCard : backCard;  
+            const pronunciationText = isFront ? word[0].toString() : word[3].toString();  
+            playPronunciation(pronunciationText);  
+            
+            document.getElementById('answerInput').classList.remove('typing', 'checked');
+            document.getElementById('writingCheckBack').classList.remove('typing', 'checked');
+            clearTimeout(typingTimer);
+        } else {  
+            document.getElementById('vocabLabel').innerText = "Tất cả từ vựng đã hoàn thành.";  
+        }  
+        updateQuestionCounter();  
+    }  
+
+    function toggleVisibility(element) {  
+        hiddenElements[element] = !hiddenElements[element];
+        displayWord();  
+    }  
+
+    function updateQuestionCounter() {
+        const questionCounter = document.getElementById('questionCounter');
+        questionCounter.innerText = `Câu hỏi: ${currentIndex + 1}/${vocabList.length}`;
+    }
+
+    function loadLessonList() {
+        fetch("json_list.json")
+            .then(response => response.json())
+            .then(data => {
+                lessons = data.lessons;
+                populateLessonSelector();
+                if (lessons.length > 0) {
+                    document.getElementById("lessonSelector").value = lessons[0].name;
+                    loadLesson();
+                }
+            })
+            .catch(error => console.error("Lỗi khi tải danh sách bài học:", error));
+    }
+
+    function populateLessonSelector() {
+        const lessonSelector = document.getElementById('lessonSelector');
+        lessonSelector.innerHTML = "";
+        lessons.forEach(lesson => {
+            const option = document.createElement('option');
+            option.value = lesson.name;
+            option.textContent = lesson.name.replace('.json', '');
+            lessonSelector.appendChild(option);
+        });
+    }
+
+    function loadLesson() {
+        currentIndex = 0;
+        askedIndices = [];
+        isRandomCycleComplete = false;
+        isFront = true;
+        sessionVocabList = [];
+        const selectedLessonName = document.getElementById('lessonSelector').value;
+        const lessonData = lessons.find(lesson => lesson.name === selectedLessonName);
+        
+        if (!lessonData) {
+            alert("Bài học không tồn tại!");
+            return;
+        }
+
+        fetch("LESSON/" + lessonData.name)
+            .then(response => response.json())
+            .then(data => {
+                vocabList = data;
+                if (vocabList.length > 0) {
+                    currentIndex = 0;
+                    askedIndices = [];
+                    isRandomCycleComplete = false;
+                    displayWord();
+                } else {
+                    document.getElementById('vocabLabel').innerText = "Không tìm thấy từ vựng nào.";
+                }
+            })
+            .catch(error => console.error('Lỗi khi đọc file từ vựng:', error));
+
+        fetch("LESSON/" + lessonData.mapping)
+            .then(response => response.json())
+            .then(data => {
+                audioMapping = data;
+            })
+            .catch(error => console.error('Lỗi khi đọc file mapping:', error));
+    }
+
+    function switchApp() {
+      const selectedApp = document.getElementById('appSelector').value;
+      if (selectedApp && selectedApp !== window.location.pathname.split('/').pop()) {
+        window.location.href = selectedApp;
+      }
+    }
+
+    function toggleMode() {
+        isRandomMode = !isRandomMode;
+        document.getElementById("toggleModeButton").innerText = isRandomMode ? "Ngẫu Nhiên" : "Thứ Tự";
+        
+        askedIndices = [];
+        isRandomCycleComplete = false;
+        
+        const notification = document.getElementById('notification');
+        notification.textContent = `Chế độ: ${isRandomMode ? "Ngẫu nhiên (mỗi câu 1 lần)" : "Thứ tự"}`;
+        notification.style.display = 'block';
+        setTimeout(() => notification.style.display = 'none', 2000);
+    }
+
+    document.addEventListener('keydown', function(event) {
+        switch(event.key) {
+            case 'ArrowLeft':
+                prevWord();
+                break;
+            case 'ArrowRight':
+                nextWord();
+                break;
+            case 'ArrowDown':
+                flipCard();
+                break;
+            case 'ArrowUp':
+                repeatPronunciation();
+                break;            
+            case 'End':
+                startSpeechRecognitionFront();
+                break;
+            default:
+                break;
+        }
+    });
+
+    function handleKeyDown(event) {
+        if (event.key === 'Enter' && !event.shiftKey) {
+            event.preventDefault();
+            clearTimeout(typingTimer);
+            checkAnswer();
+        }
+    }
+
+    function handleKeyDownBack(event) {
+        if (event.key === 'Enter' && !event.shiftKey) {
+            event.preventDefault();
+            clearTimeout(typingTimer);
+            checkAnswerBack();
+        }
+    }
+
+    function showNotification(message, isCorrect) {
+        const notification = document.getElementById('notification');
+        notification.innerText = message;
+        notification.style.display = 'inline-block';
+        notification.style.color = '#ffffff';
+        notification.style.backgroundColor = isCorrect ? '#4caf50' : '#f44336';
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 2000);
+    }
+
+    function playPronunciation(text) {
+        currentPronunciationText = text;
+        if (audio) {
+            audio.stop();
+            audio.unload();
+        }
+        const engineSel = document.getElementById('audioEngineSelector');
+        const preferredEngine = engineSel ? engineSel.value : (localStorage.getItem('preferred_tts_engine') || 'gTTS');
+        // prefer mapping with selected engine
+        let audioEntry = audioMapping.find(item => item.text === text && item.engine === preferredEngine);
+        if (!audioEntry) audioEntry = audioMapping.find(item => item.text === text);
+        if (audioEntry) {
+            const audioFilePath = "LESSON/" + audioEntry.file;
+            audio = new Howl({
+                src: [audioFilePath],
+                html5: true,
+                rate: 1,
+                onload: function() {
+                    audio.play();
+                    
+                    if (autoFlip) {
+                        clearTimeout(autoFlipTimeout);
+                        const duration = audio.duration() * 1000;
+                        const bufferTime = 2000;
+                        
+                        autoFlipTimeout = setTimeout(() => {
+                            if (!isFront) {
+                                nextWord();
+                            } else {
+                                flipCard();
+                            }
+                        }, duration + bufferTime);
+                    }
+                },
+                onend: function() {
+                    console.log('Phát âm hoàn tất');
+                },
+                onloaderror: function(id, error) {
+                    console.error("Lỗi phát âm thanh:", error);
+                    if (autoFlip) {
+                        autoFlipTimeout = setTimeout(() => {
+                            if (!isFront) {
+                                nextWord();
+                            } else {
+                                flipCard();
+                            }
+                        }, 5000);
+                    }
+                }
+            });
+        } else {
+            console.log("Không tìm thấy file âm thanh cho:", text);
+            if (autoFlip) {
+                autoFlipTimeout = setTimeout(() => {
+                    if (!isFront) {
+                        nextWord();
+                    } else {
+                        flipCard();
+                    }
+                }, 5000);
+            }
+        }
+    }
+
+    function repeatPronunciation() {
+        if (currentPronunciationText) {
+            playPronunciation(currentPronunciationText);
+        } else {
+            const word = vocabList[currentIndex];
+            const textToPlay = isFront ? word[0] : word[3];
+            playPronunciation(textToPlay);
+        }
+    }
+
+    function toggleAutoFlip() {
+        autoFlip = !autoFlip;
+        const button = document.getElementById('autoFlipButton');
+        button.innerText = autoFlip ? "Tắt Tự Động" : "Tự Động";
+        
+        if (autoFlip) {
+            clearTimeout(autoFlipTimeout);
+            const word = vocabList[currentIndex];
+            const textToPlay = isFront ? word[0] : word[3];
+            playPronunciation(textToPlay);
+        } else {
+            clearTimeout(autoFlipTimeout);
+            if (audio) {
+                audio.stop();
+            }
+        }
+    }
+
+    function normalizeText(text) {
+        return text
+            .replace(/[-]/g, ' ')
+            .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"']/g, '')
+            .replace(/\s{2,}/g, ' ')
+            .replace(/\b10\b/g, 'ten')
+            .replace(/\b1\b/g, 'one')
+            .replace(/\b2\b/g, 'two')
+            .replace(/\b3\b/g, 'three')
+            .replace(/\b4\b/g, 'four')
+            .replace(/\b5\b/g, 'five')
+            .replace(/\b6\b/g, 'six')
+            .replace(/\b7\b/g, 'seven')
+            .replace(/\b8\b/g, 'eight')
+            .replace(/\b9\b/g, 'nine')
+            .replace(/\b0\b/g, 'zero')
+            .replace(/\b50\b/g, 'fifty')
+            .replace(/\b13\b/g, 'thirteen')
+            .replace(/\b100\b/g, 'one hundred')
+            .replace(/\b4th\b/g, 'fourth')
+            .replace(/\bJr.\b/g, 'Junior')
+            .toLowerCase()
+            .trim();
+    }
+
+    function checkAnswer() {
+        const answerInput = document.getElementById('answerInput');
+        const userAnswer = normalizeText(answerInput.value.toString().trim().toLowerCase());
+        const word = vocabList[currentIndex];
+        const expectedText = isFront ? word[0] : word[3];
+        const normalizedExpectedText = normalizeText(expectedText.toString().trim().toLowerCase());
+
+        if (userAnswer === normalizedExpectedText) {
+            showNotification("Đúng!", true);
+            
+            playPronunciation(expectedText);
+            if (audio) {
+                audio.once('end', function() {
+                    setTimeout(() => {
+                        if (isFront) {
+                            flipCard();
+                        } else {
+                            nextWord();
+                        }
+                    }, 1000);
+                });
+            } else {
+                setTimeout(() => {
+                    if (isFront) {
+                        flipCard();
+                    } else {
+                        nextWord();
+                    }
+                }, 4000);
+            }
+            
+        } else {
+            showNotification("Sai!", false);
+            playPronunciation(expectedText);
+        }
+        answerInput.value = '';
+        answerInput.classList.remove('typing', 'checked');
+    }
+
+    function checkAnswerBack() {
+        const currentExample = normalizeText(vocabList[currentIndex][3].toString().trim().toLowerCase());
+        const userAnswerBack = normalizeText(document.getElementById("writingCheckBack").value.trim().toLowerCase());
+        document.getElementById("writingCheckBack").value = "";
+        document.getElementById("writingCheckBack").classList.remove('typing', 'checked');
+
+        if (userAnswerBack === currentExample) {
+            showNotification("Đúng!", true);
+            document.getElementById('vocabLabel').innerHTML = `
+                <div class="card">
+                    <span class="example">${vocabList[currentIndex][3]}</span><br>
+                    <span class="example_ipa">${vocabList[currentIndex][4]}</span><br>
+                    <span class="example_vi">${vocabList[currentIndex][5]}</span>
+                </div>
+            `;
+            
+            playPronunciation(vocabList[currentIndex][3]);
+            if (audio) {
+                audio.once('end', function() {
+                    setTimeout(() => {
+                        nextWord();
+                    }, 1000);
+                });
+            } else {
+                setTimeout(() => {
+                    nextWord();
+                }, 4000);
+            }
+            
+        } else {
+            document.getElementById('vocabLabel').innerHTML = `
+                <div class="card">
+                    <span class="example">${vocabList[currentIndex][3]}</span><br>
+                    <span class="example_ipa">${vocabList[currentIndex][4]}</span><br>
+                    <span class="example_vi">${vocabList[currentIndex][5]}</span>
+                </div>
+            `;
+            showNotification("Sai!", false);
+            playPronunciation(vocabList[currentIndex][3]);
+        }
+    }
+
+    function startSpeechRecognitionFront() {
+        if (!('webkitSpeechRecognition' in window)) {
+            alert("Trình duyệt của bạn không hỗ trợ nhận diện giọng nói.");
+            return;
+        }
+
+        const activeElement = document.activeElement;
+        const isV1 = activeElement.id === 'answerInput';
+        const isV2 = activeElement.id === 'writingCheckBack';
+
+        const recognition = new webkitSpeechRecognition();
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        recognition.onstart = function() {
+            document.getElementById('recognizedSpeech').textContent = "Đang nghe...";
+            document.getElementById('speechResult').style.display = 'block';
+        };
+
+        recognition.onresult = function(event) {
+            const speechResult = event.results[0][0].transcript;
+            
+            if (isV1) {
+                document.getElementById('answerInput').value = speechResult;
+                document.getElementById('answerInput').classList.add('typing');
+                setTimeout(() => {
+                    handleTypingDoneV1();
+                }, doneTypingInterval);
+            } else if (isV2) {
+                document.getElementById('writingCheckBack').value = speechResult;
+                document.getElementById('writingCheckBack').classList.add('typing');
+                setTimeout(() => {
+                    handleTypingDoneV2();
+                }, doneTypingInterval);
+            }
+            
+            document.getElementById('recognizedSpeech').textContent = speechResult;
+            
+            recognition.stop();
+        };
+
+        recognition.onerror = function(event) {
+            console.error("Lỗi nhận diện giọng nói: ", event.error);
+            document.getElementById('recognizedSpeech').textContent = "Lỗi: " + event.error;
+            recognition.stop();
+        };
+
+        recognition.start();
+    }
+
+    function handleTypingDoneV1() {
+        if (!isAutoCheckEnabled) return;
+        const input = document.getElementById('answerInput');
+        if (input.value.trim() !== '') {
+            input.classList.add('checked');
+            input.classList.remove('typing');
+            checkAnswer();
+        }
+    }
+
+    function handleTypingDoneV2() {
+        if (!isAutoCheckEnabled) return;
+        const input = document.getElementById('writingCheckBack');
+        if (input.value.trim() !== '') {
+            input.classList.add('checked');
+            input.classList.remove('typing');
+            checkAnswerBack();
+        }
+    }
+
+    document.getElementById('answerInput').addEventListener('input', function() {
+        if (!isAutoCheckEnabled) {
+            this.classList.remove('typing');
+            clearTimeout(typingTimer);
+            return;
+        }
+        
+        this.classList.add('typing');
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(() => {
+            if (isAutoCheckEnabled) {
+                handleTypingDoneV1();
+            }
+        }, doneTypingInterval);
+    });
+
+    document.getElementById('writingCheckBack').addEventListener('input', function() {
+        if (!isAutoCheckEnabled) {
+            this.classList.remove('typing');
+            clearTimeout(typingTimer);
+            return;
+        }
+        
+        this.classList.add('typing');
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(() => {
+            if (isAutoCheckEnabled) {
+                handleTypingDoneV2();
+            }
+        }, doneTypingInterval);
+    });
+
+    document.getElementById('answerInput').addEventListener('keydown', function() {
+        clearTimeout(typingTimer);
+    });
+
+    document.getElementById('writingCheckBack').addEventListener('keydown', function() {
+        clearTimeout(typingTimer);
+    });
+    
+    function getBookmarkKey() {
+        const lesson = (document.getElementById('lessonSelector') && document.getElementById('lessonSelector').value) || 'test_offline';
+        return `bookmark_${lesson}`;
+    }
+
+    function saveBookmark() {
+        try {
+            const key = getBookmarkKey();
+            const payload = { currentIndex: currentIndex, isFront: isFront, vocabLength: vocabList.length, ts: Date.now() };
+            localStorage.setItem(key, JSON.stringify(payload));
+            showNotification('Đã lưu bookmark', true);
+            console.log('Saved bookmark', key, payload);
+        } catch (e) {
+            showNotification('Lưu bookmark thất bại', false);
+            console.error('saveBookmark error', e);
+        }
+    }
+
+    function loadBookmark() {
+        try {
+            const key = getBookmarkKey();
+            const raw = localStorage.getItem(key);
+            if (!raw) {
+                showNotification('Không tìm thấy bookmark', false);
+                return;
+            }
+            const obj = JSON.parse(raw);
+            if (typeof obj.currentIndex === 'number') {
+                currentIndex = Math.min(obj.currentIndex, Math.max(0, vocabList.length - 1));
+            }
+            if (typeof obj.isFront === 'boolean') {
+                isFront = obj.isFront;
+            }
+            displayWord();
+            showNotification('Đã tải bookmark', true);
+            console.log('Loaded bookmark', key, obj);
+        } catch (e) {
+            showNotification('Tải bookmark lỗi', false);
+            console.error('loadBookmark error', e);
+        }
+    }
+
+    window.onload = function () {
+        loadLessonList();
+        // init audio engine selector from localStorage
+        const aSel = document.getElementById('audioEngineSelector');
+        if (aSel) {
+            const saved = localStorage.getItem('preferred_tts_engine');
+            if (saved) aSel.value = saved;
+            aSel.addEventListener('change', (e) => { localStorage.setItem('preferred_tts_engine', e.target.value); });
+        }
+    };
+</script>
+</body>
+</html>

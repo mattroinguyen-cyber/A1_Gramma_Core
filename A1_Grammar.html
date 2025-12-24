@@ -90,7 +90,7 @@
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </head>
-<body data-theme="dark">
+<body data-theme="light">
   <div class="container">
     <header>
       <div style="display:flex; align-items:center; gap:12px">
@@ -100,11 +100,14 @@
           <p style="margin:0; font-size: 0.8rem; color: var(--text);">Listen - Speak - Read - Write</p>
         </div>
       </div>
-      <div style="display:flex; gap:10px">
+      <div style="display:flex; gap:10px; align-items:center">
         <!-- Import JSON removed; lessons are loaded from json_list.json / LESSON/ -->
         <button class="btn ghost" id="themeToggle" title="Chuyển giao diện sáng/tối">🌙</button>
+        <a class="btn ghost" href="test_offline.html" title="Mở Học Ngoại Ngữ" style="margin-left:6px">Học Ngoại Ngữ</a>
       </div>
     </header>
+
+    <div id="exerciseArea"></div>
 
     <div class="control-panel">
       <div class="option-group" style="flex:1">
@@ -146,6 +149,14 @@
       </div>
 
       <div class="option-group">
+        <span>Audio Engine:</span>
+        <select id="audioEngineSelect" style="padding:8px; border-radius:6px;">
+          <option value="gTTS">gTTS (Female US)</option>
+          <option value="Edge">Edge TTS (Male US)</option>
+        </select>
+      </div>
+
+      <div class="option-group">
         <span>Tỷ lệ đúng:</span>
         <input type="range" id="thresholdRange" min="50" max="100" step="1" value="100" title="Tỷ lệ tương đồng tối thiểu để coi là đúng (50% - dễ, 100% - chính xác)">
         <span id="thresholdVal" style="margin-left:8px; font-weight:700;">100%</span>
@@ -154,7 +165,7 @@
 
       <div class="option-group">
         <button class="btn ghost" id="toggleSkillMode" title="Bật/tắt chế độ luyện nói">🎙️ Luyện Nói</button>
-        <button class="btn ghost" id="toggleViewMode" title="Chuyển chế độ hiển thị (Câu đơn / Tất cả)">Chế độ: Tất cả</button>
+        <button class="btn ghost active-mode" id="toggleViewMode" title="Chuyển chế độ hiển thị (Câu đơn / Tất cả)">Chế độ: Câu đơn</button>
       </div>
       <div class="option-group">
         <span>Phiên:</span>
@@ -168,12 +179,10 @@
     </div>
 
     <div class="tabs">
-      <button class="tab" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
-      <button class="tab active" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
-      <button class="tab" id="tabSentence" title="Chế độ: Viết câu (Sentence Writing)">Sentence writing</button>
+      <button class="tab active" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
+      <button class="tab" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
+      <button class="tab" id="tabSentence" title="Chế độ: Viết câu (Writing Test)">Writing Test</button>
     </div>
-
-    <div id="exerciseArea"></div>
 
     <div id="pagination" class="pagination hide">
       <button class="btn ghost" id="prevEx" title="Câu trước">◀ Câu trước</button>
@@ -188,10 +197,10 @@
     let lessons = [];
     let currentLessonIdx = -1;
     let currentExIdx = 0;
-    let isSingleMode = false;
+    let isSingleMode = true;
     let isSpeakingMode = false; // dùng cho luyện nói thực sự
     // currentMode controls UI: 'sentence' or 'reading'
-    let currentMode = 'reading'; // default to Reading Test
+    let currentMode = 'listeningPreview'; // default to Listening Preview (home)
     let isReadingModeActive = false;
     let delayTimer = null;
 
@@ -211,6 +220,7 @@
     let isPreviewPlaying = false;
     let listeningAutoLoop = false; // auto-loop session when reaching end
     let readingAutoLoop = false; // auto-loop for Reading Test
+    let sentenceAutoLoop = false; // auto-loop for Sentence/Writing Test
 
     // Server lesson metadata and audio mapping
     let lessonsMeta = [];
@@ -332,6 +342,20 @@
       listLoopCheckbox.addEventListener('change', (e) => { listeningAutoLoop = !!e.target.checked; });
     }
 
+    // keep global auto-loop checkbox as master: when changed, update other modes' loop flags and visible checkboxes
+    if (listLoopCheckbox) {
+      listLoopCheckbox.addEventListener('change', (e) => {
+        const checked = !!e.target.checked;
+        listeningAutoLoop = checked;
+        readingAutoLoop = checked;
+        sentenceAutoLoop = checked;
+        // update visible controls if present
+        const rcb = document.getElementById('readingLoopCheckbox'); if (rcb) rcb.checked = checked;
+        const sb = document.getElementById('sentenceLoopCheckbox'); if (sb) sb.checked = checked;
+        const lp = document.getElementById('lpAutoLoop'); if (lp) lp.checked = checked;
+      });
+    }
+
     // session apply / bookmark handlers
     document.getElementById('applySessionBtn').addEventListener('click', () => {
       const lesson = lessons[currentLessonIdx] || {};
@@ -352,8 +376,25 @@
       if (currentLessonIdx === -1) return setStatus('Không có bài để bookmark', 'var(--error)');
       const lesson = lessons[currentLessonIdx];
       const key = `bookmark_${lesson.title || 'lesson'}`;
-      const payload = { sessionStart: sessionStart, current: currentExIdx };
-      try { localStorage.setItem(key, JSON.stringify(payload)); setStatus('Đã lưu bookmark', 'green'); } catch (e) { setStatus('Lưu bookmark thất bại', 'var(--error)'); }
+      const payload = {
+        sessionStart: sessionStart,
+        sessionEnd: sessionEnd,
+        sessionSize: sessionSize,
+        current: currentExIdx,
+        threshold: Math.round(matchThreshold * 100),
+        listeningAutoLoop: !!listeningAutoLoop,
+        readingAutoLoop: !!readingAutoLoop,
+        sentenceAutoLoop: !!sentenceAutoLoop,
+        isSingleMode: !!isSingleMode,
+        currentMode: currentMode || 'reading'
+      };
+      try {
+        localStorage.setItem(key, JSON.stringify(payload));
+        // also save a fallback last_bookmark for cross-page recovery
+        try { localStorage.setItem('last_bookmark', JSON.stringify({ key, payload, page: window.location.pathname, ts: Date.now() })); } catch (e) { /* ignore */ }
+        setStatus('Đã lưu bookmark', 'green');
+        console.log('Saved bookmark', key, payload);
+      } catch (e) { setStatus('Lưu bookmark thất bại', 'var(--error)'); console.error('bookmark save error', e); }
     });
 
     document.getElementById('loadBookmarkBtn').addEventListener('click', () => {
@@ -361,18 +402,72 @@
       const lesson = lessons[currentLessonIdx];
       const key = `bookmark_${lesson.title || 'lesson'}`;
       try {
-        const raw = localStorage.getItem(key);
+        let raw = localStorage.getItem(key);
+        // fallback to last_bookmark if specific key not found
+        if (!raw) {
+          const last = localStorage.getItem('last_bookmark');
+          if (last) {
+            try {
+              const parsedLast = JSON.parse(last);
+              // if last_bookmark contains the same lesson key, use it; otherwise still allow user to restore
+              raw = parsedLast && parsedLast.payload ? JSON.stringify(parsedLast.payload) : null;
+              console.warn('Using fallback last_bookmark for restore');
+            } catch (e) { /* ignore parse error */ }
+          }
+        }
         if (!raw) return setStatus('Không tìm thấy bookmark', 'var(--muted)');
         const obj = JSON.parse(raw);
-        sessionStart = obj.sessionStart || 0;
-        currentExIdx = obj.current || sessionStart;
-        sessionEnd = Math.min(sessionStart + sessionSize - 1, (lesson.sentence || []).length - 1);
+        sessionStart = (typeof obj.sessionStart === 'number') ? obj.sessionStart : 0;
+        // restore sessionEnd and sessionSize if provided
+        if (typeof obj.sessionEnd === 'number') {
+          sessionEnd = Math.min(obj.sessionEnd, (lesson.sentence || []).length - 1);
+        } else {
+          sessionEnd = Math.min(sessionStart + sessionSize - 1, (lesson.sentence || []).length - 1);
+        }
+        sessionSize = (typeof obj.sessionSize === 'number') ? Math.max(1, Math.min(obj.sessionSize, (lesson.sentence || []).length)) : (sessionEnd - sessionStart + 1);
+        currentExIdx = (typeof obj.current === 'number') ? obj.current : sessionStart;
         // update inputs (1-based)
         document.getElementById('sessionStartInput').value = sessionStart + 1;
         document.getElementById('sessionEndInput').value = sessionEnd + 1;
+        // restore threshold if present
+        if (typeof obj.threshold === 'number') {
+          const perc = Math.max(50, Math.min(100, obj.threshold));
+          document.getElementById('thresholdRange').value = perc;
+          document.getElementById('thresholdVal').textContent = perc + '%';
+          matchThreshold = perc / 100;
+        }
+        // restore auto-loop flags and UI state
+        if (typeof obj.listeningAutoLoop === 'boolean') {
+          listeningAutoLoop = obj.listeningAutoLoop;
+          const globalAuto = document.getElementById('listLoopCheckbox'); if (globalAuto) globalAuto.checked = !!listeningAutoLoop;
+        }
+        if (typeof obj.readingAutoLoop === 'boolean') {
+          readingAutoLoop = obj.readingAutoLoop;
+          const readingCb = document.getElementById('readingLoopCheckbox'); if (readingCb) readingCb.checked = !!readingAutoLoop;
+        }
+        if (typeof obj.sentenceAutoLoop === 'boolean') {
+          sentenceAutoLoop = obj.sentenceAutoLoop;
+          const sentenceCb = document.getElementById('sentenceLoopCheckbox'); if (sentenceCb) sentenceCb.checked = !!sentenceAutoLoop;
+        }
+        if (typeof obj.isSingleMode === 'boolean') {
+          isSingleMode = obj.isSingleMode;
+          const viewBtn = document.getElementById('toggleViewMode'); if (viewBtn) {
+            viewBtn.textContent = isSingleMode ? 'Chế độ: Câu đơn' : 'Chế độ: Tất cả';
+            viewBtn.classList.toggle('active-mode', !!isSingleMode);
+          }
+        }
+        if (obj.currentMode) {
+          currentMode = obj.currentMode;
+          // update tab classes
+          const tRead = document.getElementById('tabReading'); const tListen = document.getElementById('tabListeningPreview'); const tSent = document.getElementById('tabSentence');
+          if (tRead) tRead.classList.toggle('active', currentMode === 'reading');
+          if (tListen) tListen.classList.toggle('active', currentMode === 'listeningPreview');
+          if (tSent) tSent.classList.toggle('active', currentMode === 'sentence');
+        }
         setStatus('Đã tải bookmark', 'green');
+        console.log('Loaded bookmark', key, obj);
         if (currentMode === 'reading') renderReading(); else render();
-      } catch (e) { setStatus('Tải bookmark lỗi', 'var(--error)'); }
+      } catch (e) { setStatus('Tải bookmark lỗi', 'var(--error)'); console.error('bookmark load error', e); }
     });
 
     function setStatus(text, color) {
@@ -597,10 +692,18 @@
       }
     });
 
-    document.getElementById('themeToggle').addEventListener('click', () => {
-      const isLight = document.body.getAttribute('data-theme') === 'light';
-      document.body.setAttribute('data-theme', isLight ? 'dark' : 'light');
-    });
+    const themeToggleBtn = document.getElementById('themeToggle');
+    if (themeToggleBtn) {
+      // initialize icon based on current theme
+      const initIsLight = document.body.getAttribute('data-theme') === 'light';
+      themeToggleBtn.textContent = initIsLight ? '☀️' : '🌙';
+      themeToggleBtn.addEventListener('click', () => {
+        const isLight = document.body.getAttribute('data-theme') === 'light';
+        const newTheme = isLight ? 'dark' : 'light';
+        document.body.setAttribute('data-theme', newTheme);
+        themeToggleBtn.textContent = newTheme === 'light' ? '☀️' : '🌙';
+      });
+    }
 
     window.addEventListener('scroll', () => {
       document.getElementById('backToTop').classList.toggle('show', window.scrollY > 200);
@@ -609,6 +712,14 @@
 
     // load server lessons list on startup
     loadLessonList();
+
+    // initialize audio engine selector from localStorage
+    const engineSel = document.getElementById('audioEngineSelect');
+    if (engineSel) {
+      const saved = localStorage.getItem('preferred_tts_engine');
+      if (saved) engineSel.value = saved;
+      engineSel.addEventListener('change', (e) => { localStorage.setItem('preferred_tts_engine', e.target.value); });
+    }
 
     // Tab handlers for switching modes
     document.getElementById('tabSentence').addEventListener('click', () => {
@@ -666,9 +777,13 @@
     // tabs removed: only Sentence writing supported
 
     function render() {
-      // if we're in reading mode, prefer the reading renderer
+      // dispatch to specific renderers based on currentMode
       if (currentMode === 'reading') {
         renderReading();
+        return;
+      }
+      if (currentMode === 'listeningPreview') {
+        renderListeningPreview();
         return;
       }
       exerciseArea.innerHTML = '';
@@ -684,6 +799,26 @@
       sessionStart = Math.max(0, Math.min(sessionStart, Math.max(0, total - 1)));
       sessionEnd = Math.max(sessionStart, Math.min(sessionEnd, total - 1));
 
+      // If in sentence/writing mode, show session controls (Restart + Auto-loop)
+      if (currentMode === 'sentence') {
+        const sessCtrl = document.createElement('div');
+        sessCtrl.style.display = 'flex';
+        sessCtrl.style.justifyContent = 'center';
+        sessCtrl.style.gap = '10px';
+        sessCtrl.style.marginBottom = '12px';
+        sessCtrl.innerHTML = `
+          <button class="btn ghost" id="sentenceRestart">Bắt đầu lại</button>
+          <label style="display:flex; align-items:center; gap:8px; font-weight:600; margin-left:6px;"><input type="checkbox" id="sentenceLoopCheckbox"> Tự lặp</label>
+        `;
+        // insert at top
+        exerciseArea.appendChild(sessCtrl);
+        // wire events
+        const restartBtn = document.getElementById('sentenceRestart');
+        const loopCb = document.getElementById('sentenceLoopCheckbox');
+        if (restartBtn) restartBtn.addEventListener('click', () => { currentExIdx = sessionStart; render(); });
+        if (loopCb) { loopCb.checked = !!sentenceAutoLoop; loopCb.onchange = (e) => { sentenceAutoLoop = !!e.target.checked; const globalAuto = document.getElementById('listLoopCheckbox'); if (globalAuto) globalAuto.checked = e.target.checked; }; }
+      }
+
       if (isSingleMode) {
         document.getElementById('pagination').classList.remove('hide');
         renderItem(data[currentExIdx], currentExIdx, total);
@@ -697,14 +832,17 @@
         }
       }
       
-      const firstInput = exerciseArea.querySelector('input');
+      const firstInput = exerciseArea.querySelector('input[type="text"], textarea, input[id^="input_"]');
       if (firstInput) {
         if (isSpeakingMode) {
           firstInput.placeholder = '🎤 Đang nghe... hãy nói';
         } else {
           firstInput.placeholder = 'Nhập câu trả lời...';
         }
-        firstInput.focus();
+        // delay focusing slightly to avoid being overridden by audio/recognition handlers
+        setTimeout(() => {
+          try { firstInput.focus(); if (typeof firstInput.select === 'function') firstInput.select(); } catch (e) { /* ignore */ }
+        }, 50);
       }
     }
 
@@ -779,7 +917,7 @@
         // reflect current state when rendering (pre-check if previously enabled)
         readingLoopCheckbox.checked = !!readingAutoLoop;
         // assign onchange to avoid multiple listeners on repeated renders
-        readingLoopCheckbox.onchange = (e) => { readingAutoLoop = !!e.target.checked; };
+        readingLoopCheckbox.onchange = (e) => { readingAutoLoop = !!e.target.checked; const globalAuto = document.getElementById('listLoopCheckbox'); if (globalAuto) globalAuto.checked = e.target.checked; };
       }
       const visibleCount = sessionEnd - sessionStart + 1;
       document.getElementById('pageInfo').textContent = `${currentExIdx - sessionStart + 1} / ${visibleCount} (tổng ${total})`;
@@ -822,6 +960,7 @@
         <button class="btn" id="lpPlay" title="Phát hiện tại">▶ Phát</button>
         <button class="btn ghost" id="lpNext" title="Tới (ArrowRight)">Tới ▶</button>
         <button class="btn ghost" id="lpRepeat" title="Lặp lại (ArrowDown)">🔁 Lặp lại</button>
+        <label style="display:flex; align-items:center; gap:8px; margin-left:12px; font-weight:600;"><input type="checkbox" id="lpAutoLoop"> Tự lặp (Auto-loop)</label>
       `;
       exerciseArea.appendChild(ctrl);
 
@@ -861,6 +1000,24 @@
       nextBtn.addEventListener('click', () => { if (listeningIndex < sessionEnd) { listeningIndex++; updateListeningCard(listeningIndex); playPreviewAt(listeningIndex, false); } });
       repBtn.addEventListener('click', () => { playPreviewAt(listeningIndex, false); });
       playBtn.addEventListener('click', () => { if (!isPreviewPlaying) { playPreviewAt(listeningIndex, true); playBtn.textContent = '⏸ Dừng'; } else { stopPreviewPlayback(); playBtn.textContent = '▶ Phát'; } });
+
+      // sync the local Listening Preview auto-loop checkbox with the global control
+      const lpAuto = document.getElementById('lpAutoLoop');
+      const globalAuto = document.getElementById('listLoopCheckbox');
+      if (lpAuto) {
+        lpAuto.checked = !!listeningAutoLoop || (globalAuto && globalAuto.checked);
+        lpAuto.addEventListener('change', (e) => {
+          listeningAutoLoop = !!e.target.checked;
+          if (globalAuto) globalAuto.checked = e.target.checked;
+        });
+      }
+      if (globalAuto) {
+        // keep local checkbox in sync when global toggles
+        globalAuto.addEventListener('change', (e) => {
+          listeningAutoLoop = !!e.target.checked;
+          if (lpAuto) lpAuto.checked = e.target.checked;
+        });
+      }
     }
 
     function highlightListeningItem(idx) {
@@ -1016,7 +1173,17 @@
             
             delayTimer = setTimeout(() => {
               if (isSingleMode) {
-                if (currentExIdx < total - 1) { currentExIdx++; render(); }
+                // advance within the session range, not the full lesson
+                if (currentExIdx < sessionEnd) {
+                  currentExIdx++; render();
+                } else {
+                  // reached end of session
+                  if (sentenceAutoLoop) {
+                    currentExIdx = sessionStart; render();
+                  } else {
+                    setStatus('Hoàn thành phiên', 'var(--muted)');
+                  }
+                }
               } else {
                 const nextInput = document.getElementById(`input_${idx + 1}`);
                 if (nextInput) { nextInput.scrollIntoView({ behavior: 'smooth', block: 'center' }); nextInput.focus(); }
@@ -1039,7 +1206,7 @@
         if (typeof onComplete === 'function') onComplete();
         return;
       }
-      const entry = audioMapping.find(it => it.text && it.text.toString().trim() === text.toString().trim());
+      const entry = resolveAudioEntry(text);
       if (entry && entry.file) {
         const path = ('LESSON/' + entry.file).replace(/\\/g, '/').replace(/\\/g, '/');
         try { if (currentHowl) { currentHowl.stop(); currentHowl.unload(); } } catch(e){}
@@ -1090,6 +1257,24 @@
           }
         }, pauseSeconds * 1000);
       });
+    }
+
+    function getSelectedEngine() {
+      const sel = document.getElementById('audioEngineSelect');
+      if (!sel) return localStorage.getItem('preferred_tts_engine') || 'gTTS';
+      return sel.value || (localStorage.getItem('preferred_tts_engine') || 'gTTS');
+    }
+
+    function resolveAudioEntry(text) {
+      if (!text) return null;
+      const trimmed = text.toString().trim();
+      const preferred = getSelectedEngine();
+      // prefer mapping that matches both text and engine
+      let entry = audioMapping.find(it => it.text && it.text.toString().trim() === trimmed && it.engine === preferred);
+      if (entry) return entry;
+      // fallback: any entry that matches text regardless engine
+      entry = audioMapping.find(it => it.text && it.text.toString().trim() === trimmed);
+      return entry || null;
     }
 
     function speak(text, onEnded) {

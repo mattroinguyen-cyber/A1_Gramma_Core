@@ -1,802 +1,802 @@
 [
-    [
-        "I am a student.",
-        "/aɪ æm ə ˈstuːdənt/",
-        "Tôi là học sinh.",
-        "I am a student.",
-        "/aɪ æm ə ˈstuːdənt/",
-        "Tôi là học sinh."
-    ],
-    [
-        "She is my friend.",
-        "/ʃiː ɪz maɪ frɛnd/",
-        "Cô ấy là bạn tôi.",
-        "She is my friend.",
-        "/ʃiː ɪz maɪ frɛnd/",
-        "Cô ấy là bạn tôi."
-    ],
-    [
-        "He is at home.",
-        "/hiː ɪz æt hoʊm/",
-        "Anh ấy ở nhà.",
-        "He is at home.",
-        "/hiː ɪz æt hoʊm/",
-        "Anh ấy ở nhà."
-    ],
-    [
-        "They are happy.",
-        "/ðeɪ ɑːr ˈhæpi/",
-        "Họ đang vui.",
-        "They are happy.",
-        "/ðeɪ ɑːr ˈhæpi/",
-        "Họ đang vui."
-    ],
-    [
-        "We are ready.",
-        "/wiː ɑːr ˈrɛdi/",
-        "Chúng tôi đã sẵn sàng.",
-        "We are ready.",
-        "/wiː ɑːr ˈrɛdi/",
-        "Chúng tôi đã sẵn sàng."
-    ],
-    [
-        "It is cold today.",
-        "/ɪt ɪz koʊld təˈdeɪ/",
-        "Hôm nay trời lạnh.",
-        "It is cold today.",
-        "/ɪt ɪz koʊld təˈdeɪ/",
-        "Hôm nay trời lạnh."
-    ],
-    [
-        "You are very kind.",
-        "/juː ɑːr ˈvɛri kaɪnd/",
-        "Bạn rất tốt bụng.",
-        "You are very kind.",
-        "/juː ɑːr ˈvɛri kaɪnd/",
-        "Bạn rất tốt bụng."
-    ],
-    [
-        "I am not tired.",
-        "/aɪ æm nɑːt ˈtaɪərd/",
-        "Tôi không mệt.",
-        "I am not tired.",
-        "/aɪ æm nɑːt ˈtaɪərd/",
-        "Tôi không mệt."
-    ],
-    [
-        "She is not here.",
-        "/ʃiː ɪz nɑːt hɪr/",
-        "Cô ấy không có ở đây.",
-        "She is not here.",
-        "/ʃiː ɪz nɑːt hɪr/",
-        "Cô ấy không có ở đây."
-    ],
-    [
-        "They are not students.",
-        "/ðeɪ ɑːr nɑːt ˈstuːdənts/",
-        "Họ không phải học sinh.",
-        "They are not students.",
-        "/ðeɪ ɑːr nɑːt ˈstuːdənts/",
-        "Họ không phải học sinh."
-    ],
-    [
-        "These are books.",
-        "/ðiːz ɑːr bʊks/",
-        "Đây là những quyển sách.",
-        "These are books.",
-        "/ðiːz ɑːr bʊks/",
-        "Đây là những quyển sách."
-    ],
-    [
-        "Those are chairs.",
-        "/ðoʊz ɑːr tʃɛrz/",
-        "Kia là những cái ghế.",
-        "Those are chairs.",
-        "/ðoʊz ɑːr tʃɛrz/",
-        "Kia là những cái ghế."
-    ],
-    [
-        "I have two cats.",
-        "/aɪ hæv tuː kæts/",
-        "Tôi có hai con mèo.",
-        "I have two cats.",
-        "/aɪ hæv tuː kæts/",
-        "Tôi có hai con mèo."
-    ],
-    [
-        "They have three cars.",
-        "/ðeɪ hæv θriː kɑːrz/",
-        "Họ có ba chiếc xe.",
-        "They have three cars.",
-        "/ðeɪ hæv θriː kɑːrz/",
-        "Họ có ba chiếc xe."
-    ],
-    [
-        "These are my friends.",
-        "/ðiːz ɑːr maɪ frɛndz/",
-        "Đây là bạn của tôi.",
-        "These are my friends.",
-        "/ðiːz ɑːr maɪ frɛndz/",
-        "Đây là bạn của tôi."
-    ],
-    [
-        "Those are apples.",
-        "/ðoʊz ɑːr ˈæpəlz/",
-        "Kia là những quả táo.",
-        "Those are apples.",
-        "/ðoʊz ɑːr ˈæpəlz/",
-        "Kia là những quả táo."
-    ],
-    [
-        "We need more chairs.",
-        "/wiː niːd mɔːr tʃɛrz/",
-        "Chúng tôi cần thêm ghế.",
-        "We need more chairs.",
-        "/wiː niːd mɔːr tʃɛrz/",
-        "Chúng tôi cần thêm ghế."
-    ],
-    [
-        "I see many people.",
-        "/aɪ siː ˈmɛni ˈpiːpəl/",
-        "Tôi thấy nhiều người.",
-        "I see many people.",
-        "/aɪ siː ˈmɛni ˈpiːpəl/",
-        "Tôi thấy nhiều người."
-    ],
-    [
-        "They have four bags.",
-        "/ðeɪ hæv fɔːr bægz/",
-        "Họ có bốn cái túi.",
-        "They have four bags.",
-        "/ðeɪ hæv fɔːr bægz/",
-        "Họ có bốn cái túi."
-    ],
-    [
-        "These are new shoes.",
-        "/ðiːz ɑːr nuː ʃuːz/",
-        "Đây là đôi giày mới.",
-        "These are new shoes.",
-        "/ðiːz ɑːr nuː ʃuːz/",
-        "Đây là đôi giày mới."
-    ],
-    [
-        "I have a pen.",
-        "/aɪ hæv ə pɛn/",
-        "Tôi có một cây bút.",
-        "I have a pen.",
-        "/aɪ hæv ə pɛn/",
-        "Tôi có một cây bút."
-    ],
-    [
-        "She has an orange.",
-        "/ʃiː hæz æn ˈɔːrɪndʒ/",
-        "Cô ấy có một quả cam.",
-        "She has an orange.",
-        "/ʃiː hæz æn ˈɔːrɪndʒ/",
-        "Cô ấy có một quả cam."
-    ],
-    [
-        "This is a book.",
-        "/ðɪs ɪz ə bʊk/",
-        "Đây là một quyển sách.",
-        "This is a book.",
-        "/ðɪs ɪz ə bʊk/",
-        "Đây là một quyển sách."
-    ],
-    [
-        "That is an apple.",
-        "/ðæt ɪz æn ˈæpəl/",
-        "Kia là một quả táo.",
-        "That is an apple.",
-        "/ðæt ɪz æn ˈæpəl/",
-        "Kia là một quả táo."
-    ],
-    [
-        "The sun is bright.",
-        "/ðə sʌn ɪz braɪt/",
-        "Mặt trời sáng.",
-        "The sun is bright.",
-        "/ðə sʌn ɪz braɪt/",
-        "Mặt trời sáng."
-    ],
-    [
-        "The teacher is here.",
-        "/ðə ˈtiːtʃər ɪz hɪr/",
-        "Giáo viên đang ở đây.",
-        "The teacher is here.",
-        "/ðə ˈtiːtʃər ɪz hɪr/",
-        "Giáo viên đang ở đây."
-    ],
-    [
-        "I need a cup.",
-        "/aɪ niːd ə kʌp/",
-        "Tôi cần một cái ly.",
-        "I need a cup.",
-        "/aɪ niːd ə kʌp/",
-        "Tôi cần một cái ly."
-    ],
-    [
-        "She wants an egg.",
-        "/ʃiː wɑːnts æn ɛg/",
-        "Cô ấy muốn một quả trứng.",
-        "She wants an egg.",
-        "/ʃiː wɑːnts æn ɛg/",
-        "Cô ấy muốn một quả trứng."
-    ],
-    [
-        "The dog is sleeping.",
-        "/ðə dɔːg ɪz ˈsliːpɪŋ/",
-        "Con chó đang ngủ.",
-        "The dog is sleeping.",
-        "/ðə dɔːg ɪz ˈsliːpɪŋ/",
-        "Con chó đang ngủ."
-    ],
-    [
-        "The car is new.",
-        "/ðə kɑːr ɪz nuː/",
-        "Chiếc xe mới.",
-        "The car is new.",
-        "/ðə kɑːr ɪz nuː/",
-        "Chiếc xe mới."
-    ],
-    [
-        "This is my bag.",
-        "/ðɪs ɪz maɪ bæg/",
-        "Đây là túi của tôi.",
-        "This is my bag.",
-        "/ðɪs ɪz maɪ bæg/",
-        "Đây là túi của tôi."
-    ],
-    [
-        "That is your book.",
-        "/ðæt ɪz jɔːr bʊk/",
-        "Kia là sách của bạn.",
-        "That is your book.",
-        "/ðæt ɪz jɔːr bʊk/",
-        "Kia là sách của bạn."
-    ],
-    [
-        "This is his phone.",
-        "/ðɪs ɪz hɪz foʊn/",
-        "Đây là điện thoại của anh ấy.",
-        "This is his phone.",
-        "/ðɪs ɪz hɪz foʊn/",
-        "Đây là điện thoại của anh ấy."
-    ],
-    [
-        "This is her pen.",
-        "/ðɪs ɪz hɜːr pɛn/",
-        "Đây là bút của cô ấy.",
-        "This is her pen.",
-        "/ðɪs ɪz hɜːr pɛn/",
-        "Đây là bút của cô ấy."
-    ],
-    [
-        "This is our house.",
-        "/ðɪs ɪz aʊər haʊs/",
-        "Đây là nhà của chúng tôi.",
-        "This is our house.",
-        "/ðɪs ɪz aʊər haʊs/",
-        "Đây là nhà của chúng tôi."
-    ],
-    [
-        "That is their car.",
-        "/ðæt ɪz ðɛr kɑːr/",
-        "Kia là xe của họ.",
-        "That is their car.",
-        "/ðæt ɪz ðɛr kɑːr/",
-        "Kia là xe của họ."
-    ],
-    [
-        "My name is Duy.",
-        "/maɪ neɪm ɪz duːi/",
-        "Tên tôi là Duy.",
-        "My name is Duy.",
-        "/maɪ neɪm ɪz duːi/",
-        "Tên tôi là Duy."
-    ],
-    [
-        "Her bag is new.",
-        "/hɜːr bæg ɪz nuː/",
-        "Túi của cô ấy mới.",
-        "Her bag is new.",
-        "/hɜːr bæg ɪz nuː/",
-        "Túi của cô ấy mới."
-    ],
-    [
-        "His room is big.",
-        "/hɪz ruːm ɪz bɪg/",
-        "Phòng của anh ấy lớn.",
-        "His room is big.",
-        "/hɪz ruːm ɪz bɪg/",
-        "Phòng của anh ấy lớn."
-    ],
-    [
-        "Their house is small.",
-        "/ðɛr haʊs ɪz smɔːl/",
-        "Nhà của họ nhỏ.",
-        "Their house is small.",
-        "/ðɛr haʊs ɪz smɔːl/",
-        "Nhà của họ nhỏ."
-    ],
-    [
-        "I go to school.",
-        "/aɪ goʊ tuː skuːl/",
-        "Tôi đi học.",
-        "I go to school.",
-        "/aɪ goʊ tuː skuːl/",
-        "Tôi đi học."
-    ],
-    [
-        "She works every day.",
-        "/ʃiː wɜːrks ˈɛvri deɪ/",
-        "Cô ấy làm việc mỗi ngày.",
-        "She works every day.",
-        "/ʃiː wɜːrks ˈɛvri deɪ/",
-        "Cô ấy làm việc mỗi ngày."
-    ],
-    [
-        "He likes coffee.",
-        "/hiː laɪks ˈkɔːfi/",
-        "Anh ấy thích cà phê.",
-        "He likes coffee.",
-        "/hiː laɪks ˈkɔːfi/",
-        "Anh ấy thích cà phê."
-    ],
-    [
-        "They play soccer.",
-        "/ðeɪ pleɪ ˈsɑːkər/",
-        "Họ chơi bóng đá.",
-        "They play soccer.",
-        "/ðeɪ pleɪ ˈsɑːkər/",
-        "Họ chơi bóng đá."
-    ],
-    [
-        "We study English.",
-        "/wiː ˈstʌdi ˈɪŋglɪʃ/",
-        "Chúng tôi học tiếng Anh.",
-        "We study English.",
-        "/wiː ˈstʌdi ˈɪŋglɪʃ/",
-        "Chúng tôi học tiếng Anh."
-    ],
-    [
-        "She reads books.",
-        "/ʃiː riːdz bʊks/",
-        "Cô ấy đọc sách.",
-        "She reads books.",
-        "/ʃiː riːdz bʊks/",
-        "Cô ấy đọc sách."
-    ],
-    [
-        "He drives to work.",
-        "/hiː draɪvz tuː wɜːrk/",
-        "Anh ấy lái xe đi làm.",
-        "He drives to work.",
-        "/hiː draɪvz tuː wɜːrk/",
-        "Anh ấy lái xe đi làm."
-    ],
-    [
-        "I eat breakfast.",
-        "/aɪ iːt ˈbrɛkfəst/",
-        "Tôi ăn sáng.",
-        "I eat breakfast.",
-        "/aɪ iːt ˈbrɛkfəst/",
-        "Tôi ăn sáng."
-    ],
-    [
-        "They watch TV.",
-        "/ðeɪ wɑːtʃ ˌtiːˈviː/",
-        "Họ xem TV.",
-        "They watch TV.",
-        "/ðeɪ wɑːtʃ ˌtiːˈviː/",
-        "Họ xem TV."
-    ],
-    [
-        "We cook dinner.",
-        "/wiː kʊk ˈdɪnər/",
-        "Chúng tôi nấu bữa tối.",
-        "We cook dinner.",
-        "/wiː kʊk ˈdɪnər/",
-        "Chúng tôi nấu bữa tối."
-    ],
-    [
-        "I do not like tea.",
-        "/aɪ duː nɑːt laɪk tiː/",
-        "Tôi không thích trà.",
-        "I do not like tea.",
-        "/aɪ duː nɑːt laɪk tiː/",
-        "Tôi không thích trà."
-    ],
-    [
-        "She does not work here.",
-        "/ʃiː dʌz nɑːt wɜːrk hɪr/",
-        "Cô ấy không làm ở đây.",
-        "She does not work here.",
-        "/ʃiː dʌz nɑːt wɜːrk hɪr/",
-        "Cô ấy không làm ở đây."
-    ],
-    [
-        "He does not drive.",
-        "/hiː dʌz nɑːt draɪv/",
-        "Anh ấy không lái xe.",
-        "He does not drive.",
-        "/hiː dʌz nɑːt draɪv/",
-        "Anh ấy không lái xe."
-    ],
-    [
-        "They do not eat meat.",
-        "/ðeɪ duː nɑːt iːt miːt/",
-        "Họ không ăn thịt.",
-        "They do not eat meat.",
-        "/ðeɪ duː nɑːt iːt miːt/",
-        "Họ không ăn thịt."
-    ],
-    [
-        "We do not watch TV.",
-        "/wiː duː nɑːt wɑːtʃ tiːviː/",
-        "Chúng tôi không xem TV.",
-        "We do not watch TV.",
-        "/wiː duː nɑːt wɑːtʃ tiːviː/",
-        "Chúng tôi không xem TV."
-    ],
-    [
-        "She does not like cats.",
-        "/ʃiː dʌz nɑːt laɪk kæts/",
-        "Cô ấy không thích mèo.",
-        "She does not like cats.",
-        "/ʃiː dʌz nɑːt laɪk kæts/",
-        "Cô ấy không thích mèo."
-    ],
-    [
-        "He does not study English.",
-        "/hiː dʌz nɑːt ˈstʌdi ˈɪŋglɪʃ/",
-        "Anh ấy không học tiếng Anh.",
-        "He does not study English.",
-        "/hiː dʌz nɑːt ˈstʌdi ˈɪŋglɪʃ/",
-        "Anh ấy không học tiếng Anh."
-    ],
-    [
-        "I do not work on Sunday.",
-        "/aɪ duː nɑːt wɜːrk ɑːn ˈsʌndeɪ/",
-        "Tôi không làm việc Chủ Nhật.",
-        "I do not work on Sunday.",
-        "/aɪ duː nɑːt wɜːrk ɑːn ˈsʌndeɪ/",
-        "Tôi không làm việc Chủ Nhật."
-    ],
-    [
-        "They do not play games.",
-        "/ðeɪ duː nɑːt pleɪ geɪmz/",
-        "Họ không chơi game.",
-        "They do not play games.",
-        "/ðeɪ duː nɑːt pleɪ geɪmz/",
-        "Họ không chơi game."
-    ],
-    [
-        "We do not cook dinner.",
-        "/wiː duː nɑːt kʊk ˈdɪnər/",
-        "Chúng tôi không nấu tối.",
-        "We do not cook dinner.",
-        "/wiː duː nɑːt kʊk ˈdɪnər/",
-        "Chúng tôi không nấu tối."
-    ],
-    [
-        "Do you like coffee?",
-        "/duː juː laɪk ˈkɔːfi/",
-        "Bạn thích cà phê không",
-        "Do you like coffee",
-        "/duː juː laɪk ˈkɔːfi/",
-        "Bạn thích cà phê không"
-    ],
-    [
-        "Do they play soccer?",
-        "/duː ðeɪ pleɪ ˈsɑːkər/",
-        "Họ chơi bóng đá không",
-        "Do they play soccer",
-        "/duː ðeɪ pleɪ ˈsɑːkər/",
-        "Họ chơi bóng đá không"
-    ],
-    [
-        "Do you work here?",
-        "/duː juː wɜːrk hɪr/",
-        "Bạn làm ở đây không",
-        "Do you work here",
-        "/duː juː wɜːrk hɪr/",
-        "Bạn làm ở đây không"
-    ],
-    [
-        "Does he drive?",
-        "/dʌz hiː draɪv/",
-        "Anh ấy lái xe không",
-        "Does he drive",
-        "/dʌz hiː draɪv/",
-        "Anh ấy lái xe không"
-    ],
-    [
-        "Does she study English?",
-        "/dʌz ʃiː ˈstʌdi ˈɪŋglɪʃ/",
-        "Cô ấy học tiếng Anh không",
-        "Does she study English",
-        "/dʌz ʃiː ˈstʌdi ˈɪŋglɪʃ/",
-        "Cô ấy học tiếng Anh không"
-    ],
-    [
-        "Do we need help?",
-        "/duː wiː niːd hɛlp/",
-        "Chúng ta cần giúp đỡ không",
-        "Do we need help",
-        "/duː wiː niːd hɛlp/",
-        "Chúng ta cần giúp đỡ không"
-    ],
-    [
-        "Do you eat breakfast?",
-        "/duː juː iːt ˈbrɛkfəst/",
-        "Bạn ăn sáng không",
-        "Do you eat breakfast",
-        "/duː juː iːt ˈbrɛkfəst/",
-        "Bạn ăn sáng không"
-    ],
-    [
-        "Does he like cats?",
-        "/dʌz hiː laɪk kæts/",
-        "Anh ấy thích mèo không",
-        "Does he like cats",
-        "/dʌz hiː laɪk kæts/",
-        "Anh ấy thích mèo không"
-    ],
-    [
-        "Do they watch TV?",
-        "/duː ðeɪ wɑːtʃ tiːviː/",
-        "Họ xem TV không",
-        "Do they watch TV",
-        "/duː ðeɪ wɑːtʃ tiːviː/",
-        "Họ xem TV không"
-    ],
-    [
-        "Does she work today?",
-        "/dʌz ʃiː wɜːrk təˈdeɪ/",
-        "Cô ấy làm việc hôm nay không",
-        "Does she work today",
-        "/dʌz ʃiː wɜːrk təˈdeɪ/",
-        "Cô ấy làm việc hôm nay không"
-    ],
-    [
-        "I always wake up early.",
-        "/aɪ ˈɔːlweɪz weɪk ʌp ˈɜːrli/",
-        "Tôi luôn dậy sớm.",
-        "I always wake up early.",
-        "/aɪ ˈɔːlweɪz weɪk ʌp ˈɜːrli/",
-        "Tôi luôn dậy sớm."
-    ],
-    [
-        "She usually cooks dinner.",
-        "/ʃiː ˈjuːʒuəli kʊks ˈdɪnər/",
-        "Cô ấy thường nấu tối.",
-        "She usually cooks dinner.",
-        "/ʃiː ˈjuːʒuəli kʊks ˈdɪnər/",
-        "Cô ấy thường nấu tối."
-    ],
-    [
-        "He often reads books.",
-        "/hiː ˈɔːfən riːdz bʊks/",
-        "Anh ấy thường đọc sách.",
-        "He often reads books.",
-        "/hiː ˈɔːfən riːdz bʊks/",
-        "Anh ấy thường đọc sách."
-    ],
-    [
-        "They sometimes play games.",
-        "/ðeɪ ˈsʌmtaɪmz pleɪ geɪmz/",
-        "Họ thỉnh thoảng chơi game.",
-        "They sometimes play games.",
-        "/ðeɪ ˈsʌmtaɪmz pleɪ geɪmz/",
-        "Họ thỉnh thoảng chơi game."
-    ],
-    [
-        "We never eat fast food.",
-        "/wiː ˈnɛvər iːt fæst fuːd/",
-        "Chúng tôi không bao giờ ăn đồ nhanh.",
-        "We never eat fast food.",
-        "/wiː ˈnɛvər iːt fæst fuːd/",
-        "Chúng tôi không bao giờ ăn đồ nhanh."
-    ],
-    [
-        "I often go to the park.",
-        "/aɪ ˈɔːfən goʊ tuː ðə pɑːrk/",
-        "Tôi thường đi công viên.",
-        "I often go to the park.",
-        "/aɪ ˈɔːfən goʊ tuː ðə pɑːrk/",
-        "Tôi thường đi công viên."
-    ],
-    [
-        "She always studies at night.",
-        "/ʃiː ˈɔːlweɪz ˈstʌdiz æt naɪt/",
-        "Cô ấy luôn học buổi tối.",
-        "She always studies at night.",
-        "/ʃiː ˈɔːlweɪz ˈstʌdiz æt naɪt/",
-        "Cô ấy luôn học buổi tối."
-    ],
-    [
-        "He never drinks coffee.",
-        "/hiː ˈnɛvər drɪŋks ˈkɔːfi/",
-        "Anh ấy không bao giờ uống cà phê.",
-        "He never drinks coffee.",
-        "/hiː ˈnɛvər drɪŋks ˈkɔːfi/",
-        "Anh ấy không bao giờ uống cà phê."
-    ],
-    [
-        "They usually walk to school.",
-        "/ðeɪ ˈjuːʒuəli wɔːk tuː skuːl/",
-        "Họ thường đi bộ đến trường.",
-        "They usually walk to school.",
-        "/ðeɪ ˈjuːʒuəli wɔːk tuː skuːl/",
-        "Họ thường đi bộ đến trường."
-    ],
-    [
-        "We sometimes watch movies.",
-        "/wiː ˈsʌmtaɪmz wɑːtʃ ˈmuːviz/",
-        "Chúng tôi thỉnh thoảng xem phim.",
-        "We sometimes watch movies.",
-        "/wiː ˈsʌmtaɪmz wɑːtʃ ˈmuːviz/",
-        "Chúng tôi thỉnh thoảng xem phim."
-    ],
-    [
-        "I can swim.",
-        "/aɪ kæn swɪm/",
-        "Tôi biết bơi.",
-        "I can swim.",
-        "/aɪ kæn swɪm/",
-        "Tôi biết bơi."
-    ],
-    [
-        "She can cook.",
-        "/ʃiː kæn kʊk/",
-        "Cô ấy biết nấu ăn.",
-        "She can cook.",
-        "/ʃiː kæn kʊk/",
-        "Cô ấy biết nấu ăn."
-    ],
-    [
-        "He can drive.",
-        "/hiː kæn draɪv/",
-        "Anh ấy biết lái xe.",
-        "He can drive.",
-        "/hiː kæn draɪv/",
-        "Anh ấy biết lái xe."
-    ],
-    [
-        "They can sing.",
-        "/ðeɪ kæn sɪŋ/",
-        "Họ biết hát.",
-        "They can sing.",
-        "/ðeɪ kæn sɪŋ/",
-        "Họ biết hát."
-    ],
-    [
-        "We can help you.",
-        "/wiː kæn hɛlp juː/",
-        "Chúng tôi có thể giúp bạn.",
-        "We can help you.",
-        "/wiː kæn hɛlp juː/",
-        "Chúng tôi có thể giúp bạn."
-    ],
-    [
-        "I can't swim.",
-        "/aɪ kænt swɪm/",
-        "Tôi không biết bơi.",
-        "I can't swim.",
-        "/aɪ kænt swɪm/",
-        "Tôi không biết bơi."
-    ],
-    [
-        "She can't drive.",
-        "/ʃiː kænt draɪv/",
-        "Cô ấy không biết lái xe.",
-        "She can't drive.",
-        "/ʃiː kænt draɪv/",
-        "Cô ấy không biết lái xe."
-    ],
-    [
-        "He can't cook.",
-        "/hiː kænt kʊk/",
-        "Anh ấy không biết nấu ăn.",
-        "He can't cook.",
-        "/hiː kænt kʊk/",
-        "Anh ấy không biết nấu ăn."
-    ],
-    [
-        "They can't speak French.",
-        "/ðeɪ kænt spiːk frɛntʃ/",
-        "Họ không biết nói tiếng Pháp.",
-        "They can't speak French.",
-        "/ðeɪ kænt spiːk frɛntʃ/",
-        "Họ không biết nói tiếng Pháp."
-    ],
-    [
-        "We can't help today.",
-        "/wiː kænt hɛlp təˈdeɪ/",
-        "Hôm nay chúng tôi không thể giúp.",
-        "We can't help today.",
-        "/wiː kænt hɛlp təˈdeɪ/",
-        "Hôm nay chúng tôi không thể giúp."
-    ],
-    [
-        "There is a cat on the table.",
-        "/ðɛr ɪz ə kæt ɑːn ðə ˈteɪbəl/",
-        "Có một con mèo trên bàn.",
-        "There is a cat on the table.",
-        "/ðɛr ɪz ə kæt ɑːn ðə ˈteɪbəl/",
-        "Có một con mèo trên bàn."
-    ],
-    [
-        "There is a book on the chair.",
-        "/ðɛr ɪz ə bʊk ɑːn ðə tʃɛr/",
-        "Có một quyển sách trên ghế.",
-        "There is a book on the chair.",
-        "/ðɛr ɪz ə bʊk ɑːn ðə tʃɛr/",
-        "Có một quyển sách trên ghế."
-    ],
-    [
-        "There are two dogs outside.",
-        "/ðɛr ɑːr tuː dɔːgz ˈaʊtsaɪd/",
-        "Có hai con chó bên ngoài.",
-        "There are two dogs outside.",
-        "/ðɛr ɑːr tuː dɔːgz ˈaʊtsaɪd/",
-        "Có hai con chó bên ngoài."
-    ],
-    [
-        "There are many people here.",
-        "/ðɛr ɑːr ˈmɛni ˈpiːpəl hɪr/",
-        "Có nhiều người ở đây.",
-        "There are many people here.",
-        "/ðɛr ɑːr ˈmɛni ˈpiːpəl hɪr/",
-        "Có nhiều người ở đây."
-    ],
-    [
-        "There is a problem.",
-        "/ðɛr ɪz ə ˈprɑːbləm/",
-        "Có một vấn đề.",
-        "There is a problem.",
-        "/ðɛr ɪz ə ˈprɑːbləm/",
-        "Có một vấn đề."
-    ],
-    [
-        "There are three cars.",
-        "/ðɛr ɑːr θriː kɑːrz/",
-        "Có ba chiếc xe.",
-        "There are three cars.",
-        "/ðɛr ɑːr θriː kɑːrz/",
-        "Có ba chiếc xe."
-    ],
-    [
-        "There is a pen on the desk.",
-        "/ðɛr ɪz ə pɛn ɑːn ðə dɛsk/",
-        "Có một cây bút trên bàn.",
-        "There is a pen on the desk.",
-        "/ðɛr ɪz ə pɛn ɑːn ðə dɛsk/",
-        "Có một cây bút trên bàn."
-    ],
-    [
-        "There are apples in the bag.",
-        "/ðɛr ɑːr ˈæpəlz ɪn ðə bæg/",
-        "Có táo trong túi.",
-        "There are apples in the bag.",
-        "/ðɛr ɑːr ˈæpəlz ɪn ðə bæg/",
-        "Có táo trong túi."
-    ],
-    [
-        "There is a phone here.",
-        "/ðɛr ɪz ə foʊn hɪr/",
-        "Có một cái điện thoại ở đây.",
-        "There is a phone here.",
-        "/ðɛr ɪz ə foʊn hɪr/",
-        "Có một cái điện thoại ở đây."
-    ],
-    [
-        "There are students in the room.",
-        "/ðɛr ɑːr ˈstuːdənts ɪn ðə ruːm/",
-        "Có học sinh trong phòng.",
-        "There are students in the room.",
-        "/ðɛr ɑːr ˈstuːdənts ɪn ðə ruːm/",
-        "Có học sinh trong phòng."
-    ]
+  [
+    "I am a student.",
+    "/aɪ æm ə ˈstuːdənt/",
+    "Tôi là học sinh.",
+    "I am a student.",
+    "/aɪ æm ə ˈstuːdənt/",
+    "Tôi là học sinh."
+  ],
+  [
+    "She is my friend.",
+    "/ʃiː ɪz maɪ frɛnd/",
+    "Cô ấy là bạn tôi.",
+    "She is my friend.",
+    "/ʃiː ɪz maɪ frɛnd/",
+    "Cô ấy là bạn tôi."
+  ],
+  [
+    "He is at home.",
+    "/hiː ɪz æt hoʊm/",
+    "Anh ấy ở nhà.",
+    "He is at home.",
+    "/hiː ɪz æt hoʊm/",
+    "Anh ấy ở nhà."
+  ],
+  [
+    "They are happy.",
+    "/ðeɪ ɑːr ˈhæpi/",
+    "Họ đang vui.",
+    "They are happy.",
+    "/ðeɪ ɑːr ˈhæpi/",
+    "Họ đang vui."
+  ],
+  [
+    "We are ready.",
+    "/wiː ɑːr ˈrɛdi/",
+    "Chúng tôi đã sẵn sàng.",
+    "We are ready.",
+    "/wiː ɑːr ˈrɛdi/",
+    "Chúng tôi đã sẵn sàng."
+  ],
+  [
+    "It is cold today.",
+    "/ɪt ɪz koʊld təˈdeɪ/",
+    "Hôm nay trời lạnh.",
+    "It is cold today.",
+    "/ɪt ɪz koʊld təˈdeɪ/",
+    "Hôm nay trời lạnh."
+  ],
+  [
+    "You are very kind.",
+    "/juː ɑːr ˈvɛri kaɪnd/",
+    "Bạn rất tốt bụng.",
+    "You are very kind.",
+    "/juː ɑːr ˈvɛri kaɪnd/",
+    "Bạn rất tốt bụng."
+  ],
+  [
+    "I am not tired.",
+    "/aɪ æm nɑːt ˈtaɪərd/",
+    "Tôi không mệt.",
+    "I am not tired.",
+    "/aɪ æm nɑːt ˈtaɪərd/",
+    "Tôi không mệt."
+  ],
+  [
+    "She is not here.",
+    "/ʃiː ɪz nɑːt hɪr/",
+    "Cô ấy không có ở đây.",
+    "She is not here.",
+    "/ʃiː ɪz nɑːt hɪr/",
+    "Cô ấy không có ở đây."
+  ],
+  [
+    "They are not students.",
+    "/ðeɪ ɑːr nɑːt ˈstuːdənts/",
+    "Họ không phải học sinh.",
+    "They are not students.",
+    "/ðeɪ ɑːr nɑːt ˈstuːdənts/",
+    "Họ không phải học sinh."
+  ],
+  [
+    "These are books.",
+    "/ðiːz ɑːr bʊks/",
+    "Đây là những quyển sách.",
+    "These are books.",
+    "/ðiːz ɑːr bʊks/",
+    "Đây là những quyển sách."
+  ],
+  [
+    "Those are chairs.",
+    "/ðoʊz ɑːr tʃɛrz/",
+    "Kia là những cái ghế.",
+    "Those are chairs.",
+    "/ðoʊz ɑːr tʃɛrz/",
+    "Kia là những cái ghế."
+  ],
+  [
+    "I have two cats.",
+    "/aɪ hæv tuː kæts/",
+    "Tôi có hai con mèo.",
+    "I have two cats.",
+    "/aɪ hæv tuː kæts/",
+    "Tôi có hai con mèo."
+  ],
+  [
+    "They have three cars.",
+    "/ðeɪ hæv θriː kɑːrz/",
+    "Họ có ba chiếc xe.",
+    "They have three cars.",
+    "/ðeɪ hæv θriː kɑːrz/",
+    "Họ có ba chiếc xe."
+  ],
+  [
+    "These are my friends.",
+    "/ðiːz ɑːr maɪ frɛndz/",
+    "Đây là bạn của tôi.",
+    "These are my friends.",
+    "/ðiːz ɑːr maɪ frɛndz/",
+    "Đây là bạn của tôi."
+  ],
+  [
+    "Those are apples.",
+    "/ðoʊz ɑːr ˈæpəlz/",
+    "Kia là những quả táo.",
+    "Those are apples.",
+    "/ðoʊz ɑːr ˈæpəlz/",
+    "Kia là những quả táo."
+  ],
+  [
+    "We need more chairs.",
+    "/wiː niːd mɔːr tʃɛrz/",
+    "Chúng tôi cần thêm ghế.",
+    "We need more chairs.",
+    "/wiː niːd mɔːr tʃɛrz/",
+    "Chúng tôi cần thêm ghế."
+  ],
+  [
+    "I see many people.",
+    "/aɪ siː ˈmɛni ˈpiːpəl/",
+    "Tôi thấy nhiều người.",
+    "I see many people.",
+    "/aɪ siː ˈmɛni ˈpiːpəl/",
+    "Tôi thấy nhiều người."
+  ],
+  [
+    "They have four bags.",
+    "/ðeɪ hæv fɔːr bægz/",
+    "Họ có bốn cái túi.",
+    "They have four bags.",
+    "/ðeɪ hæv fɔːr bægz/",
+    "Họ có bốn cái túi."
+  ],
+  [
+    "These are new shoes.",
+    "/ðiːz ɑːr nuː ʃuːz/",
+    "Đây là đôi giày mới.",
+    "These are new shoes.",
+    "/ðiːz ɑːr nuː ʃuːz/",
+    "Đây là đôi giày mới."
+  ],
+  [
+    "I have a pen.",
+    "/aɪ hæv ə pɛn/",
+    "Tôi có một cây bút.",
+    "I have a pen.",
+    "/aɪ hæv ə pɛn/",
+    "Tôi có một cây bút."
+  ],
+  [
+    "She has an orange.",
+    "/ʃiː hæz æn ˈɔːrɪndʒ/",
+    "Cô ấy có một quả cam.",
+    "She has an orange.",
+    "/ʃiː hæz æn ˈɔːrɪndʒ/",
+    "Cô ấy có một quả cam."
+  ],
+  [
+    "This is a book.",
+    "/ðɪs ɪz ə bʊk/",
+    "Đây là một quyển sách.",
+    "This is a book.",
+    "/ðɪs ɪz ə bʊk/",
+    "Đây là một quyển sách."
+  ],
+  [
+    "That is an apple.",
+    "/ðæt ɪz æn ˈæpəl/",
+    "Kia là một quả táo.",
+    "That is an apple.",
+    "/ðæt ɪz æn ˈæpəl/",
+    "Kia là một quả táo."
+  ],
+  [
+    "The sun is bright.",
+    "/ðə sʌn ɪz braɪt/",
+    "Mặt trời sáng.",
+    "The sun is bright.",
+    "/ðə sʌn ɪz braɪt/",
+    "Mặt trời sáng."
+  ],
+  [
+    "The teacher is here.",
+    "/ðə ˈtiːtʃər ɪz hɪr/",
+    "Giáo viên đang ở đây.",
+    "The teacher is here.",
+    "/ðə ˈtiːtʃər ɪz hɪr/",
+    "Giáo viên đang ở đây."
+  ],
+  [
+    "I need a cup.",
+    "/aɪ niːd ə kʌp/",
+    "Tôi cần một cái ly.",
+    "I need a cup.",
+    "/aɪ niːd ə kʌp/",
+    "Tôi cần một cái ly."
+  ],
+  [
+    "She wants an egg.",
+    "/ʃiː wɑːnts æn ɛg/",
+    "Cô ấy muốn một quả trứng.",
+    "She wants an egg.",
+    "/ʃiː wɑːnts æn ɛg/",
+    "Cô ấy muốn một quả trứng."
+  ],
+  [
+    "The dog is sleeping.",
+    "/ðə dɔːg ɪz ˈsliːpɪŋ/",
+    "Con chó đang ngủ.",
+    "The dog is sleeping.",
+    "/ðə dɔːg ɪz ˈsliːpɪŋ/",
+    "Con chó đang ngủ."
+  ],
+  [
+    "The car is new.",
+    "/ðə kɑːr ɪz nuː/",
+    "Chiếc xe mới.",
+    "The car is new.",
+    "/ðə kɑːr ɪz nuː/",
+    "Chiếc xe mới."
+  ],
+  [
+    "This is my bag.",
+    "/ðɪs ɪz maɪ bæg/",
+    "Đây là túi của tôi.",
+    "This is my bag.",
+    "/ðɪs ɪz maɪ bæg/",
+    "Đây là túi của tôi."
+  ],
+  [
+    "That is your book.",
+    "/ðæt ɪz jɔːr bʊk/",
+    "Kia là sách của bạn.",
+    "That is your book.",
+    "/ðæt ɪz jɔːr bʊk/",
+    "Kia là sách của bạn."
+  ],
+  [
+    "This is his phone.",
+    "/ðɪs ɪz hɪz foʊn/",
+    "Đây là điện thoại của anh ấy.",
+    "This is his phone.",
+    "/ðɪs ɪz hɪz foʊn/",
+    "Đây là điện thoại của anh ấy."
+  ],
+  [
+    "This is her pen.",
+    "/ðɪs ɪz hɜːr pɛn/",
+    "Đây là bút của cô ấy.",
+    "This is her pen.",
+    "/ðɪs ɪz hɜːr pɛn/",
+    "Đây là bút của cô ấy."
+  ],
+  [
+    "This is our house.",
+    "/ðɪs ɪz aʊər haʊs/",
+    "Đây là nhà của chúng tôi.",
+    "This is our house.",
+    "/ðɪs ɪz aʊər haʊs/",
+    "Đây là nhà của chúng tôi."
+  ],
+  [
+    "That is their car.",
+    "/ðæt ɪz ðɛr kɑːr/",
+    "Kia là xe của họ.",
+    "That is their car.",
+    "/ðæt ɪz ðɛr kɑːr/",
+    "Kia là xe của họ."
+  ],
+  [
+    "My name is Duy.",
+    "/maɪ neɪm ɪz duːi/",
+    "Tên tôi là Duy.",
+    "My name is Duy.",
+    "/maɪ neɪm ɪz duːi/",
+    "Tên tôi là Duy."
+  ],
+  [
+    "Her bag is new.",
+    "/hɜːr bæg ɪz nuː/",
+    "Túi của cô ấy mới.",
+    "Her bag is new.",
+    "/hɜːr bæg ɪz nuː/",
+    "Túi của cô ấy mới."
+  ],
+  [
+    "His room is big.",
+    "/hɪz ruːm ɪz bɪg/",
+    "Phòng của anh ấy lớn.",
+    "His room is big.",
+    "/hɪz ruːm ɪz bɪg/",
+    "Phòng của anh ấy lớn."
+  ],
+  [
+    "Their house is small.",
+    "/ðɛr haʊs ɪz smɔːl/",
+    "Nhà của họ nhỏ.",
+    "Their house is small.",
+    "/ðɛr haʊs ɪz smɔːl/",
+    "Nhà của họ nhỏ."
+  ],
+  [
+    "I go to school.",
+    "/aɪ goʊ tuː skuːl/",
+    "Tôi đi học.",
+    "I go to school.",
+    "/aɪ goʊ tuː skuːl/",
+    "Tôi đi học."
+  ],
+  [
+    "She works every day.",
+    "/ʃiː wɜːrks ˈɛvri deɪ/",
+    "Cô ấy làm việc mỗi ngày.",
+    "She works every day.",
+    "/ʃiː wɜːrks ˈɛvri deɪ/",
+    "Cô ấy làm việc mỗi ngày."
+  ],
+  [
+    "He likes coffee.",
+    "/hiː laɪks ˈkɔːfi/",
+    "Anh ấy thích cà phê.",
+    "He likes coffee.",
+    "/hiː laɪks ˈkɔːfi/",
+    "Anh ấy thích cà phê."
+  ],
+  [
+    "They play soccer.",
+    "/ðeɪ pleɪ ˈsɑːkər/",
+    "Họ chơi bóng đá.",
+    "They play soccer.",
+    "/ðeɪ pleɪ ˈsɑːkər/",
+    "Họ chơi bóng đá."
+  ],
+  [
+    "We study English.",
+    "/wiː ˈstʌdi ˈɪŋglɪʃ/",
+    "Chúng tôi học tiếng Anh.",
+    "We study English.",
+    "/wiː ˈstʌdi ˈɪŋglɪʃ/",
+    "Chúng tôi học tiếng Anh."
+  ],
+  [
+    "She reads books.",
+    "/ʃiː riːdz bʊks/",
+    "Cô ấy đọc sách.",
+    "She reads books.",
+    "/ʃiː riːdz bʊks/",
+    "Cô ấy đọc sách."
+  ],
+  [
+    "He drives to work.",
+    "/hiː draɪvz tuː wɜːrk/",
+    "Anh ấy lái xe đi làm.",
+    "He drives to work.",
+    "/hiː draɪvz tuː wɜːrk/",
+    "Anh ấy lái xe đi làm."
+  ],
+  [
+    "I eat breakfast.",
+    "/aɪ iːt ˈbrɛkfəst/",
+    "Tôi ăn sáng.",
+    "I eat breakfast.",
+    "/aɪ iːt ˈbrɛkfəst/",
+    "Tôi ăn sáng."
+  ],
+  [
+    "They watch TV.",
+    "/ðeɪ wɑːtʃ ˌtiːˈviː/",
+    "Họ xem TV.",
+    "They watch TV.",
+    "/ðeɪ wɑːtʃ ˌtiːˈviː/",
+    "Họ xem TV."
+  ],
+  [
+    "We cook dinner.",
+    "/wiː kʊk ˈdɪnər/",
+    "Chúng tôi nấu bữa tối.",
+    "We cook dinner.",
+    "/wiː kʊk ˈdɪnər/",
+    "Chúng tôi nấu bữa tối."
+  ],
+  [
+    "I do not like tea.",
+    "/aɪ duː nɑːt laɪk tiː/",
+    "Tôi không thích trà.",
+    "I do not like tea.",
+    "/aɪ duː nɑːt laɪk tiː/",
+    "Tôi không thích trà."
+  ],
+  [
+    "She does not work here.",
+    "/ʃiː dʌz nɑːt wɜːrk hɪr/",
+    "Cô ấy không làm ở đây.",
+    "She does not work here.",
+    "/ʃiː dʌz nɑːt wɜːrk hɪr/",
+    "Cô ấy không làm ở đây."
+  ],
+  [
+    "He does not drive.",
+    "/hiː dʌz nɑːt draɪv/",
+    "Anh ấy không lái xe.",
+    "He does not drive.",
+    "/hiː dʌz nɑːt draɪv/",
+    "Anh ấy không lái xe."
+  ],
+  [
+    "They do not eat meat.",
+    "/ðeɪ duː nɑːt iːt miːt/",
+    "Họ không ăn thịt.",
+    "They do not eat meat.",
+    "/ðeɪ duː nɑːt iːt miːt/",
+    "Họ không ăn thịt."
+  ],
+  [
+    "We do not watch TV.",
+    "/wiː duː nɑːt wɑːtʃ tiːviː/",
+    "Chúng tôi không xem TV.",
+    "We do not watch TV.",
+    "/wiː duː nɑːt wɑːtʃ tiːviː/",
+    "Chúng tôi không xem TV."
+  ],
+  [
+    "She does not like cats.",
+    "/ʃiː dʌz nɑːt laɪk kæts/",
+    "Cô ấy không thích mèo.",
+    "She does not like cats.",
+    "/ʃiː dʌz nɑːt laɪk kæts/",
+    "Cô ấy không thích mèo."
+  ],
+  [
+    "He does not study English.",
+    "/hiː dʌz nɑːt ˈstʌdi ˈɪŋglɪʃ/",
+    "Anh ấy không học tiếng Anh.",
+    "He does not study English.",
+    "/hiː dʌz nɑːt ˈstʌdi ˈɪŋglɪʃ/",
+    "Anh ấy không học tiếng Anh."
+  ],
+  [
+    "I do not work on Sunday.",
+    "/aɪ duː nɑːt wɜːrk ɑːn ˈsʌndeɪ/",
+    "Tôi không làm việc Chủ Nhật.",
+    "I do not work on Sunday.",
+    "/aɪ duː nɑːt wɜːrk ɑːn ˈsʌndeɪ/",
+    "Tôi không làm việc Chủ Nhật."
+  ],
+  [
+    "They do not play games.",
+    "/ðeɪ duː nɑːt pleɪ geɪmz/",
+    "Họ không chơi game.",
+    "They do not play games.",
+    "/ðeɪ duː nɑːt pleɪ geɪmz/",
+    "Họ không chơi game."
+  ],
+  [
+    "We do not cook dinner.",
+    "/wiː duː nɑːt kʊk ˈdɪnər/",
+    "Chúng tôi không nấu tối.",
+    "We do not cook dinner.",
+    "/wiː duː nɑːt kʊk ˈdɪnər/",
+    "Chúng tôi không nấu tối."
+  ],
+  [
+    "Do you like coffee?",
+    "/duː juː laɪk ˈkɔːfi/",
+    "Bạn thích cà phê không",
+    "Do you like coffee",
+    "/duː juː laɪk ˈkɔːfi/",
+    "Bạn thích cà phê không"
+  ],
+  [
+    "Do they play soccer?",
+    "/duː ðeɪ pleɪ ˈsɑːkər/",
+    "Họ chơi bóng đá không",
+    "Do they play soccer",
+    "/duː ðeɪ pleɪ ˈsɑːkər/",
+    "Họ chơi bóng đá không"
+  ],
+  [
+    "Do you work here?",
+    "/duː juː wɜːrk hɪr/",
+    "Bạn làm ở đây không",
+    "Do you work here",
+    "/duː juː wɜːrk hɪr/",
+    "Bạn làm ở đây không"
+  ],
+  [
+    "Does he drive?",
+    "/dʌz hiː draɪv/",
+    "Anh ấy lái xe không",
+    "Does he drive",
+    "/dʌz hiː draɪv/",
+    "Anh ấy lái xe không"
+  ],
+  [
+    "Does she study English?",
+    "/dʌz ʃiː ˈstʌdi ˈɪŋglɪʃ/",
+    "Cô ấy học tiếng Anh không",
+    "Does she study English",
+    "/dʌz ʃiː ˈstʌdi ˈɪŋglɪʃ/",
+    "Cô ấy học tiếng Anh không"
+  ],
+  [
+    "Do we need help?",
+    "/duː wiː niːd hɛlp/",
+    "Chúng ta cần giúp đỡ không",
+    "Do we need help",
+    "/duː wiː niːd hɛlp/",
+    "Chúng ta cần giúp đỡ không"
+  ],
+  [
+    "Do you eat breakfast?",
+    "/duː juː iːt ˈbrɛkfəst/",
+    "Bạn ăn sáng không",
+    "Do you eat breakfast",
+    "/duː juː iːt ˈbrɛkfəst/",
+    "Bạn ăn sáng không"
+  ],
+  [
+    "Does he like cats?",
+    "/dʌz hiː laɪk kæts/",
+    "Anh ấy thích mèo không",
+    "Does he like cats",
+    "/dʌz hiː laɪk kæts/",
+    "Anh ấy thích mèo không"
+  ],
+  [
+    "Do they watch TV?",
+    "/duː ðeɪ wɑːtʃ tiːviː/",
+    "Họ xem TV không",
+    "Do they watch TV",
+    "/duː ðeɪ wɑːtʃ tiːviː/",
+    "Họ xem TV không"
+  ],
+  [
+    "Does she work today?",
+    "/dʌz ʃiː wɜːrk təˈdeɪ/",
+    "Cô ấy làm việc hôm nay không",
+    "Does she work today",
+    "/dʌz ʃiː wɜːrk təˈdeɪ/",
+    "Cô ấy làm việc hôm nay không"
+  ],
+  [
+    "I always wake up early.",
+    "/aɪ ˈɔːlweɪz weɪk ʌp ˈɜːrli/",
+    "Tôi luôn dậy sớm.",
+    "I always wake up early.",
+    "/aɪ ˈɔːlweɪz weɪk ʌp ˈɜːrli/",
+    "Tôi luôn dậy sớm."
+  ],
+  [
+    "She usually cooks dinner.",
+    "/ʃiː ˈjuːʒuəli kʊks ˈdɪnər/",
+    "Cô ấy thường nấu tối.",
+    "She usually cooks dinner.",
+    "/ʃiː ˈjuːʒuəli kʊks ˈdɪnər/",
+    "Cô ấy thường nấu tối."
+  ],
+  [
+    "He often reads books.",
+    "/hiː ˈɔːfən riːdz bʊks/",
+    "Anh ấy thường đọc sách.",
+    "He often reads books.",
+    "/hiː ˈɔːfən riːdz bʊks/",
+    "Anh ấy thường đọc sách."
+  ],
+  [
+    "They sometimes play games.",
+    "/ðeɪ ˈsʌmtaɪmz pleɪ geɪmz/",
+    "Họ thỉnh thoảng chơi game.",
+    "They sometimes play games.",
+    "/ðeɪ ˈsʌmtaɪmz pleɪ geɪmz/",
+    "Họ thỉnh thoảng chơi game."
+  ],
+  [
+    "We never eat fast food.",
+    "/wiː ˈnɛvər iːt fæst fuːd/",
+    "Chúng tôi không bao giờ ăn đồ nhanh.",
+    "We never eat fast food.",
+    "/wiː ˈnɛvər iːt fæst fuːd/",
+    "Chúng tôi không bao giờ ăn đồ nhanh."
+  ],
+  [
+    "I often go to the park.",
+    "/aɪ ˈɔːfən goʊ tuː ðə pɑːrk/",
+    "Tôi thường đi công viên.",
+    "I often go to the park.",
+    "/aɪ ˈɔːfən goʊ tuː ðə pɑːrk/",
+    "Tôi thường đi công viên."
+  ],
+  [
+    "She always studies at night.",
+    "/ʃiː ˈɔːlweɪz ˈstʌdiz æt naɪt/",
+    "Cô ấy luôn học buổi tối.",
+    "She always studies at night.",
+    "/ʃiː ˈɔːlweɪz ˈstʌdiz æt naɪt/",
+    "Cô ấy luôn học buổi tối."
+  ],
+  [
+    "He never drinks coffee.",
+    "/hiː ˈnɛvər drɪŋks ˈkɔːfi/",
+    "Anh ấy không bao giờ uống cà phê.",
+    "He never drinks coffee.",
+    "/hiː ˈnɛvər drɪŋks ˈkɔːfi/",
+    "Anh ấy không bao giờ uống cà phê."
+  ],
+  [
+    "They usually walk to school.",
+    "/ðeɪ ˈjuːʒuəli wɔːk tuː skuːl/",
+    "Họ thường đi bộ đến trường.",
+    "They usually walk to school.",
+    "/ðeɪ ˈjuːʒuəli wɔːk tuː skuːl/",
+    "Họ thường đi bộ đến trường."
+  ],
+  [
+    "We sometimes watch movies.",
+    "/wiː ˈsʌmtaɪmz wɑːtʃ ˈmuːviz/",
+    "Chúng tôi thỉnh thoảng xem phim.",
+    "We sometimes watch movies.",
+    "/wiː ˈsʌmtaɪmz wɑːtʃ ˈmuːviz/",
+    "Chúng tôi thỉnh thoảng xem phim."
+  ],
+  [
+    "I can swim.",
+    "/aɪ kæn swɪm/",
+    "Tôi biết bơi.",
+    "I can swim.",
+    "/aɪ kæn swɪm/",
+    "Tôi biết bơi."
+  ],
+  [
+    "She can cook.",
+    "/ʃiː kæn kʊk/",
+    "Cô ấy biết nấu ăn.",
+    "She can cook.",
+    "/ʃiː kæn kʊk/",
+    "Cô ấy biết nấu ăn."
+  ],
+  [
+    "He can drive.",
+    "/hiː kæn draɪv/",
+    "Anh ấy biết lái xe.",
+    "He can drive.",
+    "/hiː kæn draɪv/",
+    "Anh ấy biết lái xe."
+  ],
+  [
+    "They can sing.",
+    "/ðeɪ kæn sɪŋ/",
+    "Họ biết hát.",
+    "They can sing.",
+    "/ðeɪ kæn sɪŋ/",
+    "Họ biết hát."
+  ],
+  [
+    "We can help you.",
+    "/wiː kæn hɛlp juː/",
+    "Chúng tôi có thể giúp bạn.",
+    "We can help you.",
+    "/wiː kæn hɛlp juː/",
+    "Chúng tôi có thể giúp bạn."
+  ],
+  [
+    "I can't swim.",
+    "/aɪ kænt swɪm/",
+    "Tôi không biết bơi.",
+    "I can't swim.",
+    "/aɪ kænt swɪm/",
+    "Tôi không biết bơi."
+  ],
+  [
+    "She can't drive.",
+    "/ʃiː kænt draɪv/",
+    "Cô ấy không biết lái xe.",
+    "She can't drive.",
+    "/ʃiː kænt draɪv/",
+    "Cô ấy không biết lái xe."
+  ],
+  [
+    "He can't cook.",
+    "/hiː kænt kʊk/",
+    "Anh ấy không biết nấu ăn.",
+    "He can't cook.",
+    "/hiː kænt kʊk/",
+    "Anh ấy không biết nấu ăn."
+  ],
+  [
+    "They can't speak French.",
+    "/ðeɪ kænt spiːk frɛntʃ/",
+    "Họ không biết nói tiếng Pháp.",
+    "They can't speak French.",
+    "/ðeɪ kænt spiːk frɛntʃ/",
+    "Họ không biết nói tiếng Pháp."
+  ],
+  [
+    "We can't help today.",
+    "/wiː kænt hɛlp təˈdeɪ/",
+    "Hôm nay chúng tôi không thể giúp.",
+    "We can't help today.",
+    "/wiː kænt hɛlp təˈdeɪ/",
+    "Hôm nay chúng tôi không thể giúp."
+  ],
+  [
+    "There is a cat on the table.",
+    "/ðɛr ɪz ə kæt ɑːn ðə ˈteɪbəl/",
+    "Có một con mèo trên bàn.",
+    "There is a cat on the table.",
+    "/ðɛr ɪz ə kæt ɑːn ðə ˈteɪbəl/",
+    "Có một con mèo trên bàn."
+  ],
+  [
+    "There is a book on the chair.",
+    "/ðɛr ɪz ə bʊk ɑːn ðə tʃɛr/",
+    "Có một quyển sách trên ghế.",
+    "There is a book on the chair.",
+    "/ðɛr ɪz ə bʊk ɑːn ðə tʃɛr/",
+    "Có một quyển sách trên ghế."
+  ],
+  [
+    "There are two dogs outside.",
+    "/ðɛr ɑːr tuː dɔːgz ˈaʊtsaɪd/",
+    "Có hai con chó bên ngoài.",
+    "There are two dogs outside.",
+    "/ðɛr ɑːr tuː dɔːgz ˈaʊtsaɪd/",
+    "Có hai con chó bên ngoài."
+  ],
+  [
+    "There are many people here.",
+    "/ðɛr ɑːr ˈmɛni ˈpiːpəl hɪr/",
+    "Có nhiều người ở đây.",
+    "There are many people here.",
+    "/ðɛr ɑːr ˈmɛni ˈpiːpəl hɪr/",
+    "Có nhiều người ở đây."
+  ],
+  [
+    "There is a problem.",
+    "/ðɛr ɪz ə ˈprɑːbləm/",
+    "Có một vấn đề.",
+    "There is a problem.",
+    "/ðɛr ɪz ə ˈprɑːbləm/",
+    "Có một vấn đề."
+  ],
+  [
+    "There are three cars.",
+    "/ðɛr ɑːr θriː kɑːrz/",
+    "Có ba chiếc xe.",
+    "There are three cars.",
+    "/ðɛr ɑːr θriː kɑːrz/",
+    "Có ba chiếc xe."
+  ],
+  [
+    "There is a pen on the desk.",
+    "/ðɛr ɪz ə pɛn ɑːn ðə dɛsk/",
+    "Có một cây bút trên bàn.",
+    "There is a pen on the desk.",
+    "/ðɛr ɪz ə pɛn ɑːn ðə dɛsk/",
+    "Có một cây bút trên bàn."
+  ],
+  [
+    "There are apples in the bag.",
+    "/ðɛr ɑːr ˈæpəlz ɪn ðə bæg/",
+    "Có táo trong túi.",
+    "There are apples in the bag.",
+    "/ðɛr ɑːr ˈæpəlz ɪn ðə bæg/",
+    "Có táo trong túi."
+  ],
+  [
+    "There is a phone here.",
+    "/ðɛr ɪz ə foʊn hɪr/",
+    "Có một cái điện thoại ở đây.",
+    "There is a phone here.",
+    "/ðɛr ɪz ə foʊn hɪr/",
+    "Có một cái điện thoại ở đây."
+  ],
+  [
+    "There are students in the room.",
+    "/ðɛr ɑːr ˈstuːdənts ɪn ðə ruːm/",
+    "Có học sinh trong phòng.",
+    "There are students in the room.",
+    "/ðɛr ɑːr ˈstuːdənts ɪn ðə ruːm/",
+    "Có học sinh trong phòng."
+  ]
 ]
