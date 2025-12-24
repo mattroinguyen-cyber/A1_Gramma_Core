@@ -4,6 +4,11 @@
             "name": "A1_Gramma_01.json",
             "mapping": "mapping_A1_Gramma_01.json",
             "audio": "audio_A1_Gramma_01"
+        },
+        {
+            "name": "2000_Daily_English_01.json",
+            "mapping": "mapping_2000_Daily_English_01.json",
+            "audio": "audio_2000_Daily_English_01"
         }
     ]
 }
