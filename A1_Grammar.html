@@ -44,10 +44,11 @@
     .logo { width: 52px; height: 52px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #071022; font-weight: 800; font-size: 1.1rem; box-shadow: var(--soft-shadow); }
     
     .control-panel { 
-      display: flex; flex-wrap: wrap; gap: 14px; background: var(--card-bg);
-      padding: 14px; border-radius: var(--radius); box-shadow: var(--soft-shadow); margin-bottom: 20px; align-items: center; border: 1px solid rgba(255,255,255,0.03);
+      display: flex; flex-wrap: wrap; gap: 8px; background: var(--card-bg);
+      padding: 6px 8px; border-radius: calc(var(--radius) - 4px); box-shadow: var(--soft-shadow); margin-bottom: 12px; align-items: center; border: 1px solid rgba(255,255,255,0.03);
+      font-size: 0.88rem; line-height: 1; 
     }
-    .option-group { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.92rem; border-right: 1px solid var(--border); padding-right: 15px; }
+    .option-group { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.86rem; border-right: 1px solid var(--border); padding-right: 8px; }
     .option-group:last-child { border-right: none; }
     
     select { flex: 1; min-width: 180px; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.03); background: var(--card-bg); color: var(--text); font-weight: 600; outline: none; box-shadow: none; }
@@ -107,7 +108,19 @@
       </div>
     </header>
 
+    <div class="tabs">
+      <button class="tab active" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
+      <button class="tab" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
+      <button class="tab" id="tabSentence" title="Chế độ: Viết câu (Writing Test)">Writing Test</button>
+    </div>
+
     <div id="exerciseArea"></div>
+
+    <div id="pagination" class="pagination hide">
+      <button class="btn ghost" id="prevEx" title="Câu trước">◀ Câu trước</button>
+      <span id="pageInfo" style="font-weight: 600;">1 / 1</span>
+      <button class="btn ghost" id="nextEx" title="Câu sau">Câu sau ▶</button>
+    </div>
 
     <div class="control-panel">
       <div class="option-group" style="flex:1">
@@ -165,7 +178,6 @@
 
       <div class="option-group">
         <button class="btn ghost" id="toggleSkillMode" title="Bật/tắt chế độ luyện nói">🎙️ Luyện Nói</button>
-        <button class="btn ghost active-mode" id="toggleViewMode" title="Chuyển chế độ hiển thị (Câu đơn / Tất cả)">Chế độ: Câu đơn</button>
       </div>
       <div class="option-group">
         <span>Phiên:</span>
@@ -178,17 +190,7 @@
       </div>
     </div>
 
-    <div class="tabs">
-      <button class="tab active" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
-      <button class="tab" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
-      <button class="tab" id="tabSentence" title="Chế độ: Viết câu (Writing Test)">Writing Test</button>
-    </div>
-
-    <div id="pagination" class="pagination hide">
-      <button class="btn ghost" id="prevEx" title="Câu trước">◀ Câu trước</button>
-      <span id="pageInfo" style="font-weight: 600;">1 / 1</span>
-      <button class="btn ghost" id="nextEx" title="Câu sau">Câu sau ▶</button>
-    </div>
+    <!-- pagination moved above to sit directly under tabs -->
   </div>
 
   <button id="backToTop" title="Lên đầu trang">▲</button>
@@ -766,14 +768,6 @@
       }
     });
     
-    document.getElementById('toggleViewMode').addEventListener('click', (e) => {
-      isSingleMode = !isSingleMode;
-      e.target.textContent = isSingleMode ? 'Chế độ: Câu đơn' : 'Chế độ: Tất cả';
-      e.target.classList.toggle('active-mode', isSingleMode);
-      currentExIdx = 0; 
-      render();
-    });
-
     // tabs removed: only Sentence writing supported
 
     function render() {
@@ -957,7 +951,7 @@
         <button class="btn ghost" id="lpPrev" title="Lui (ArrowLeft)">◀ Lui</button>
         <button class="btn ghost" id="lpRewind" title="Lùi 3s (ArrowUp)">⏪ -3s</button>
         <button class="btn ghost" id="lpRestart" title="Bắt đầu lại phiên">🔁 Bắt đầu lại</button>
-        <button class="btn" id="lpPlay" title="Phát hiện tại">▶ Phát</button>
+        <button class="btn" id="lpPlay" title="Phát hiện tại (bấm phím r để bắt đầu lại)">▶ Phát</button>
         <button class="btn ghost" id="lpNext" title="Tới (ArrowRight)">Tới ▶</button>
         <button class="btn ghost" id="lpRepeat" title="Lặp lại (ArrowDown)">🔁 Lặp lại</button>
         <label style="display:flex; align-items:center; gap:8px; margin-left:12px; font-weight:600;"><input type="checkbox" id="lpAutoLoop"> Tự lặp (Auto-loop)</label>
