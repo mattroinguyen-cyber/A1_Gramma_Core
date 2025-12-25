@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "en_0",
+    "text": "What time do you finish work?",
+    "file": "audio_2000_Daily_English_02/gtts_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_0",
+    "text": "What time do you finish work?",
+    "file": "audio_2000_Daily_English_02/edge_en_0.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "I finish at 5:00.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_0",
+    "text": "I finish at 5:00.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_0.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_1",
+    "text": "Do you go home right away?",
+    "file": "audio_2000_Daily_English_02/gtts_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_1",
+    "text": "Do you go home right away?",
+    "file": "audio_2000_Daily_English_02/edge_en_1.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "Yes, I usually go home right away.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_1",
+    "text": "Yes, I usually go home right away.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_1.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_2",
+    "text": "How long does it take to go home?",
+    "file": "audio_2000_Daily_English_02/gtts_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_2",
+    "text": "How long does it take to go home?",
+    "file": "audio_2000_Daily_English_02/edge_en_2.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "It takes about 30 minutes.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_2",
+    "text": "It takes about 30 minutes.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_2.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_3",
+    "text": "Do you feel tired after work?",
+    "file": "audio_2000_Daily_English_02/gtts_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_3",
+    "text": "Do you feel tired after work?",
+    "file": "audio_2000_Daily_English_02/edge_en_3.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "Yes, I sometimes feel tired.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_3",
+    "text": "Yes, I sometimes feel tired.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_3.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_4",
+    "text": "What do you do when you get home?",
+    "file": "audio_2000_Daily_English_02/gtts_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_4",
+    "text": "What do you do when you get home?",
+    "file": "audio_2000_Daily_English_02/edge_en_4.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "I usually take a shower.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_4",
+    "text": "I usually take a shower.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_4.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_5",
+    "text": "Do you relax in the evening?",
+    "file": "audio_2000_Daily_English_02/gtts_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_5",
+    "text": "Do you relax in the evening?",
+    "file": "audio_2000_Daily_English_02/edge_en_5.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "Yes, I relax in the evening.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_5",
+    "text": "Yes, I relax in the evening.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_5.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_6",
+    "text": "What do you do to relax?",
+    "file": "audio_2000_Daily_English_02/gtts_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_6",
+    "text": "What do you do to relax?",
+    "file": "audio_2000_Daily_English_02/edge_en_6.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "I listen to music.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_6",
+    "text": "I listen to music.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_6.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_7",
+    "text": "Do you watch TV?",
+    "file": "audio_2000_Daily_English_02/gtts_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_7",
+    "text": "Do you watch TV?",
+    "file": "audio_2000_Daily_English_02/edge_en_7.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "Yes, sometimes I watch TV.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_7",
+    "text": "Yes, sometimes I watch TV.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_7.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_8",
+    "text": "What shows do you like?",
+    "file": "audio_2000_Daily_English_02/gtts_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_8",
+    "text": "What shows do you like?",
+    "file": "audio_2000_Daily_English_02/edge_en_8.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "I like watching simple dramas.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_8",
+    "text": "I like watching simple dramas.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_8.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_9",
+    "text": "Do you talk to your family every day?",
+    "file": "audio_2000_Daily_English_02/gtts_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_9",
+    "text": "Do you talk to your family every day?",
+    "file": "audio_2000_Daily_English_02/edge_en_9.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "Yes, I talk to my family every day.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_9",
+    "text": "Yes, I talk to my family every day.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_9.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_10",
+    "text": "Who do you call most often?",
+    "file": "audio_2000_Daily_English_02/gtts_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_10",
+    "text": "Who do you call most often?",
+    "file": "audio_2000_Daily_English_02/edge_en_10.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "I call my mother most often.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_10",
+    "text": "I call my mother most often.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_10.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_11",
+    "text": "How is your mother?",
+    "file": "audio_2000_Daily_English_02/gtts_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_11",
+    "text": "How is your mother?",
+    "file": "audio_2000_Daily_English_02/edge_en_11.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "She is doing well.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_11",
+    "text": "She is doing well.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_11.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_12",
+    "text": "Do you have siblings?",
+    "file": "audio_2000_Daily_English_02/gtts_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_12",
+    "text": "Do you have siblings?",
+    "file": "audio_2000_Daily_English_02/edge_en_12.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "Yes, I have two siblings.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_12",
+    "text": "Yes, I have two siblings.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_12.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_13",
+    "text": "When do you usually go to bed?",
+    "file": "audio_2000_Daily_English_02/gtts_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_13",
+    "text": "When do you usually go to bed?",
+    "file": "audio_2000_Daily_English_02/edge_en_13.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "I usually go to bed at 11 p.m.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_13",
+    "text": "I usually go to bed at 11 p.m.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_13.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_14",
+    "text": "Do you drink coffee?",
+    "file": "audio_2000_Daily_English_02/gtts_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_14",
+    "text": "Do you drink coffee?",
+    "file": "audio_2000_Daily_English_02/edge_en_14.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "Yes, I drink coffee every morning.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_14",
+    "text": "Yes, I drink coffee every morning.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_14.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_15",
+    "text": "How do you like your coffee?",
+    "file": "audio_2000_Daily_English_02/gtts_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_15",
+    "text": "How do you like your coffee?",
+    "file": "audio_2000_Daily_English_02/edge_en_15.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "I like it black with no sugar.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_15",
+    "text": "I like it black with no sugar.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_15.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_16",
+    "text": "Do you cook often?",
+    "file": "audio_2000_Daily_English_02/gtts_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_16",
+    "text": "Do you cook often?",
+    "file": "audio_2000_Daily_English_02/edge_en_16.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "I cook a few times a week.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_16",
+    "text": "I cook a few times a week.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_16.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_17",
+    "text": "What dishes can you cook?",
+    "file": "audio_2000_Daily_English_02/gtts_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_17",
+    "text": "What dishes can you cook?",
+    "file": "audio_2000_Daily_English_02/edge_en_17.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I can cook noodles, soup, and fried rice.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_17",
+    "text": "I can cook noodles, soup, and fried rice.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_17.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_18",
+    "text": "Do you enjoy cooking?",
+    "file": "audio_2000_Daily_English_02/gtts_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_18",
+    "text": "Do you enjoy cooking?",
+    "file": "audio_2000_Daily_English_02/edge_en_18.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "Yes, I enjoy cooking.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_18",
+    "text": "Yes, I enjoy cooking.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_18.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_19",
+    "text": "Do you like spicy food?",
+    "file": "audio_2000_Daily_English_02/gtts_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_19",
+    "text": "Do you like spicy food?",
+    "file": "audio_2000_Daily_English_02/edge_en_19.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "Yes, I like spicy food.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_19",
+    "text": "Yes, I like spicy food.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_19.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_20",
+    "text": "Can you eat very spicy food?",
+    "file": "audio_2000_Daily_English_02/gtts_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_20",
+    "text": "Can you eat very spicy food?",
+    "file": "audio_2000_Daily_English_02/edge_en_20.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "Not too spicy, but a little is okay.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_20",
+    "text": "Not too spicy, but a little is okay.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_20.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_21",
+    "text": "What is your favorite dessert?",
+    "file": "audio_2000_Daily_English_02/gtts_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_21",
+    "text": "What is your favorite dessert?",
+    "file": "audio_2000_Daily_English_02/edge_en_21.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "My favorite dessert is chocolate cake.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_21",
+    "text": "My favorite dessert is chocolate cake.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_21.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_22",
+    "text": "Do you exercise regularly?",
+    "file": "audio_2000_Daily_English_02/gtts_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_22",
+    "text": "Do you exercise regularly?",
+    "file": "audio_2000_Daily_English_02/edge_en_22.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "Yes, I try to exercise three times a week.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_22",
+    "text": "Yes, I try to exercise three times a week.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_22.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_23",
+    "text": "What exercise do you do?",
+    "file": "audio_2000_Daily_English_02/gtts_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_23",
+    "text": "What exercise do you do?",
+    "file": "audio_2000_Daily_English_02/edge_en_23.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "I go for a run in the park.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_23",
+    "text": "I go for a run in the park.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_23.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_24",
+    "text": "What is your main hobby?",
+    "file": "audio_2000_Daily_English_02/gtts_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_24",
+    "text": "What is your main hobby?",
+    "file": "audio_2000_Daily_English_02/edge_en_24.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "My main hobby is reading.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_24",
+    "text": "My main hobby is reading.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_24.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_25",
+    "text": "What do you like to read?",
+    "file": "audio_2000_Daily_English_02/gtts_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_25",
+    "text": "What do you like to read?",
+    "file": "audio_2000_Daily_English_02/edge_en_25.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "I like to read simple English books.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_25",
+    "text": "I like to read simple English books.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_25.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_26",
+    "text": "What music do you like?",
+    "file": "audio_2000_Daily_English_02/gtts_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_26",
+    "text": "What music do you like?",
+    "file": "audio_2000_Daily_English_02/edge_en_26.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "I like soft music and pop music.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_26",
+    "text": "I like soft music and pop music.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_26.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_27",
+    "text": "Why are you learning English?",
+    "file": "audio_2000_Daily_English_02/gtts_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_27",
+    "text": "Why are you learning English?",
+    "file": "audio_2000_Daily_English_02/edge_en_27.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "I'm learning English to improve my skills.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_27",
+    "text": "I'm learning English to improve my skills.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_27.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_28",
+    "text": "How do you practice?",
+    "file": "audio_2000_Daily_English_02/gtts_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_28",
+    "text": "How do you practice?",
+    "file": "audio_2000_Daily_English_02/edge_en_28.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "I listen, repeat, and speak slowly.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_28",
+    "text": "I listen, repeat, and speak slowly.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_28.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "en_29",
+    "text": "Do you feel your English improving?",
+    "file": "audio_2000_Daily_English_02/gtts_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "en_29",
+    "text": "Do you feel your English improving?",
+    "file": "audio_2000_Daily_English_02/edge_en_29.mp3",
+    "lang": "en",
+    "type": "en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "Yes, slowly but surely.",
+    "file": "audio_2000_Daily_English_02/gtts_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "gTTS",
+    "voice": "Female US (gTTS)"
+  },
+  {
+    "id": "ex_en_29",
+    "text": "Yes, slowly but surely.",
+    "file": "audio_2000_Daily_English_02/edge_ex_en_29.mp3",
+    "lang": "en",
+    "type": "ex_en",
+    "engine": "Edge",
+    "voice": "en-US-GuyNeural"
+  }
+]

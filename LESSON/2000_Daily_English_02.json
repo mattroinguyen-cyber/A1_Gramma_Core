@@ -1,0 +1,242 @@
+[
+  [
+    "What time do you finish work?",
+    "wʌt taɪm duː juː ˈfɪnɪʃ wɜːrk?",
+    "Mấy giờ bạn tan làm?",
+    "I finish at 5:00.",
+    "aɪ ˈfɪnɪʃ æt faɪv əˈklɑːk.",
+    "Tôi tan làm lúc 5 giờ."
+  ],
+  [
+    "Do you go home right away?",
+    "duː juː ɡoʊ hoʊm raɪt əˈweɪ?",
+    "Bạn có về nhà ngay không?",
+    "Yes, I usually go home right away.",
+    "jɛs, aɪ ˈjuːʒuəli ɡoʊ hoʊm raɪt əˈweɪ.",
+    "Vâng, tôi thường về nhà ngay."
+  ],
+  [
+    "How long does it take to go home?",
+    "haʊ lɔːŋ dʌz ɪt teɪk tuː ɡoʊ hoʊm?",
+    "Về nhà mất bao lâu?",
+    "It takes about 30 minutes.",
+    "ɪt teɪks əˈbaʊt ˈθɜːrti ˈmɪnɪts.",
+    "Mất khoảng 30 phút."
+  ],
+  [
+    "Do you feel tired after work?",
+    "duː juː fiːl ˈtaɪərd ˈæftər wɜːrk?",
+    "Bạn có cảm thấy mệt sau giờ làm không?",
+    "Yes, I sometimes feel tired.",
+    "jɛs, aɪ ˈsʌmtaɪmz fiːl ˈtaɪərd.",
+    "Vâng, đôi khi tôi cảm thấy mệt."
+  ],
+  [
+    "What do you do when you get home?",
+    "wʌt duː juː duː wɛn juː ɡɛt hoʊm?",
+    "Bạn làm gì khi về nhà?",
+    "I usually take a shower.",
+    "aɪ ˈjuːʒuəli teɪk ə ˈʃaʊər.",
+    "Tôi thường đi tắm."
+  ],
+  [
+    "Do you relax in the evening?",
+    "duː juː rɪˈlæks ɪn ðə ˈiːvnɪŋ?",
+    "Bạn có thư giãn vào buổi tối không?",
+    "Yes, I relax in the evening.",
+    "jɛs, aɪ rɪˈlæks ɪn ðə ˈiːvnɪŋ.",
+    "Vâng, tôi thư giãn vào buổi tối."
+  ],
+  [
+    "What do you do to relax?",
+    "wʌt duː juː duː tuː rɪˈlæks?",
+    "Bạn làm gì để thư giãn?",
+    "I listen to music.",
+    "aɪ ˈlɪsən tuː ˈmjuːzɪk.",
+    "Tôi nghe nhạc."
+  ],
+  [
+    "Do you watch TV?",
+    "duː juː wɑːʧ ˌtiːˈviː?",
+    "Bạn có xem TV không?",
+    "Yes, sometimes I watch TV.",
+    "jɛs, ˈsʌmtaɪmz aɪ wɑːʧ ˌtiːˈviː.",
+    "Vâng, thỉnh thoảng tôi có xem TV."
+  ],
+  [
+    "What shows do you like?",
+    "wʌt ʃoʊz duː juː laɪk?",
+    "Bạn thích chương trình nào?",
+    "I like watching simple dramas.",
+    "aɪ laɪk ˈwɑːʧɪŋ ˈsɪmpəl ˈdrɑːməz.",
+    "Tôi thích xem những bộ phim truyền hình đơn giản."
+  ],
+  [
+    "Do you talk to your family every day?",
+    "duː juː tɔːk tuː jʊər ˈfæməli ˈɛvri deɪ?",
+    "Bạn có nói chuyện với gia đình mỗi ngày không?",
+    "Yes, I talk to my family every day.",
+    "jɛs, aɪ tɔːk tuː maɪ ˈfæməli ˈɛvri deɪ.",
+    "Vâng, tôi nói chuyện với gia đình mỗi ngày."
+  ],
+  [
+    "Who do you call most often?",
+    "huː duː juː kɔːl moʊst ˈɔːfən?",
+    "Bạn thường gọi cho ai nhất?",
+    "I call my mother most often.",
+    "aɪ kɔːl maɪ ˈmʌðər moʊst ˈɔːfən.",
+    "Tôi thường gọi cho mẹ tôi nhất."
+  ],
+  [
+    "How is your mother?",
+    "haʊ ɪz jʊər ˈmʌðər?",
+    "Mẹ bạn có khỏe không?",
+    "She is doing well.",
+    "ʃiː ɪz ˈduːɪŋ wɛl.",
+    "Bà ấy vẫn khỏe."
+  ],
+  [
+    "Do you have siblings?",
+    "duː juː hæv ˈsɪblɪŋz?",
+    "Bạn có anh chị em không?",
+    "Yes, I have two siblings.",
+    "jɛs, aɪ hæv tuː ˈsɪblɪŋz.",
+    "Vâng, tôi có hai anh chị em."
+  ],
+  [
+    "When do you usually go to bed?",
+    "wɛn duː juː ˈjuːʒuəli ɡoʊ tuː bɛd?",
+    "Bạn thường đi ngủ lúc mấy giờ?",
+    "I usually go to bed at 11 p.m.",
+    "aɪ ˈjuːʒuəli ɡoʊ tuː bɛd æt ɪˈlɛvən ˌpiːˈɛm.",
+    "Tôi thường đi ngủ lúc 11 giờ tối."
+  ],
+  [
+    "Do you drink coffee?",
+    "duː juː drɪŋk ˈkɔːfi?",
+    "Bạn có uống cà phê không?",
+    "Yes, I drink coffee every morning.",
+    "jɛs, aɪ drɪŋk ˈkɔːfi ˈɛvri ˈmɔːrnɪŋ.",
+    "Vâng, tôi uống cà phê mỗi sáng."
+  ],
+  [
+    "How do you like your coffee?",
+    "haʊ duː juː laɪk jʊər ˈkɔːfi?",
+    "Bạn thích cà phê của mình như thế nào?",
+    "I like it black with no sugar.",
+    "aɪ laɪk ɪt blæk wɪθ noʊ ˈʃʊɡər.",
+    "Tôi thích cà phê đen không đường."
+  ],
+  [
+    "Do you cook often?",
+    "duː juː kʊk ˈɔːfən?",
+    "Bạn có thường xuyên nấu ăn không?",
+    "I cook a few times a week.",
+    "aɪ kʊk ə fjuː taɪmz ə wiːk.",
+    "Tôi nấu ăn vài lần một tuần."
+  ],
+  [
+    "What dishes can you cook?",
+    "wʌt ˈdɪʃɪz kæn juː kʊk?",
+    "Bạn có thể nấu những món gì?",
+    "I can cook noodles, soup, and fried rice.",
+    "aɪ kæn kʊk ˈnuːdəlz, suːp, ænd fraɪd raɪs.",
+    "Tôi có thể nấu mì, súp và cơm chiên."
+  ],
+  [
+    "Do you enjoy cooking?",
+    "duː juː ɛnˈʤɔɪ ˈkʊkɪŋ?",
+    "Bạn có thích nấu ăn không?",
+    "Yes, I enjoy cooking.",
+    "jɛs, aɪ ɛnˈʤɔɪ ˈkʊkɪŋ.",
+    "Vâng, tôi thích nấu ăn."
+  ],
+  [
+    "Do you like spicy food?",
+    "duː juː laɪk ˈspaɪsi fuːd?",
+    "Bạn có thích đồ ăn cay không?",
+    "Yes, I like spicy food.",
+    "jɛs, aɪ laɪk ˈspaɪsi fuːd.",
+    "Vâng, tôi thích đồ ăn cay."
+  ],
+  [
+    "Can you eat very spicy food?",
+    "kæn juː iːt ˈvɛri ˈspaɪsi fuːd?",
+    "Bạn có thể ăn đồ ăn rất cay không?",
+    "Not too spicy, but a little is okay.",
+    "nɑːt tuː ˈspaɪsi, bʌt ə ˈlɪtəl ɪz oʊˈkeɪ.",
+    "Không quá cay, nhưng một chút thì được."
+  ],
+  [
+    "What is your favorite dessert?",
+    "wʌt ɪz jʊər ˈfeɪvərɪt dɪˈzɜːrt?",
+    "Món tráng miệng yêu thích của bạn là gì?",
+    "My favorite dessert is chocolate cake.",
+    "maɪ ˈfeɪvərɪt dɪˈzɜːrt ɪz ˈʧɔːklət keɪk.",
+    "Món tráng miệng yêu thích của tôi là bánh sô cô la."
+  ],
+  [
+    "Do you exercise regularly?",
+    "duː juː ˈɛksərsaɪz ˈrɛɡjələrli?",
+    "Bạn có tập thể dục thường xuyên không?",
+    "Yes, I try to exercise three times a week.",
+    "jɛs, aɪ traɪ tuː ˈɛksərsaɪz θriː taɪmz ə wiːk.",
+    "Vâng, tôi cố gắng tập thể dục ba lần một tuần."
+  ],
+  [
+    "What exercise do you do?",
+    "wʌt ˈɛksərsaɪz duː juː duː?",
+    "Bạn tập môn thể dục gì?",
+    "I go for a run in the park.",
+    "aɪ ɡoʊ fɔːr ə rʌn ɪn ðə pɑːrk.",
+    "Tôi đi chạy bộ trong công viên."
+  ],
+  [
+    "What is your main hobby?",
+    "wʌt ɪz jʊər meɪn ˈhɑːbi?",
+    "Sở thích chính của bạn là gì?",
+    "My main hobby is reading.",
+    "maɪ meɪn ˈhɑːbi ɪz ˈriːdɪŋ.",
+    "Sở thích chính của tôi là đọc sách."
+  ],
+  [
+    "What do you like to read?",
+    "wʌt duː juː laɪk tuː riːd?",
+    "Bạn thích đọc gì?",
+    "I like to read simple English books.",
+    "aɪ laɪk tuː riːd ˈsɪmpəl ˈɪŋɡlɪʃ bʊks.",
+    "Tôi thích đọc những quyển sách tiếng Anh đơn giản."
+  ],
+  [
+    "What music do you like?",
+    "wʌt ˈmjuːzɪk duː juː laɪk?",
+    "Bạn thích thể loại nhạc nào?",
+    "I like soft music and pop music.",
+    "aɪ laɪk sɔːft ˈmjuːzɪk ænd pɑːp ˈmjuːzɪk.",
+    "Tôi thích nhạc nhẹ và nhạc pop."
+  ],
+  [
+    "Why are you learning English?",
+    "waɪ ɑːr juː ˈlɜːrnɪŋ ˈɪŋɡlɪʃ?",
+    "Tại sao bạn lại học tiếng Anh?",
+    "I'm learning English to improve my skills.",
+    "aɪm ˈlɜːrnɪŋ ˈɪŋɡlɪʃ tuː ɪmˈpruːv maɪ skɪlz.",
+    "Tôi học tiếng Anh để nâng cao kỹ năng của mình."
+  ],
+  [
+    "How do you practice?",
+    "haʊ duː juː ˈpræktɪs?",
+    "Bạn luyện tập như thế nào?",
+    "I listen, repeat, and speak slowly.",
+    "aɪ ˈlɪsən, rɪˈpiːt, ænd spiːk ˈsloʊli.",
+    "Tôi nghe, lặp lại và nói chậm."
+  ],
+  [
+    "Do you feel your English improving?",
+    "duː juː fiːl jʊər ˈɪŋɡlɪʃ ɪmˈpruːvɪŋ?",
+    "Bạn có cảm thấy tiếng Anh của mình đang cải thiện không?",
+    "Yes, slowly but surely.",
+    "jɛs, ˈsloʊli bʌt ˈʃʊrli.",
+    "Có, chậm mà chắc."
+  ]
+]
