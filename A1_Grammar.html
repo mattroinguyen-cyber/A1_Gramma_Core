@@ -662,7 +662,7 @@
             if (readingAutoLoop) {
               // restart session
               currentExIdx = sessionStart;
-              setStatus('Tự lặp (Looping)...', 'var(--accent)');
+              setStatus('Tự lặp lại (Looping)...', 'var(--accent)');
               // keep reading mode active and restart recognition
               if (!recognition) initSpeechRecognition();
               try { recognition && recognition.start(); } catch(e) { console.log('start recognition failed', e); }
@@ -802,7 +802,7 @@
         sessCtrl.style.marginBottom = '12px';
         sessCtrl.innerHTML = `
           <button class="btn ghost" id="sentenceRestart">Bắt đầu lại</button>
-          <label style="display:flex; align-items:center; gap:8px; font-weight:600; margin-left:6px;"><input type="checkbox" id="sentenceLoopCheckbox"> Tự lặp</label>
+          <label style="display:flex; align-items:center; gap:8px; font-weight:600; margin-left:6px;"><input type="checkbox" id="sentenceLoopCheckbox"> Tự lặp lại</label>
         `;
         // insert at top
         exerciseArea.appendChild(sessCtrl);
