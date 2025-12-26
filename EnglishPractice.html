@@ -47,6 +47,7 @@
       display: flex; flex-wrap: wrap; gap: 8px; background: var(--card-bg);
       padding: 6px 8px; border-radius: calc(var(--radius) - 4px); box-shadow: var(--soft-shadow); margin-bottom: 12px; align-items: center; border: 1px solid rgba(255,255,255,0.03);
       font-size: 0.88rem; line-height: 1; 
+      position: -webkit-sticky; position: sticky; top: 20px; z-index: 55;
     }
     .option-group { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.86rem; border-right: 1px solid var(--border); padding-right: 8px; }
     .option-group:last-child { border-right: none; }
@@ -112,9 +113,15 @@
       <button class="tab active" id="tabListeningPreview" title="Chế độ: Listening Preview">Listening Preview</button>
       <button class="tab" id="tabReading" title="Chế độ: Bài đọc (Reading Test)">Reading Test</button>
       <button class="tab" id="tabSentence" title="Chế độ: Viết câu (Writing Test)">Writing Test</button>
+      <button class="tab" id="tabRolePlaying" title="Role Playing">Role Playing</button>
     </div>
 
     <div id="exerciseArea"></div>
+
+    <!-- Role Playing container (hidden until tab selected) -->
+    <div id="rolePlayingArea" class="hide" style="margin-top:8px;">
+      <div id="app"></div>
+    </div>
 
     <div id="pagination" class="pagination hide">
       <button class="btn ghost" id="prevEx" title="Câu trước (Không áp dụng cho Listening Test)">◀ Câu trước</button>
@@ -122,7 +129,7 @@
       <button class="btn ghost" id="nextEx" title="Câu sau (Không áp dụng cho Listening Test)">Câu sau ▶</button>
     </div>
 
-    <div class="control-panel">
+    <div id="mainControlPanel" class="control-panel">
       <div class="option-group" style="flex:1">
         <select id="lessonSelect"><option value="">-- Chọn bài học --</option></select>
       </div>
@@ -209,6 +216,7 @@
     let recognition = null;
     let isRecognitionSupported = false;
     let willRestartRecognition = false;
+    let isRecognitionRunning = false;
     let pauseSeconds = 0; // seconds user can read answer (default 0s for immediate resume)
     let matchThreshold = 1.0; // similarity threshold (0..1), default 100% exact match
     // session controls: show only a range of sentences per study session
@@ -501,12 +509,14 @@
         }
       };
 
+      recognition.onstart = () => { isRecognitionRunning = true; };
       recognition.onend = () => {
+        isRecognitionRunning = false;
         if (isSpeakingMode || isReadingModeActive) {
           // nếu đang tạm dừng vì playback thì không restart ở đây
           if (willRestartRecognition) return;
           try {
-            recognition.start();
+            if (!isRecognitionRunning) recognition.start();
           } catch (e) {
             console.log("Cannot restart recognition immediately:", e);
           }
@@ -579,7 +589,7 @@
       currentExIdx = 0;
       render();
       try {
-        recognition.start();
+        if (!isRecognitionRunning) recognition.start();
       } catch (e) {
         console.log("Recognition already started:", e);
       }
@@ -665,7 +675,7 @@
               setStatus('Tự lặp lại (Looping)...', 'var(--accent)');
               // keep reading mode active and restart recognition
               if (!recognition) initSpeechRecognition();
-              try { recognition && recognition.start(); } catch(e) { console.log('start recognition failed', e); }
+              try { if (!isRecognitionRunning && recognition) recognition.start(); } catch(e) { console.log('start recognition failed', e); }
               renderReading();
             } else {
               isReadingModeActive = false;
@@ -729,6 +739,15 @@
       document.getElementById('tabSentence').classList.add('active');
       document.getElementById('tabReading').classList.remove('active');
       isReadingModeActive = false;
+      // show main controls, hide RolePlay area
+      const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
+      const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.add('hide');
+      const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.remove('hide');
+      const pg = document.getElementById('pagination'); if (pg) pg.classList.remove('hide');
+      const tRole = document.getElementById('tabRolePlaying'); if (tRole) tRole.classList.remove('active');
+      // stop RolePlay app if active to avoid microphone conflicts
+      try { if (window.rolePlayInstance && typeof window.rolePlayInstance.stopPractice === 'function') window.rolePlayInstance.stopPractice();
+      else if (window.rolePlayInstance && window.rolePlayInstance.speechRecognition) try { window.rolePlayInstance.speechRecognition.stop(); } catch(e) {} } catch(e) {}
       render();
     });
 
@@ -736,6 +755,15 @@
       currentMode = 'reading';
       document.getElementById('tabReading').classList.add('active');
       document.getElementById('tabSentence').classList.remove('active');
+      // show main controls, hide RolePlay area
+      const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
+      const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.add('hide');
+      const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.remove('hide');
+      const pg = document.getElementById('pagination'); if (pg) pg.classList.remove('hide');
+      const tRole = document.getElementById('tabRolePlaying'); if (tRole) tRole.classList.remove('active');
+      // stop RolePlay app if active to avoid microphone conflicts
+      try { if (window.rolePlayInstance && typeof window.rolePlayInstance.stopPractice === 'function') window.rolePlayInstance.stopPractice();
+      else if (window.rolePlayInstance && window.rolePlayInstance.speechRecognition) try { window.rolePlayInstance.speechRecognition.stop(); } catch(e) {} } catch(e) {}
       renderReading();
     });
 
@@ -748,7 +776,59 @@
         tabListeningPreview.classList.add('active');
         document.getElementById('tabReading').classList.remove('active');
         document.getElementById('tabSentence').classList.remove('active');
+        // show main controls, hide RolePlay area
+        const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.remove('hide');
+        const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.add('hide');
+        const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.remove('hide');
+        const pg = document.getElementById('pagination'); if (pg) pg.classList.remove('hide');
+        const tRole = document.getElementById('tabRolePlaying'); if (tRole) tRole.classList.remove('active');
+        // stop RolePlay app if active to avoid dual mic usage
+        try { if (window.rolePlayInstance && typeof window.rolePlayInstance.stopPractice === 'function') window.rolePlayInstance.stopPractice();
+        else if (window.rolePlayInstance && window.rolePlayInstance.speechRecognition) try { window.rolePlayInstance.speechRecognition.stop(); } catch(e) {} } catch(e) {}
         renderListeningPreview();
+      });
+    }
+
+    // Role Playing tab
+    const tabRole = document.getElementById('tabRolePlaying');
+    if (tabRole) {
+      tabRole.addEventListener('click', () => {
+        currentMode = 'roleplaying';
+        tabRole.classList.add('active');
+        const tListen = document.getElementById('tabListeningPreview'); if (tListen) tListen.classList.remove('active');
+        const tRead = document.getElementById('tabReading'); if (tRead) tRead.classList.remove('active');
+        const tSent = document.getElementById('tabSentence'); if (tSent) tSent.classList.remove('active');
+        // hide main exercise area and pagination
+        const ex = document.getElementById('exerciseArea'); if (ex) ex.classList.add('hide');
+        const pg = document.getElementById('pagination'); if (pg) pg.classList.add('hide');
+        // hide main control panel to avoid duplicate controls when Role Playing app shows its own panel
+        const mainCtrl = document.getElementById('mainControlPanel'); if (mainCtrl) mainCtrl.classList.add('hide');
+        // show role playing area
+        const rp = document.getElementById('rolePlayingArea'); if (rp) rp.classList.remove('hide');
+        // stop main recognition to avoid mic conflicts, then ensure RolePlay app is initialized
+        try { if (recognition && isRecognitionRunning) { try { recognition.stop(); } catch(e) { console.warn('stop main recognition failed', e); } } } catch(e) {}
+        // ensure the embedded RolePlay app is initialized and synced with main lessonSelect
+        try {
+          if (window.rolePlayInstance && typeof window.rolePlayInstance.render === 'function') {
+            // stop any running RolePlay state before re-render to avoid duplicate listeners
+            try { if (window.rolePlayInstance && typeof window.rolePlayInstance.stopPractice === 'function') window.rolePlayInstance.stopPractice(); } catch(e) {}
+            window.rolePlayInstance.render();
+            const v = (lessonSelect && lessonSelect.value) ? lessonSelect.value : '';
+            if (v) {
+              if (v.startsWith('remote:')) {
+                const idx = parseInt(v.split(':')[1], 10);
+                if (!isNaN(idx)) {
+                  window.rolePlayInstance.setState({ selectedLessonIndex: idx });
+                  window.rolePlayInstance.loadSelectedLesson();
+                }
+              } else if (!isNaN(parseInt(v))) {
+                const idx = parseInt(v, 10);
+                window.rolePlayInstance.setState({ selectedLessonIndex: idx });
+                window.rolePlayInstance.loadSelectedLesson();
+              }
+            }
+          }
+        } catch (e) { console.warn('RolePlay sync failed', e); }
       });
     }
 
@@ -882,7 +962,7 @@
           if (!recognition) initSpeechRecognition();
           isReadingModeActive = true;
           setStatus('Đang nghe...', 'green');
-          try { recognition.start(); } catch(e) { console.log('start recognition failed', e); }
+          try { if (!isRecognitionRunning) recognition.start(); } catch(e) { console.log('start recognition failed', e); }
           toggle.textContent = 'Dừng Reading Test';
         } else {
           // stop reading
@@ -902,7 +982,7 @@
             isReadingModeActive = true;
             toggle.textContent = 'Dừng Reading Test';
           }
-          try { recognition && recognition.start(); } catch(e) { console.log('start recognition failed', e); }
+          try { if (!isRecognitionRunning && recognition) recognition.start(); } catch(e) { console.log('start recognition failed', e); }
           renderReading();
         });
       }
@@ -1087,7 +1167,7 @@
       try { if (ttsAudio) { ttsAudio.pause(); ttsAudio.currentTime = 0; ttsAudio = null; } } catch(e){}
       // restart recognition if needed
       if (recognition && (isSpeakingMode || isReadingModeActive)) {
-        try { recognition.start(); setStatus('Đang nghe...', 'green'); } catch(e) { console.log('restart recognition failed', e); }
+        try { if (!isRecognitionRunning) { recognition.start(); setStatus('Đang nghe...', 'green'); } } catch(e) { console.log('restart recognition failed', e); }
       } else {
         setStatus('Idle');
       }
@@ -1220,7 +1300,7 @@
             }
             willRestartRecognition = false;
             if (recognition && (isSpeakingMode || isReadingModeActive)) {
-              try { recognition.start(); setStatus('Đang nghe...', 'green'); } catch(e) { console.log('restart recognition failed', e); setStatus('Lỗi nghe', 'var(--error)'); }
+              try { if (!isRecognitionRunning) { recognition.start(); setStatus('Đang nghe...', 'green'); } } catch(e) { console.log('restart recognition failed', e); setStatus('Lỗi nghe', 'var(--error)'); }
             } else {
               setStatus('Idle');
             }
@@ -1245,7 +1325,7 @@
           }
           willRestartRecognition = false;
           if (recognition && (isSpeakingMode || isReadingModeActive)) {
-            try { recognition.start(); setStatus('Đang nghe...', 'green'); } catch(e) { console.log('restart recognition failed', e); setStatus('Lỗi nghe', 'var(--error)'); }
+            try { if (!isRecognitionRunning) { recognition.start(); setStatus('Đang nghe...', 'green'); } } catch(e) { console.log('restart recognition failed', e); setStatus('Lỗi nghe', 'var(--error)'); }
           } else {
             setStatus('Idle');
           }
@@ -1312,5 +1392,1321 @@
     // populate server lesson list on load
     loadLessonList();
   </script>
+  <!-- Role Playing app styles and script (from role_playing.html) -->
+  <style>
+    /* RolePlay styles appended to integrate role_playing.html design */
+    :root {
+      --page-bg-color: #1e1e1e;
+      --bg: linear-gradient(180deg,#1e1e1e 0%, #181818 100%);
+      --card-bg: #252526;
+      --text: #d4d4d4;
+      --muted: #9a9a9a;
+      --primary: #569cd6;
+      --accent: #c586c0;
+      --success: #6a9955;
+      --error: #f44747;
+      --glass: rgba(255,255,255,0.02);
+      --shadow: 0 10px 26px rgba(0,0,0,0.6);
+      --soft-shadow: 0 6px 14px rgba(0,0,0,0.5);
+      --border: rgba(255,255,255,0.02);
+      --radius: 12px;
+    }
+    .roleplay-container * { box-sizing: border-box; }
+    .roleplay-container body { margin:0; }
+    .roleplay-container { text-align: center; }
+    .roleplay-container .container { max-width:1100px; margin: 24px auto; padding: 18px; width:100%; }
+    .roleplay-container header { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+    .roleplay-container .logo { width:48px; height:48px; background:linear-gradient(135deg,var(--primary),var(--accent)); border-radius:10px; display:flex; align-items:center; justify-content:center; color:#071022; font-weight:800; font-size:1rem; box-shadow:var(--soft-shadow); }
+    .roleplay-container .control-panel { display:flex; flex-wrap:wrap; gap:8px; background:var(--card-bg); padding:8px 10px; border-radius:8px; box-shadow:var(--soft-shadow); border:1px solid var(--border); align-items:center; width:100%; max-width:1100px; margin:0 auto; }
+    .roleplay-container .control-panel { position: -webkit-sticky; position: sticky; top: 20px; z-index:50; }
+    .roleplay-container main { width:100%; max-width:1100px; margin:0 auto; }
+    .roleplay-container .option-group { display:flex; align-items:center; gap:8px; font-weight:600; font-size:0.88rem; }
+    .roleplay-container select, .roleplay-container input[type=range] { padding:8px; border-radius:6px; background:var(--card-bg); color:var(--text); border:1px solid var(--border); }
+    .roleplay-container .btn { border:none; border-radius:8px; padding:8px 12px; font-weight:700; cursor:pointer; background:linear-gradient(90deg,var(--primary),#4fc3f7); color:#071022; }
+    .roleplay-container .btn.ghost { background:transparent; border:1px solid rgba(255,255,255,0.04); color:var(--text); }
+    .roleplay-container .exercise-item { background:var(--card-bg); padding:18px; border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid var(--border); }
+    .roleplay-container .question { font-size:1.12rem; font-weight:700; margin-bottom:8px; text-align:center; }
+    .roleplay-container .vietnamese { font-style:italic; color:var(--muted); border-left:3px solid var(--primary); padding-left:10px; margin-bottom:10px; text-align:center; }
+    .roleplay-container .translation-hint { color:var(--primary); font-weight:600; font-style:italic; display:block; margin-top:8px; text-align:center; }
+    .roleplay-container .feedback { margin-top:10px; padding:10px; border-radius:8px; min-height:20px; font-weight:600; text-align:center; }
+    .roleplay-container .feedback.success { color:var(--success); background:rgba(46,204,113,0.06); }
+    .roleplay-container .feedback.error { color:var(--error); background:rgba(231,76,60,0.06); }
+    .roleplay-container .hide { display:none; }
+  </style>
+
+  <script type="module">
+      // --- MAIN APPLICATION ---
+      class RolePlayApp {
+        constructor() {
+          this.state = {
+            appState: 'SETUP', // SETUP, LOADING, PLAYING
+            userRole: 'A', // A speaks first, B speaks second, 'AB' for shadowing
+            currentIndex: 0,
+            feedback: { type: 'neutral', message: 'Sẵn sàng...' },
+            isProcessingAI: false,
+            isAutoPlaying: false,
+            transcript: '',
+            isListening: false,
+            
+            // Lesson data
+            availableLessons: [],
+            currentLesson: null,
+            scriptLines: [],
+            originalScriptLines: [],
+            audioBasePath: '',
+            audioCache: new Map(),
+            
+            // UI state
+            selectedLessonIndex: 0,
+            startPair: null,
+            endPair: null,
+            attempts: 0,
+            
+            // Progress tracking
+            currentPair: 1,
+            totalPairs: 0,
+            
+            // Shadowing mode
+            shadowDelay: 0, // Delay in ms before user speaks in shadowing mode
+            // Delay before starting recognition on user's turn (ms)
+            userReplyDelay: 50,
+            // UI flag when waiting for user reply (shows colored hint instead of re-rendering)
+            waitingForUser: false,
+            isShadowingActive: false,
+            
+            // Speech recognition settings
+            difficulty: 'normal', // 'easy', 'normal', 'hard'
+            matchingThreshold: 0.4, // Default 40%
+            maxAttempts: 3,
+            customThreshold: false,
+            // Voice selection (single voice for both roles)
+            voice1: 'gTTS',
+            
+            // Accuracy tracking
+            accuracyStats: {
+              totalAttempts: 0,
+              successful: 0,
+              failed: 0,
+              accuracy: 0,
+              sessionAccuracy: 0,
+              commonErrors: []
+            },
+            
+            // Pronunciation patterns for Vietnamese speakers
+            pronunciationPatterns: {
+              'th': ['d', 't', 's'], // Vietnamese often pronounce "th" as "d", "t", or "s"
+              'v': ['b'], // "v" as "b"
+              'z': ['s'], // "z" as "s"
+              'ʃ': ['s'], // "sh" as "s"
+              'ʒ': ['z'], // "zh" as "z"
+              'ð': ['d'], // "th" in "the" as "d"
+              'θ': ['t'], // "th" in "think" as "t"
+              'l': ['n'], // Sometimes "l" as "n"
+              'r': ['z'], // "r" as "z" in some accents
+              'æ': ['a'], // "cat" vowel
+              'ʌ': ['a'], // "cup" vowel
+            }
+          };
+
+          // Ensure any pre-existing matchingThreshold above 95% is clamped
+          if (this.state.matchingThreshold > 0.95) {
+            this.state.matchingThreshold = 0.95;
+            this.state.customThreshold = true;
+          }
+
+          this.audioContext = null;
+          this.speechRecognition = this.initSpeechRecognition();
+          this.loadAvailableLessons();
+        }
+
+        // --- INITIALIZE ---
+        async loadAvailableLessons() {
+          try {
+            const response = await fetch('json_list.json');
+            if (!response.ok) throw new Error(`Không thể tải danh sách bài học: ${response.status}`);
+            
+            const data = await response.json();
+            this.setState({ 
+              availableLessons: data.lessons || [],
+              feedback: { type: 'success', message: `Đã tải ${data.lessons?.length || 0} bài học` }
+            });
+          } catch (error) {
+            console.error('Lỗi tải danh sách bài học:', error);
+            this.setState({ 
+              feedback: { type: 'error', message: 'Không thể tải danh sách bài học' },
+              availableLessons: []
+            });
+          }
+        }
+
+        getAudioContext() {
+          if (!this.audioContext) {
+            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          }
+          if (this.audioContext.state === 'suspended') {
+            this.audioContext.resume();
+          }
+          return this.audioContext;
+        }
+
+        initSpeechRecognition() {
+          const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+          if (!SpeechRecognition) {
+            console.warn('Trình duyệt không hỗ trợ Speech Recognition');
+            return null;
+          }
+          
+          const recognition = new SpeechRecognition();
+          recognition.continuous = false;
+          recognition.interimResults = true;
+          recognition.lang = 'en-US';
+          
+          recognition.onstart = () => this.setState({ isListening: true }, true);
+          recognition.onresult = (event) => {
+            let finalTranscript = '';
+            let interimTranscript = '';
+            
+            for (let i = event.resultIndex; i < event.results.length; ++i) {
+              if (event.results[i].isFinal) {
+                finalTranscript += event.results[i][0].transcript;
+              } else {
+                interimTranscript += event.results[i][0].transcript;
+              }
+            }
+            
+            // Show interim results
+              if (interimTranscript) {
+                // update transcript without triggering a full re-render to avoid UI jitter
+                this.setState({ transcript: interimTranscript }, true);
+              }
+            
+            if (finalTranscript) {
+              this.setState({ transcript: finalTranscript });
+              this.checkTranscript(finalTranscript);
+            }
+          };
+          recognition.onend = () => this.setState({ isListening: false }, true);
+          recognition.onerror = (event) => {
+            console.error('Speech recognition error', event.error);
+            this.setState({ isListening: false });
+          
+            // Auto-advance on no-speech error
+            if (event.error === 'no-speech') {
+              setTimeout(() => {
+                this.setState({
+                  currentIndex: this.state.currentIndex + 1,
+                  currentPair: Math.floor((this.state.currentIndex + 1) / 2) + 1,
+                  feedback: { type: 'error', message: 'Không nghe thấy giọng nói. Tự động chuyển tiếp...' }
+                });
+                this.processCurrentLine();
+              }, 2000);
+            }
+          };
+          
+          return recognition;
+        }
+
+        // --- IMPROVED SPEECH RECOGNITION MATCHING ---
+        calculateSimilarity(str1, str2) {
+          // Simple similarity calculation based on word overlap
+          const words1 = str1.toLowerCase().split(/\s+/);
+          const words2 = str2.toLowerCase().split(/\s+/);
+          
+          const intersection = words1.filter(word => 
+            words2.some(w2 => this.wordsSimilar(word, w2))
+          );
+          
+          return intersection.length / Math.max(words1.length, words2.length);
+        }
+
+        wordsSimilar(word1, word2) {
+          // Check if words are similar (including common pronunciation errors)
+          if (word1 === word2) return true;
+          
+          // Check for common Vietnamese pronunciation patterns
+          for (const [correct, mistakes] of Object.entries(this.state.pronunciationPatterns)) {
+            if (word2.includes(correct)) {
+              for (const mistake of mistakes) {
+                const variant = word2.replace(new RegExp(correct, 'g'), mistake);
+                if (word1 === variant || variant.includes(word1) || word1.includes(variant)) {
+                  return true;
+                }
+              }
+            }
+          }
+          
+          // Check for partial matches
+          if (word1.includes(word2) || word2.includes(word1)) {
+            return true;
+          }
+          
+          // Check for similar length and characters
+          if (Math.abs(word1.length - word2.length) <= 2) {
+            const commonChars = word1.split('').filter(char => word2.includes(char)).length;
+            const similarity = commonChars / Math.max(word1.length, word2.length);
+            return similarity > 0.6;
+          }
+          
+          return false;
+        }
+
+        extractKeywords(text) {
+          // Extract important words (excluding common words)
+          const commonWords = ['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by'];
+          const words = text.toLowerCase().split(/\s+/);
+          return words.filter(word => 
+            word.length > 2 && !commonWords.includes(word)
+          );
+        }
+
+        checkKeywords(userText, keywords) {
+          if (keywords.length === 0) return 1;
+          
+          const userWords = userText.toLowerCase().split(/\s+/);
+          const matchedKeywords = keywords.filter(keyword =>
+            userWords.some(userWord => this.wordsSimilar(userWord, keyword))
+          );
+          
+          return matchedKeywords.length / keywords.length;
+        }
+
+        getMatchingThreshold() {
+          // If user set a custom threshold via UI slider, use it
+          if (this.state.customThreshold) {
+            return this.state.matchingThreshold;
+          }
+
+          // Return threshold based on difficulty
+          const thresholds = {
+            'easy': 0.3,
+            'normal': 0.4,
+            'hard': 0.6,
+            'shadowing': 0.2
+          };
+
+          if (this.state.userRole === 'AB') {
+            return thresholds.shadowing;
+          }
+
+          return thresholds[this.state.difficulty] || 0.4;
+        }
+
+        getMaxAttempts() {
+          // Return max attempts based on difficulty
+          const attempts = {
+            'easy': 5,
+            'normal': 3,
+            'hard': 2,
+            'shadowing': 3  // Increased from 1 to 3 for better practice
+          };
+          
+          if (this.state.userRole === 'AB') {
+            return attempts.shadowing;
+          }
+          
+          return attempts[this.state.difficulty] || 3;
+        }
+
+        // --- UPDATED CHECK TRANSCRIPT METHOD ---
+        checkTranscript(transcript) {
+          const currentLine = this.state.scriptLines[this.state.currentIndex];
+          if (!currentLine) return;
+          
+          // For shadowing mode, user always speaks
+          const isCorrectUser = this.state.userRole === 'AB' ? true : currentLine.role === this.state.userRole;
+          if (!isCorrectUser) return;
+          
+          // Update accuracy stats
+          this.state.accuracyStats.totalAttempts++;
+          
+          // Calculate multiple similarity scores
+          const userText = transcript.toLowerCase().replace(/[^\w\s]/g, '');
+          const targetText = currentLine.text.toLowerCase().replace(/[^\w\s]/g, '');
+          
+          // 1. Full text similarity
+          const fullSimilarity = this.calculateSimilarity(userText, targetText);
+          
+          // 2. Keyword matching
+          const keywords = this.extractKeywords(targetText);
+          const keywordScore = this.checkKeywords(userText, keywords);
+          
+          // 3. Combined score (weighted) - stricter for shadowing
+          const keywordWeight = this.state.userRole === 'AB' ? 0.1 : 0.3;
+          const fullWeight = 1 - keywordWeight;
+          const combinedScore = (fullSimilarity * fullWeight) + (keywordScore * keywordWeight);
+          
+          // Get current threshold
+          const threshold = this.getMatchingThreshold();
+          const maxAttempts = this.getMaxAttempts();
+          
+          // Show similarity percentage in feedback
+          const similarityPercent = Math.round(combinedScore * 100);
+          
+          if (combinedScore > threshold) {
+            // Success!
+            if (this.speechRecognition) this.speechRecognition.stop();
+            
+            this.state.accuracyStats.successful++;
+            this.updateAccuracy();
+            
+            this.setState({
+              feedback: { 
+                type: 'success', 
+                message: `Tốt lắm! Độ chính xác: ${similarityPercent}%` 
+              },
+              isListening: false,
+              waitingForUser: false,
+              attempts: 0
+            });
+            
+            // Record successful attempt
+            this.recordAttempt(transcript, currentLine.text, true, similarityPercent);
+            
+            // Advance to next line after success
+            setTimeout(() => {
+              this.setState({
+                currentIndex: this.state.currentIndex + 1,
+                currentPair: Math.floor((this.state.currentIndex + 1) / 2) + 1,
+                transcript: ''
+              });
+              this.processCurrentLine();
+            }, 1200);
+          } else {
+            // Not accurate enough
+            this.state.accuracyStats.failed++;
+            this.updateAccuracy();
+            
+            this.setState({ attempts: this.state.attempts + 1 });
+            
+            // Record failed attempt
+            this.recordAttempt(transcript, currentLine.text, false, similarityPercent);
+            
+            if (this.state.attempts >= maxAttempts) {
+              // Too many attempts, advance anyway
+              if (this.speechRecognition) this.speechRecognition.stop();
+              this.setState({
+                feedback: { 
+                  type: 'error', 
+                  message: this.state.userRole === 'AB' ? 
+                    `Shadowing thất bại (${similarityPercent}%). Nghe lại và thử lại lần sau. Chuyển tiếp...` : 
+                    `Quá nhiều lần thử (${similarityPercent}%). Chuyển sang câu tiếp theo...` 
+                },
+                isListening: false,
+                waitingForUser: false,
+                attempts: 0,
+                currentIndex: this.state.currentIndex + 1,
+                currentPair: Math.floor((this.state.currentIndex + 1) / 2) + 1,
+                transcript: ''
+              });
+              setTimeout(() => this.processCurrentLine(), 2000);
+            } else {
+              const remainingAttempts = maxAttempts - this.state.attempts;
+              this.setState({
+                feedback: { 
+                  type: 'error', 
+                  message: this.state.userRole === 'AB' ? 
+                    `Shadowing chưa chính xác (${similarityPercent}%). Nghe lại và thử lại (${remainingAttempts} lần còn lại).` : 
+                    `Hãy thử lại (${this.state.attempts}/${maxAttempts}). Độ chính xác: ${similarityPercent}%` 
+                }
+              });
+              
+              // Show what was mispronounced
+              this.showMispronunciation(transcript, currentLine.text);
+              
+              // Play the correct audio again
+              setTimeout(async () => {
+                if (currentLine.audioFile) {
+                  try {
+                    await this.playAudio(currentLine.audioFile);
+                  } catch (error) {
+                    console.error('Lỗi phát lại audio:', error);
+                  }
+                }
+                
+                // Restart listening (keep waitingForUser true)
+                setTimeout(() => {
+                  if (this.state.isAutoPlaying && this.speechRecognition) {
+                    if (!this.state.isListening) {
+                      try { this.speechRecognition.start(); } catch (e) { console.warn('Không thể bắt đầu nhận diện:', e); }
+                    } else {
+                      console.warn('SpeechRecognition already running, skip start');
+                    }
+                  }
+                }, 500);
+              }, 1000);
+            }
+          }
+        }
+
+        showMispronunciation(userText, targetText) {
+          // Simple mispronunciation detection
+          const userWords = userText.toLowerCase().split(/\s+/);
+          const targetWords = targetText.toLowerCase().split(/\s+/);
+          
+          const missingWords = targetWords.filter(word => 
+            !userWords.some(uWord => this.wordsSimilar(uWord, word))
+          );
+          
+          if (missingWords.length > 0) {
+            console.log('Từ bị thiếu/sai:', missingWords.join(', '));
+            // Could show this in UI
+          }
+        }
+
+        recordAttempt(userText, targetText, isSuccess, accuracyPercent) {
+          // Record attempt for statistics
+          const attempt = {
+            timestamp: new Date().toISOString(),
+            userText,
+            targetText,
+            isSuccess,
+            accuracyPercent,
+            difficulty: this.state.difficulty
+          };
+          
+          // Store in localStorage for persistence
+          const attempts = JSON.parse(localStorage.getItem('speechAttempts') || '[]');
+          attempts.push(attempt);
+          if (attempts.length > 100) attempts.shift(); // Keep only last 100
+          localStorage.setItem('speechAttempts', JSON.stringify(attempts));
+        }
+
+        updateAccuracy() {
+          const { totalAttempts, successful } = this.state.accuracyStats;
+          if (totalAttempts > 0) {
+            this.state.accuracyStats.accuracy = (successful / totalAttempts) * 100;
+            
+            // Calculate session accuracy (last 10 attempts)
+            const attempts = JSON.parse(localStorage.getItem('speechAttempts') || '[]');
+            const recentAttempts = attempts.slice(-10);
+            if (recentAttempts.length > 0) {
+              const recentSuccesses = recentAttempts.filter(a => a.isSuccess).length;
+              this.state.accuracyStats.sessionAccuracy = (recentSuccesses / recentAttempts.length) * 100;
+            }
+          }
+        }
+
+        getAccuracyColor(accuracy) {
+          if (accuracy >= 70) return 'accuracy-high';
+          if (accuracy >= 40) return 'accuracy-medium';
+          return 'accuracy-low';
+        }
+
+        // --- LOAD LESSON ---
+        async loadSelectedLesson() {
+          if (this.state.availableLessons.length === 0) return;
+          
+          const lesson = this.state.availableLessons[this.state.selectedLessonIndex];
+          this.setState({ 
+            appState: 'LOADING',
+            feedback: { type: 'neutral', message: `Đang tải bài học: ${lesson.name}...` }
+          });
+
+          try {
+            // 1. Load the main lesson JSON
+            const lessonResponse = await fetch(`LESSON/${lesson.name}`);
+            if (!lessonResponse.ok) throw new Error(`Không thể tải file bài học: ${lessonResponse.status}`);
+            const lessonData = await lessonResponse.json();
+
+            // 2. Load the mapping JSON
+            const mappingResponse = await fetch(`LESSON/${lesson.mapping}`);
+            if (!mappingResponse.ok) throw new Error(`Không thể tải file mapping: ${mappingResponse.status}`);
+            const mappingData = await mappingResponse.json();
+
+            // 3. Parse script lines from your specific format
+            const scriptLines = this.parseLessonData(lessonData, mappingData);
+            
+            if (scriptLines.length === 0) {
+              throw new Error('Không có dữ liệu hội thoại hợp lệ');
+            }
+
+            const totalPairs = Math.floor(scriptLines.length / 2);
+            
+            // Reset accuracy stats for new session
+            this.state.accuracyStats = {
+              totalAttempts: 0,
+              successful: 0,
+              failed: 0,
+              accuracy: 0,
+              sessionAccuracy: 0,
+              commonErrors: []
+            };
+            
+            // 4. Set state with loaded lesson
+            this.setState({
+              currentLesson: lesson,
+              scriptLines: scriptLines,
+              originalScriptLines: scriptLines,
+              audioBasePath: `LESSON/${lesson.audio}`,
+              currentIndex: 0,
+              currentPair: 1,
+              totalPairs: totalPairs,
+              appState: 'PLAYING',
+              feedback: { type: 'success', message: `Đã tải: ${lesson.name} (${totalPairs} cặp)` },
+              isAutoPlaying: true,
+              transcript: '',
+              isShadowingActive: this.state.userRole === 'AB',
+              attempts: 0,
+              matchingThreshold: this.getMatchingThreshold()
+            });
+
+            // 5. Preload first few audio files
+            this.preloadAudioFiles(scriptLines.slice(0, 4));
+
+            // 6. Start processing the first line
+            this.processCurrentLine();
+
+          } catch (error) {
+            console.error('Lỗi tải bài học:', error);
+            this.setState({
+              appState: 'SETUP',
+              feedback: { type: 'error', message: `Lỗi: ${error.message}` }
+            });
+          }
+        }
+
+        // Parse your specific format: each item is [EN, IPA, VI, Example_EN, Example_IPA, Example_VI]
+        parseLessonData(lessonData, mappingData) {
+          const scriptLines = [];
+          const mappingDict = {};
+          
+          // Create a dictionary for quick audio file lookup
+          mappingData.forEach(item => {
+            mappingDict[item.text] = item.file;
+          });
+
+          // Process each lesson item (each is an array of 6 elements)
+          lessonData.forEach((item, index) => {
+            if (item.length >= 6) {
+              const englishText = item[0];
+              const ipaText = item[1];
+              const vietnameseText = item[2];
+              const exampleEnglish = item[3];
+              const exampleIpa = item[4];
+              const exampleVietnamese = item[5];
+              
+              // Add the main question as role A
+              scriptLines.push({
+                id: `line-${index}-q`,
+                role: 'A',
+                text: englishText,
+                ipa: ipaText,
+                translation: vietnameseText,
+                audioFile: mappingDict[englishText] ? `LESSON/${mappingDict[englishText]}` : null,
+                lineIndex: index * 2,
+                pairNumber: index + 1
+              });
+              
+              // Add the example response as role B
+              scriptLines.push({
+                id: `line-${index}-a`,
+                role: 'B',
+                text: exampleEnglish,
+                ipa: exampleIpa,
+                translation: exampleVietnamese,
+                audioFile: mappingDict[exampleEnglish] ? `LESSON/${mappingDict[exampleEnglish]}` : null,
+                lineIndex: index * 2 + 1,
+                pairNumber: index + 1
+              });
+            }
+          });
+          
+          return scriptLines;
+        }
+
+        async preloadAudioFiles(lines) {
+          for (const line of lines) {
+            if (line.audioFile && !this.state.audioCache.has(line.audioFile)) {
+              try {
+                const audioBuffer = await this.loadAudioFile(line.audioFile);
+                this.state.audioCache.set(line.audioFile, audioBuffer);
+              } catch (error) {
+                console.warn(`Không thể tải trước: ${line.audioFile}`, error);
+              }
+            }
+          }
+        }
+
+        async loadAudioFile(url) {
+          try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const arrayBuffer = await response.arrayBuffer();
+            const audioContext = this.getAudioContext();
+            return await audioContext.decodeAudioData(arrayBuffer);
+          } catch (error) {
+            console.error('Lỗi tải audio:', error);
+            throw error;
+          }
+        }
+
+        // --- PLAYBACK LOGIC ---
+        async processCurrentLine() {
+          if (this.state.appState !== 'PLAYING' || !this.state.isAutoPlaying) return;
+
+          const currentLine = this.state.scriptLines[this.state.currentIndex];
+          
+          if (!currentLine) {
+            // End of lesson - loop back
+            this.setState({
+              currentIndex: 0,
+              currentPair: 1,
+              feedback: { type: 'success', message: 'Hoàn thành tua! Bắt đầu lại từ đầu...' }
+            });
+            // Continue if still auto playing
+            if (this.state.isAutoPlaying) {
+              setTimeout(() => this.processCurrentLine(), 2000);
+            }
+            return;
+          }
+
+          // Update current pair
+          this.setState({ currentPair: Math.floor(this.state.currentIndex / 2) + 1 });
+
+          // Determine if it's AI's turn or user's turn
+          const isUsersTurn = this.state.userRole === 'AB' ? true : currentLine.role === this.state.userRole;
+          
+          if (!isUsersTurn) {
+            // AI speaks (play audio)
+            this.setState({
+              feedback: { 
+                type: 'neutral', 
+                message: `Đang nghe ${currentLine.role === 'A' ? 'Người A' : 'Người B'} nói...` 
+              },
+              isProcessingAI: true
+            });
+
+            try {
+              if (currentLine.audioFile) {
+                await this.playAudio(currentLine.audioFile);
+              } else {
+                // Fallback: speak text using selected voice1
+                await this.speakText(currentLine.text || '', this.state.voice1 || 'gTTS');
+              }
+              
+              // Move to next line after playback
+              this.setState({
+                isProcessingAI: false,
+                currentIndex: this.state.currentIndex + 1,
+                currentPair: Math.floor((this.state.currentIndex + 1) / 2) + 1
+              });
+              
+              // Process next line after delay
+              setTimeout(() => this.processCurrentLine(), 300);
+              
+            } catch (error) {
+              console.error('Lỗi phát âm thanh:', error);
+              this.setState({
+                feedback: { type: 'error', message: 'Lỗi phát âm thanh. Chuyển sang dòng tiếp theo...' },
+                isProcessingAI: false,
+                currentIndex: this.state.currentIndex + 1,
+                currentPair: Math.floor((this.state.currentIndex + 1) / 2) + 1
+              });
+              setTimeout(() => this.processCurrentLine(), 1000);
+            }
+          } else {
+            // User's turn to speak (for both normal and shadowing modes)
+            if (this.state.userRole === 'AB') {
+              // Shadowing mode: user speaks immediately after hearing
+              this.setState({
+                feedback: { 
+                  type: 'neutral', 
+                  message: 'SHADOWING: Lặp lại ngay sau khi nghe!' 
+                },
+                transcript: ''
+              });
+
+              // In shadowing mode, start listening immediately with a prompt
+              setTimeout(() => {
+                if (this.state.isAutoPlaying && this.speechRecognition) {
+                  if (!this.state.isListening) {
+                    try {
+                      this.speechRecognition.start();
+                    } catch (e) {
+                      console.warn('Không thể bắt đầu nhận diện:', e);
+                      // Auto-advance if speech recognition fails
+                      setTimeout(() => {
+                        this.setState({
+                          currentIndex: this.state.currentIndex + 1,
+                          currentPair: Math.floor((this.state.currentIndex + 1) / 2) + 1,
+                          feedback: { type: 'error', message: 'Lỗi microphone. Tự động chuyển tiếp...' }
+                        });
+                        this.processCurrentLine();
+                      }, 1500);
+                    }
+                  } else {
+                    console.warn('SpeechRecognition already running, skip start');
+                  }
+                }
+              }, this.state.shadowDelay);
+              
+              // Also play the audio for shadowing
+              setTimeout(async () => {
+                if (currentLine.audioFile) {
+                  try {
+                    await this.playAudio(currentLine.audioFile);
+                  } catch (error) {
+                    console.error('Lỗi phát audio shadowing:', error);
+                  }
+                }
+              }, 100);
+              } else {
+              // Normal mode
+              this.setState({
+                feedback: { 
+                  type: 'neutral', 
+                  message: 'Đến lượt bạn! Hãy đọc to câu tiếng Anh.' 
+                },
+                transcript: '',
+                waitingForUser: true
+              });
+
+              // Start listening after delay
+              setTimeout(() => {
+                if (this.state.isAutoPlaying && this.speechRecognition) {
+                  if (!this.state.isListening) {
+                    try {
+                      this.speechRecognition.start();
+                    } catch (e) {
+                      console.warn('Không thể bắt đầu nhận diện:', e);
+                      // Auto-advance if speech recognition fails
+                      setTimeout(() => {
+                        this.setState({
+                          currentIndex: this.state.currentIndex + 1,
+                          currentPair: Math.floor((this.state.currentIndex + 1) / 2) + 1,
+                          feedback: { type: 'error', message: 'Lỗi microphone. Tự động chuyển tiếp...' }
+                        });
+                        this.processCurrentLine();
+                      }, 1500);
+                    }
+                  } else {
+                    console.warn('SpeechRecognition already running, skip start');
+                  }
+                }
+              }, this.state.userReplyDelay || 50);
+            }
+          }
+        }
+
+        async playAudio(audioFile) {
+          try {
+            let audioBuffer = this.state.audioCache.get(audioFile);
+            
+            if (!audioBuffer) {
+              audioBuffer = await this.loadAudioFile(audioFile);
+              this.state.audioCache.set(audioFile, audioBuffer);
+            }
+            
+            const audioContext = this.getAudioContext();
+            const source = audioContext.createBufferSource();
+            source.buffer = audioBuffer;
+            source.connect(audioContext.destination);
+            
+            return new Promise((resolve) => {
+              source.onended = resolve;
+              source.start();
+            });
+          } catch (error) {
+            console.error('Lỗi phát audio:', error);
+            throw error;
+          }
+        }
+
+        // Speak text using Web Speech Synthesis as fallback TTS
+        speakText(text, engine = 'gTTS') {
+          return new Promise((resolve) => {
+            try {
+              const synth = window.speechSynthesis;
+              if (!synth) {
+                // no TTS support; fallback to short delay
+                setTimeout(resolve, 1000);
+                return;
+              }
+
+              let voices = synth.getVoices();
+              // getVoices can be empty initially; if so, wait briefly
+              if (!voices || voices.length === 0) {
+                // try again after voices loaded
+                synth.onvoiceschanged = () => {
+                  voices = synth.getVoices() || [];
+                  const selected = this.selectVoiceByEngine(voices, engine);
+                  const utter = new SpeechSynthesisUtterance(text);
+                  if (selected) utter.voice = selected;
+                  utter.rate = 1;
+                  utter.onend = resolve;
+                  synth.speak(utter);
+                };
+                // safety timeout
+                setTimeout(() => resolve(), 1500);
+                return;
+              }
+
+              const selected = this.selectVoiceByEngine(voices, engine);
+              const utter = new SpeechSynthesisUtterance(text);
+              if (selected) utter.voice = selected;
+              utter.rate = 1;
+              utter.onend = resolve;
+              synth.speak(utter);
+            } catch (e) {
+              console.warn('TTS lỗi, dùng chờ thay thế', e);
+              setTimeout(resolve, 1000);
+            }
+          });
+        }
+
+        selectVoiceByEngine(voices, engine) {
+          // engine: 'gTTS' -> prefer Google-like female en-US; 'Edge' -> prefer Microsoft/ male
+          const enVoices = voices.filter(v => v.lang && v.lang.startsWith('en'));
+          if (engine === 'Edge') {
+            // prefer voices with "Microsoft" or male hints
+            let v = enVoices.find(vv => /Microsoft|Zira|Male|Guy|Adam/i.test(vv.name));
+            if (v) return v;
+            // fallback to any en voice
+            return enVoices[0] || voices[0];
+          }
+          // default gTTS-like: prefer Google voices or female names
+          let v = enVoices.find(vv => /Google|Female|Samantha|Emma|Alloy/i.test(vv.name));
+          if (v) return v;
+          // fallback to first en voice
+          return enVoices[0] || voices[0];
+        }
+
+        // --- CONTROLS ---
+        toggleAutoPlay() {
+          const newState = !this.state.isAutoPlaying;
+          this.setState({ isAutoPlaying: newState });
+          
+          if (newState && this.state.appState === 'PLAYING') {
+            // Reset to beginning if at end
+            if (this.state.currentIndex >= this.state.scriptLines.length) {
+              this.setState({ currentIndex: 0, currentPair: 1 });
+            }
+            if (!this.state.isListening) {
+              this.processCurrentLine();
+            }
+          } else if (!newState && this.speechRecognition) {
+            this.speechRecognition.stop();
+          }
+        }
+
+        stopPractice() {
+          if (this.speechRecognition) this.speechRecognition.abort();
+          if (this.audioContext) {
+            this.audioContext.close();
+            this.audioContext = null;
+          }
+          
+          this.setState({
+            appState: 'SETUP',
+            isAutoPlaying: false,
+            isProcessingAI: false,
+            isListening: false,
+            feedback: { type: 'neutral', message: 'Đã dừng. Chọn bài học mới.' },
+            currentPair: 1,
+            isShadowingActive: false
+          });
+        }
+
+        selectLesson(index) {
+          this.setState({ selectedLessonIndex: index });
+        }
+
+        startRangeSession() {
+          const start = parseInt(document.getElementById('rangeStart').value);
+          const end = parseInt(document.getElementById('rangeEnd').value);
+
+          if (isNaN(start)) {
+            this.setState({ feedback: { type: 'error', message: 'Vui lòng nhập cặp bắt đầu' } });
+            return;
+          }
+          
+          if (isNaN(end)) {
+            this.setState({ feedback: { type: 'error', message: 'Vui lòng nhập cặp kết thúc' } });
+            return;
+          }
+          
+          const totalPairs = Math.floor(this.state.scriptLines.length / 2);
+          
+          if (start < 1 || end < 1 || start > totalPairs || end > totalPairs) {
+            this.setState({ feedback: { type: 'error', message: 'Số cặp phải lớn hơn 0 và không vượt quá tổng số cặp' } });
+            return;
+          }
+          
+          if (start > end) {
+            this.setState({ feedback: { type: 'error', message: 'Cặp bắt đầu phải nhỏ hơn cặp kết thúc' } });
+            return;
+          }
+          
+          const startLine = (start - 1) * 2;
+          const endLine = end * 2;
+          const sessionScriptLines = this.state.scriptLines.slice(startLine, endLine);
+          
+          if (sessionScriptLines.length === 0) {
+            this.setState({ feedback: { type: 'error', message: 'Không có cặp nào trong khoảng này' } });
+            return;
+          }
+          
+          this.setState({
+            scriptLines: sessionScriptLines,
+            startPair: start,
+            endPair: end,
+            currentIndex: 0,
+            currentPair: 1,
+            totalPairs: end - start + 1,
+            appState: 'PLAYING',
+            isShadowingActive: this.state.userRole === 'AB',
+            feedback: { type: 'success', message: `Bắt đầu phiên học từ cặp ${start} đến ${end}` }
+          });
+
+          // Start playing if auto
+          if (this.state.isAutoPlaying) {
+            setTimeout(() => this.processCurrentLine(), 500);
+          }
+        }
+
+        resetSession() {
+          this.loadSelectedLesson();
+          this.setState({ 
+            startPair: null,
+            endPair: null,
+            feedback: { type: 'neutral', message: 'Đã reset phiên học về toàn bộ danh sách' }
+          });
+        }
+
+        setShadowDelay(delay) {
+          this.setState({ shadowDelay: delay });
+        }
+
+        setDifficulty(difficulty) {
+          this.setState({ 
+            difficulty,
+            matchingThreshold: this.getMatchingThreshold()
+          });
+        }
+
+        // --- STATE MANAGEMENT ---
+        setState(newState, skipRender = false) {
+          this.state = { ...this.state, ...newState };
+          // Clamp matchingThreshold to maximum 95% to avoid unrealistic 100%
+          if (this.state.matchingThreshold > 0.95) {
+            this.state.matchingThreshold = 0.95;
+            this.state.customThreshold = true;
+          }
+          if (skipRender) {
+            // If only transcript changed, update the interim transcript element to avoid full re-render
+            if (Object.prototype.hasOwnProperty.call(newState, 'transcript')) {
+              const interimEl = document.getElementById('interimTranscript');
+              if (interimEl) {
+                interimEl.textContent = newState.transcript || '';
+              }
+            }
+            return;
+          }
+          this.render();
+        }
+
+        // --- RENDER ---
+        render() {
+          const app = document.getElementById('app');
+          if (!app) return;
+
+          const { 
+            appState, userRole, currentIndex, feedback, isProcessingAI, 
+            isAutoPlaying, transcript, isListening, availableLessons,
+            scriptLines, originalScriptLines, currentLesson, selectedLessonIndex,
+            startPair, endPair, currentPair, totalPairs, isShadowingActive, shadowDelay,
+            difficulty, accuracyStats
+          } = this.state;
+
+          const isMicSupported = this.speechRecognition !== null;
+          const hasLessons = availableLessons.length > 0;
+          const displayTotalPairs = startPair && endPair ? (endPair - startPair + 1) : Math.floor(scriptLines.length / 2);
+
+          // Generate progress steps (max 10 steps for visibility)
+          const progressSteps = [];
+          const maxSteps = 10;
+          const stepInterval = Math.max(1, Math.floor(displayTotalPairs / maxSteps));
+          
+          for (let i = 1; i <= displayTotalPairs; i += stepInterval) {
+            if (progressSteps.length < maxSteps) {
+              progressSteps.push(i);
+            }
+          }
+          if (progressSteps[progressSteps.length - 1] !== displayTotalPairs) {
+            progressSteps.push(displayTotalPairs);
+          }
+
+          const accuracyColor = this.getAccuracyColor(accuracyStats.accuracy);
+          const waitingClass = (isListening || this.state.waitingForUser) ? ' waiting' : '';
+          const sessionAccuracyColor = this.getAccuracyColor(accuracyStats.sessionAccuracy);
+
+          app.innerHTML = `
+            <div class="roleplay-container container" style="display:flex; flex-direction:column; min-height:auto; align-items:center; text-align:center;">
+              <main style="flex:1;">
+                <div class="exercise-item" style="margin-bottom:6px;">
+                  <div class="question">${scriptLines[currentIndex]?.text ? scriptLines[currentIndex].text : 'Chọn bài học và nhấn Bắt đầu'}</div>
+                  ${scriptLines[currentIndex]?.translation ? `<div class="vietnamese">${scriptLines[currentIndex].translation}</div>` : ''}
+                  ${scriptLines[currentIndex]?.ipa ? `<div class="translation-hint">IPA: ${scriptLines[currentIndex].ipa}</div>` : ''}
+                  <div id="rp_status" style="margin-top:8px; font-weight:700; color:var(--muted)">${currentPair}/${totalPairs} (${Math.round(accuracyStats.sessionAccuracy || accuracyStats.accuracy)}%)</div>
+                  <div id="feedbackBox" class="feedback${waitingClass}">${feedback.message}
+                    <div id="interimTranscript" class="transcript-interim">${transcript ? transcript : ''}</div>
+                  </div>
+                </div>
+              </main>
+
+              <div class="control-panel" style="margin-top:8px; display:flex; flex-direction:column; gap:8px; padding-top:8px">
+                  <div style="display:flex; gap:8px; align-items:center;">
+                  <select id="appLessonSelect" style="padding:8px; border-radius:6px; background:var(--card-bg); border:1px solid var(--border); color:var(--text); min-width:220px">
+                    <option value="">-- Chọn bài học --</option>
+                    ${availableLessons.map((l, i) => `<option value="${i}" ${selectedLessonIndex===i? 'selected':''}>${l.name.replace('.json','')}</option>`).join('')}
+                  </select>
+                  <select id="voice_ctrl" style="padding:8px; border-radius:6px; background:var(--card-bg); border:1px solid var(--border); color:var(--text)">
+                    <option value="gTTS" ${this.state.voice1 === 'gTTS' ? 'selected' : ''}>gTTS (Female)</option>
+                    <option value="Edge" ${this.state.voice1 === 'Edge' ? 'selected' : ''}>Edge (Male)</option>
+                  </select>
+                  <button id="startBtn" class="btn">Bắt đầu</button>
+                  <button id="stopBtn" class="btn ghost">Kết thúc</button>
+                  <button id="rpSaveBookmark" class="btn ghost" title="Lưu bookmark">🔖 Lưu</button>
+                  <button id="rpLoadBookmark" class="btn ghost" title="Tải bookmark">📂 Tải</button>
+                </div>
+
+                <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                  <div class="option-group" style="display:flex; gap:8px; align-items:center">
+                    <label style="margin-right:8px; font-weight:700;">Chế độ:</label>
+                    <button id="roleA" class="btn ghost ${userRole==='A' ? 'active-mode':''}">Vai A</button>
+                    <button id="roleB" class="btn ghost ${userRole==='B' ? 'active-mode':''}" style="margin-left:8px">Vai B</button>
+                  </div>
+
+                  <div class="option-group" style="margin-left:8px;">
+                    <label style="margin-right:6px">Ngưỡng:</label>
+                    <input id="matchingThreshold" type="range" min="0" max="95" value="${Math.min(Math.round(this.state.matchingThreshold*100),95)}" />
+                    <span id="matchingThresholdValue" style="margin-left:6px; font-weight:700">${Math.min(Math.round(this.state.matchingThreshold*100),95)}%</span>
+                  </div>
+
+                      <div class="option-group" style="margin-left:8px;">
+                        <label style="margin-right:6px">Reply delay:</label>
+                        <input id="replyDelayCtrl" type="range" min="50" max="2000" step="25" value="${this.state.userReplyDelay || 50}" />
+                        <span id="replyDelayVal" style="margin-left:6px; font-weight:700">${(this.state.userReplyDelay || 50)}ms</span>
+                      </div>
+
+                      <div class="option-group" style="margin-left:8px;">
+                        <label style="margin-right:6px">Phiên (số cặp):</label>
+                        <input id="sessionPairsCount" type="number" min="1" value="${displayTotalPairs}" style="width:80px; padding:6px; border-radius:6px; background:var(--card-bg); border:1px solid var(--border); color:var(--text);" />
+                        <button id="applySessionPairsBtn" class="btn ghost" style="margin-left:8px">Áp dụng Phiên</button>
+                      </div>
+
+                  <div style="margin-left:auto; display:flex; gap:8px; align-items:center">
+                    <button id="playSample" class="btn ghost">Phát mẫu</button>
+                    <button id="listenBtn" class="btn ghost">Bắt đầu nghe</button>
+                  </div>
+                </div>
+              </div>
+
+              <footer style="margin-top:12px; text-align:center; color:var(--muted); font-size:0.9rem">
+                RolePlay AI • giao diện A1-style
+              </footer>
+            </div>
+          `;
+
+          this.attachEventListeners();
+        }
+
+        attachEventListeners() {
+          // Store app instance in window for inline event handlers
+          window.app = this;
+
+          // Role selection
+          document.getElementById('roleA')?.addEventListener('click', () => this.setState({ userRole: 'A' }));
+          document.getElementById('roleB')?.addEventListener('click', () => this.setState({ userRole: 'B' }));
+          // Voice selector (single control)
+          document.getElementById('voice_ctrl')?.addEventListener('change', (e) => this.setState({ voice1: e.target.value }));
+          // Lesson select in header
+          document.getElementById('appLessonSelect')?.addEventListener('change', (e) => {
+            const v = parseInt(e.target.value, 10);
+            if (!isNaN(v)) this.setState({ selectedLessonIndex: v });
+          });
+          // Play sample / listen buttons
+          document.getElementById('playSample')?.addEventListener('click', async () => {
+            const line = this.state.scriptLines[this.state.currentIndex];
+            if (!line) return;
+            try {
+              if (line.audioFile) await this.playAudio(line.audioFile);
+              else await this.speakText(line.text || '', this.state.voice1 || 'gTTS');
+            } catch (e) { console.error(e); }
+          });
+          document.getElementById('listenBtn')?.addEventListener('click', () => {
+            if (this.speechRecognition) {
+              if (!this.state.isListening) {
+                try { this.speechRecognition.start(); } catch (e) { console.warn(e); }
+              } else {
+                console.warn('SpeechRecognition already running, skip start');
+              }
+            }
+          });
+
+          // Reply delay control (slider)
+          const replyCtrl = document.getElementById('replyDelayCtrl');
+          const replyVal = document.getElementById('replyDelayVal');
+          if (replyCtrl) {
+            replyCtrl.addEventListener('input', (e) => {
+              const ms = parseInt(e.target.value, 10) || 0;
+              // update both shadowDelay and userReplyDelay
+              this.setState({ shadowDelay: ms, userReplyDelay: ms });
+              if (replyVal) replyVal.textContent = ms + 'ms';
+            });
+          }
+
+          // Reset preset button (difficulty presets removed)
+          document.getElementById('resetPresetBtn')?.addEventListener('click', () => {
+            this.setState({ customThreshold: false, matchingThreshold: this.getMatchingThreshold() });
+          });
+
+          // Matching threshold slider (0-100%)
+          const matchingInput = document.getElementById('matchingThreshold');
+          const matchingValue = document.getElementById('matchingThresholdValue');
+          if (matchingInput) {
+            matchingInput.addEventListener('input', (e) => {
+              let v = parseInt(e.target.value || '0', 10);
+              // enforce maximum 95%
+              if (v > 95) v = 95;
+              this.setState({ matchingThreshold: v / 100, customThreshold: true });
+              if (matchingValue) matchingValue.textContent = `${v}%`;
+              const warn = document.getElementById('matchingThresholdWarn');
+              if (warn) {
+                if (v >= 95) {
+                  warn.textContent = 'Cảnh báo: Ngưỡng ≥95% đã bị giới hạn — giá trị tối đa cho phép là 95%.';
+                  warn.className = 'text-xs mt-1 text-yellow-400';
+                } else {
+                  warn.textContent = 'Khuyến nghị: 90–95% là mức cân bằng giữa chính xác và tính thực tế.';
+                  warn.className = 'text-xs mt-1 text-gray-500';
+                }
+              }
+              // ensure the slider reflects clamped value
+              matchingInput.value = String(v);
+            });
+          }
+
+          // Start button
+          document.getElementById('startBtn')?.addEventListener('click', () => this.loadSelectedLesson());
+
+          // Range session buttons
+          document.getElementById('startRangeBtn')?.addEventListener('click', () => this.startRangeSession());
+          document.getElementById('resetSessionBtn')?.addEventListener('click', () => this.resetSession());
+
+          // Apply session pairs (start from current pair)
+          document.getElementById('applySessionPairsBtn')?.addEventListener('click', () => {
+            try {
+              const raw = document.getElementById('sessionPairsCount')?.value;
+              let count = parseInt(raw, 10);
+              if (isNaN(count) || count < 1) {
+                this.setState({ feedback: { type: 'error', message: 'Số cặp không hợp lệ' } });
+                return;
+              }
+              const startPair = this.state.currentPair && this.state.currentPair > 0 ? this.state.currentPair : 1;
+              const endPair = startPair + count - 1;
+
+              const startLine = (startPair - 1) * 2;
+              const endLine = endPair * 2; // slice end is exclusive
+
+              const fullLines = (this.state.originalScriptLines && this.state.originalScriptLines.length) ? this.state.originalScriptLines : this.state.scriptLines;
+              const sliced = fullLines.slice(startLine, endLine);
+              if (!sliced || sliced.length === 0) {
+                this.setState({ feedback: { type: 'error', message: 'Không đủ câu trong bài để tạo phiên' } });
+                return;
+              }
+
+              this.setState({
+                scriptLines: sliced,
+                startPair: startPair,
+                endPair: endPair,
+                currentIndex: 0,
+                currentPair: 1,
+                totalPairs: count,
+                appState: 'PLAYING',
+                isAutoPlaying: true,
+                feedback: { type: 'success', message: `Phiên: ${startPair} → ${endPair} (tổng ${count} cặp)` }
+              });
+
+              setTimeout(() => this.processCurrentLine(), 300);
+            } catch (e) { console.error(e); }
+          });
+
+          // Control buttons
+          document.getElementById('toggleAutoPlay')?.addEventListener('click', () => this.toggleAutoPlay());
+          document.getElementById('stopBtn')?.addEventListener('click', () => this.stopPractice());
+
+          // RolePlay: Save bookmark
+          document.getElementById('rpSaveBookmark')?.addEventListener('click', () => {
+            try {
+              const lesson = this.state.currentLesson || this.state.availableLessons[this.state.selectedLessonIndex];
+              if (!lesson) { this.setState({ feedback: { type: 'error', message: 'Chưa chọn bài để lưu bookmark' } }); return; }
+              const key = `rp_bookmark_${lesson.name}`;
+              const payload = {
+                selectedLessonIndex: this.state.selectedLessonIndex,
+                currentIndex: this.state.currentIndex,
+                currentPair: this.state.currentPair,
+                startPair: this.state.startPair,
+                endPair: this.state.endPair,
+                matchingThreshold: Math.round((this.state.matchingThreshold || 0) * 100),
+                voice1: this.state.voice1,
+                userRole: this.state.userRole,
+                userReplyDelay: this.state.userReplyDelay || 50,
+                ts: Date.now()
+              };
+              try { localStorage.setItem(key, JSON.stringify(payload)); localStorage.setItem('rp_last_bookmark', JSON.stringify({ key, payload })); } catch (e) { console.warn('save bk failed', e); }
+              this.setState({ feedback: { type: 'success', message: 'Đã lưu bookmark cho RolePlay' } });
+            } catch (e) { console.error(e); this.setState({ feedback: { type: 'error', message: 'Lưu bookmark thất bại' } }); }
+          });
+
+          // RolePlay: Load bookmark
+          document.getElementById('rpLoadBookmark')?.addEventListener('click', () => {
+            try {
+              const lesson = this.state.currentLesson || this.state.availableLessons[this.state.selectedLessonIndex];
+              let key = null;
+              if (lesson) key = `rp_bookmark_${lesson.name}`;
+              let raw = key ? localStorage.getItem(key) : null;
+              if (!raw) {
+                const last = localStorage.getItem('rp_last_bookmark');
+                if (last) {
+                  try { const parsed = JSON.parse(last); raw = JSON.stringify(parsed.payload); }
+                  catch(e){ raw = last; }
+              }
+              }
+              if (!raw) { this.setState({ feedback: { type: 'error', message: 'Không tìm thấy bookmark' } }); return; }
+              const obj = JSON.parse(raw);
+              // if lesson differs, switch lesson first
+              if (typeof obj.selectedLessonIndex === 'number') {
+                this.setState({ selectedLessonIndex: obj.selectedLessonIndex });
+              }
+              // load lesson and then restore indices after a short delay
+              this.loadSelectedLesson().then?.(() => {}).catch(()=>{});
+              setTimeout(() => {
+                this.setState({
+                  currentIndex: typeof obj.currentIndex === 'number' ? obj.currentIndex : (obj.currentPair ? ((obj.currentPair-1)*2) : 0),
+                  currentPair: typeof obj.currentPair === 'number' ? obj.currentPair : 1,
+                  startPair: typeof obj.startPair === 'number' ? obj.startPair : null,
+                  endPair: typeof obj.endPair === 'number' ? obj.endPair : null,
+                  matchingThreshold: (typeof obj.matchingThreshold === 'number') ? (obj.matchingThreshold/100) : this.state.matchingThreshold,
+                  voice1: obj.voice1 || this.state.voice1,
+                  userRole: obj.userRole || this.state.userRole,
+                  userReplyDelay: typeof obj.userReplyDelay === 'number' ? obj.userReplyDelay : this.state.userReplyDelay
+                });
+                // ensure the app processes current line
+                try { this.processCurrentLine(); } catch(e){}
+                this.setState({ feedback: { type: 'success', message: 'Đã tải bookmark RolePlay' } });
+              }, 600);
+            } catch (e) { console.error(e); this.setState({ feedback: { type: 'error', message: 'Tải bookmark thất bại' } }); }
+          });
+
+          // App selector removed
+        }
+      }
+
+      // Initialize app
+      document.addEventListener('DOMContentLoaded', () => {
+        // expose instance globally so main page can control/sync it
+        try { window.rolePlayInstance = new RolePlayApp(); } catch (e) { console.error('Failed to create RolePlayApp', e); }
+      });
+    </script>
 </body>
 </html>
